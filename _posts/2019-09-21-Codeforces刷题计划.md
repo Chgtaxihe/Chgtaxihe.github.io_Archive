@@ -10,7 +10,7 @@ tags: algorithm Codeforces
 {:toc}
 ## 说明
 
-1. 有些题目比较简单，就没写题解/AC代码啦
+有些题目比较简单，就没写题解/AC代码啦
 
 ## Div. 1
 
@@ -43,7 +43,7 @@ tags: algorithm Codeforces
 
 | 题号                                                         | 完成 | 一句话题解                                                   | 过题人数 |
 | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [2048 Game](https://codeforces.com/contest/1221/problem/A) | AC   |                                                              | 5662     |
+| A. [2048 Game](https://codeforces.com/contest/1221/problem/A) | √    |                                                              | 5662     |
 | B. [Knights](https://codeforces.com/contest/1221/problem/B)  | √    | 随便猜个结论，居然过了？？？                                 | 4135     |
 | C. [Perfect Team](https://codeforces.com/contest/1221/problem/C) | √    |                                                              | 4776     |
 | D. [Make The Fence Great Again](https://codeforces.com/contest/1221/problem/D) | √    | 每个板子增加的长度不会超过2，故$$dp_{pos, add} = add \cdot b_{pos} + \min\limits_{x=0 \dots 2, a_{pos-1}+x \neq a_{pos}+add} dp_{pos-1, x}$$ | 1426     |
@@ -66,7 +66,7 @@ tags: algorithm Codeforces
 | C. [Primes and Multiplication](https://codeforces.com/contest/1228/problem/C) | √    | 数学太恐怖，去看题解吧      | 4559     |
 | D. [Complete Tripartite](https://codeforces.com/contest/1228/problem/D) | √    | 优雅的暴力                  | 2842     |
 | E. [Another Filling the Grid](https://codeforces.com/contest/1228/problem/E) | √    | [DP] 题解表述有误，看评论区 | 965      |
-| F. [One Node is Gone](https://codeforces.com/contest/1228/problem/F) | ╳    |                             | 209      |
+| F. [One Node is Gone](https://codeforces.com/contest/1228/problem/F) |      |                             | 209      |
 
 
 
@@ -247,15 +247,117 @@ tags: algorithm Codeforces
 
 [题解](https://codeforces.com/blog/entry/71594)
 
-| 题号                                                         | 完成 | 备注 | 通过人数 |
-| ------------------------------------------------------------ | ---- | ---- | -------- |
-| A. [Changing Volume](https://codeforces.com/contest/1255/problem/A) |      |      |          |
-| B. [Fridge Lockers](https://codeforces.com/contest/1255/problem/B) |      |      |          |
-| C. [League of Leesins](https://codeforces.com/contest/1255/problem/C) |      |      |          |
-| D. [Feeding Chicken](https://codeforces.com/contest/1255/problem/D) |      |      |          |
-| E1. [Send Boxes to Alice (Easy Version)](https://codeforces.com/contest/1255/problem/E1) |      |      |          |
-| E2. [Send Boxes to Alice (Hard Version)](https://codeforces.com/contest/1255/problem/E2) |      |      |          |
-| F. [Point Ordering](https://codeforces.com/contest/1255/problem/F) |      |      |          |
+[我的AC代码](https://gist.github.com/Chgtaxihe/6cae819ea8ccc42ba7a13bd74cd950d7)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Changing Volume](https://codeforces.com/contest/1255/problem/A) | √    |                                                              | 9713     |
+| B. [Fridge Lockers](https://codeforces.com/contest/1255/problem/B) | √    |                                                              | 6467     |
+| C. [League of Leesins](https://codeforces.com/contest/1255/problem/C) | √    |                                                              | 3659     |
+| D. [Feeding Chicken](https://codeforces.com/contest/1255/problem/D) | √    | python3的builtdins.input()比pypy3的快                        | 1842     |
+| E1. [Send Boxes to Alice (Easy Version)](https://codeforces.com/contest/1255/problem/E1) | √    |                                                              | 1213     |
+| E2. [Send Boxes to Alice (Hard Version)](https://codeforces.com/contest/1255/problem/E2) | √    | 对$a$求前缀和$S_i$，那么$box_i$向$box_{i+1}$移动一块，相当于$S_i -= 1$，对于$factor_k$,使得$all(S_i\%factor_k=0)$即可 | 604      |
+| F. [Point Ordering](https://codeforces.com/contest/1255/problem/F) |      |                                                              | 142      |
+
+
+
+###  [Educational Codeforces Round 77 (Rated for Div. 2)](https://codeforces.com/contest/1260)
+
+[题解](https://codeforces.com/blog/entry/71805)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/51c3fb94efd178b1f0fe2e408548777e)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Heating](https://codeforces.com/contest/1260/problem/A)  | √    |                                                              | 5450     |
+| B. [Obtain Two Zeroes](https://codeforces.com/contest/1260/problem/B) | √    | 对于$(a+b)\equiv0\pmod{3}$,定有$2a\equiv b\pmod3$(枚举一下$a$和$b$即可证明)故本题只需要满足$(a+b)\equiv 0\pmod3$和$min(a,b)*2\ge max(a,b)$即可 | 4380     |
+| C. [Infinite Fence](https://codeforces.com/contest/1260/problem/C) | √    |                                                              | 2075     |
+| D. [A Game with Traps](https://codeforces.com/contest/1260/problem/D) | √    | 注意到：对与一个要排除的陷阱$(l_k, r_k, d_k)$，若$l_k <= r_k$，则我们需要经过区域$[l_k, r_k]$三次（人生苦短，我用C++） | 796      |
+| E. [Tournament](https://codeforces.com/contest/1260/problem/E) |      |                                                              | 194      |
+| F. [Colored Tree](https://codeforces.com/contest/1260/problem/F) |      |                                                              | 20       |
+
+#### C题题解
+
+假定$r\le b$， $g=gcd(r, b)$，存在$rx - by = g$ ($y\ge0$)，即$rx = g + by$ ($y\ge0$)
+
+则对于两个相邻的蓝色块$by$与$by + b$，我们要在其中插入$m+1$个红色块，
+
+$by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
+
+且 $by+g+(m*r) < by+b$
+
+也就是说$m+1 \ge k$，即$g + (k-1)*r < b$ 时`REBEL`，否则`OBEY`
+
+
+
+### [Codeforces Round #603 (Div. 2)](https://codeforces.com/contest/1263)
+
+[题解](https://codeforces.com/blog/entry/71844?locale=en)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/3056e723c8e312749fe62e6a8c7d61e9)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Sweet Problem](https://codeforces.com/contest/1263/problem/A) | √    | 若$a\ge b\ge c$且$a \le b+c$，则按照最优策略，最后剩下的总糖果数为`0`或`1` | 8681     |
+| B. [PIN Codes](https://codeforces.com/contest/1263/problem/B) | √    |                                                              | 5919     |
+| C. [Everyone is a Winner!](https://codeforces.com/contest/1263/problem/C) | √    | 所有$k = \lfloor \sqrt{n} \rfloor$都属于是答案的一部分       | 6194     |
+| D. [Secret Passwords](https://codeforces.com/contest/1263/problem/D) | √    |                                                              | 5144     |
+| E. [Editor](https://codeforces.com/contest/1263/problem/E)   | √    | 第一反应是线段树，题解用两个`stack`维护左右两侧信息          | 1629     |
+| F. [Economic Difficulties](https://codeforces.com/contest/1263/problem/F) |      |                                                              | 448      |
+
+#### F题题解
+
+以`cursor`为界，分为左右两部分。同时计算左侧前缀和、右侧后缀和("("计1，")"计-1)。
+
+若左侧合法，则定有$min(sum_{left}) \ge 0$，右侧合法则定有$max(sum_{right}) \le 0$
+
+若整个串合法，除上述条件外，$sum_{left} + sum_{right}=0$
+
+那么最大深度为$max(sum_{left}, max(sum_{left}), -min(sum_{right}))$
+
+复杂度$O( n )$
+
+
+
+### [Codeforces Round #604 (Div. 2)](https://codeforces.com/contest/1265)
+
+[题解](https://codeforces.com/blog/entry/71995)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/086b10066ac0b4c1fa9c5f3a274d376b)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Beautiful String](https://codeforces.com/contest/1265/problem/A) | √    |                                                              | 8368     |
+| B. [Beautiful Numbers](https://codeforces.com/contest/1265/problem/B) | √    |                                                              | 6432     |
+| C. [Beautiful Regional Contest](https://codeforces.com/contest/1265/problem/C) | √    |                                                              | 4708     |
+| D. [Beautiful Sequence](https://codeforces.com/contest/1265/problem/D) | √    | 需要注意的是，尽管$cnt[min] < cnt[min+1]$，但$min$仍可能放在开头位置，样例"20000 39999 20000 0" | 2331     |
+| E. [Beautiful Mirrors](https://codeforces.com/contest/1265/problem/E) | √    | 复习了一下概率dp和逆元~                                      | 1261     |
+| F. [Beautiful Bracket Sequence (easy version)](https://codeforces.com/contest/1265/problem/F) | X    | 没懂！！                                                     | 134      |
+
+#### E题题解
+
+没什么好说的，概率dp
+
+$cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
+
+#### F题待完成！！！
+
+
+
+### [Codeforces Round #607 (Div. 2)](https://codeforces.com/contest/1281)
+
+[题解](https://codeforces.com/blog/entry/72212)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/e88cbaa483f8bb0d1895406ebc5d9e5e)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Suffix Three](https://codeforces.com/contest/1281/problem/A) | √    |                                                              | 8724     |
+| B. [Azamon Web Services](https://codeforces.com/contest/1281/problem/B) | √    | 找到**可交换**且字典序最小的字符a，若有多个a，取pos**最大**的那个 **BTW**：题解给出的代码挺巧妙的 | 3864     |
+| C. [Cut and Paste](https://codeforces.com/contest/1281/problem/C) |      |                                                              | 1656     |
+| D. [Beingawesomeism](https://codeforces.com/contest/1281/problem/D) |      |                                                              | 1115     |
+| E. [Jeremy Bearimy](https://codeforces.com/contest/1281/problem/E) |      |                                                              | 293      |
+| F. [Miss Punyverse](https://codeforces.com/contest/1281/problem/F) |      |                                                              | 30       |
 
 
 
@@ -338,3 +440,47 @@ tags: algorithm Codeforces
 当字符串s没有重复出现的字符时
 
 > every swap of two adjacent elements changes the parity of the number of inversions
+
+
+
+### [Codeforces Round #605 (Div. 3)](https://codeforces.com/contest/1272)
+
+[题解](https://codeforces.com/blog/entry/72132)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/987972772382a0a49f6c953e68cf2740)
+
+| 题号                                                         | 完成 | 备注                     | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------ | -------- |
+| A. [Three Friends](https://codeforces.com/contest/1272/problem/A) | √    |                          | 6972     |
+| B. [Snow Walking Robot](https://codeforces.com/contest/1272/problem/B) | √    |                          | 4486     |
+| C. [Yet Another Broken Keyboard](https://codeforces.com/contest/1272/problem/C) | √    |                          | 5061     |
+| D. [Remove One Element](https://codeforces.com/contest/1272/problem/D) | √    |                          | 2429     |
+| E. [Nearest Opposite Parity](https://codeforces.com/contest/1272/problem/E) | √    | 图论，痛哭涕流，看题解吧 | 594      |
+| F. [Two Bracket Sequences](https://codeforces.com/contest/1272/problem/F) | √    | 看了题解，是个三维Dp     | 188      |
+
+#### F题题解
+
+设`dp[i][j][k]`代表字符串`ans`的最小长度，其中`s[:i]`和`t[:j]`为`ans`的子序列，且`ans`中`(` - `)`的数量为`k`，可知如果`k`小于0，该字符串一定不合法，故有$0 \le k \le max(len(s), len(t))$
+
+则可按如下规则更新`dp`
+
+`dp[i+1][j][k+1] = dp[i][j][k] + 1 if s[i] == '('`
+
+`dp[i][j+1][k+1] = dp[i][j][k] + 1 if t[j] == '('`
+
+`dp[i+1][j+1][k+1] = dp[i][j][k] + 1 if s[i] == t[j] == '('`
+
+`dp[i+1][j][k-1] = dp[i][j][k] + 1 if s[i] == ')'`
+
+`dp[i][j+1][k-1] = dp[i][j][k] + 1 if t[j] == ')'`
+
+`dp[i+1][j+1][k-1] = dp[i][j][k] + 1 if s[i] == t[j] == ')'`
+
+同时根据定义，有
+
+`dp[i][j][k] = max(self, dp[i][j][k+1] + 1, dp[i][j][k-1] + 1)`
+
+则`dp[len(s)][len(t)][0]`为答案
+
+按dp路径回溯即可得到`ans`
+
