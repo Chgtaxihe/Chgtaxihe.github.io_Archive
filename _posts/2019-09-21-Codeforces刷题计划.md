@@ -14,7 +14,16 @@ tags: algorithm Codeforces
 
 ## Div. 1
 
-还没到那个级别呢～
+### [Codeforces Round #609 (Div. 1)](https://codeforces.com/contest/1268)
+
+[题解](https://codeforces.com/blog/entry/72358)
+
+[我的AC代码]
+
+| 题号                                                         | 完成 | 备注        | 过题人数 |
+| ------------------------------------------------------------ | ---- | ----------- | -------- |
+| D. [Invertation in Tournament](https://codeforces.com/contest/1268/problem/D) |      | 我不配 ╥﹏╥ | 93       |
+| E. [Happy Cactus](https://codeforces.com/contest/1268/problem/E) |      |             | 58       |
 
 
 
@@ -354,10 +363,112 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
 | A. [Suffix Three](https://codeforces.com/contest/1281/problem/A) | √    |                                                              | 8724     |
 | B. [Azamon Web Services](https://codeforces.com/contest/1281/problem/B) | √    | 找到**可交换**且字典序最小的字符a，若有多个a，取pos**最大**的那个 **BTW**：题解给出的代码挺巧妙的 | 3864     |
-| C. [Cut and Paste](https://codeforces.com/contest/1281/problem/C) |      |                                                              | 1656     |
-| D. [Beingawesomeism](https://codeforces.com/contest/1281/problem/D) |      |                                                              | 1115     |
-| E. [Jeremy Bearimy](https://codeforces.com/contest/1281/problem/E) |      |                                                              | 293      |
+| C. [Cut and Paste](https://codeforces.com/contest/1281/problem/C) | √    | 看了一眼题解，原来直接把前`x`个字符记录下来并保存到`vector`里也能过(935ms, $O(|S| + x)$), 那怎么我不偷鸡的递归查找就不能过了呢？(用记忆化搜索后时间降到62ms，复杂度$O(\log x)$ ) 另外，用`std::string`拼接更快，很迷，估计是是我想复杂了 | 1656     |
+| D. [Beingawesomeism](https://codeforces.com/contest/1281/problem/D) | √    | 分类讨论                                                     | 1115     |
+| E. [Jeremy Bearimy](https://codeforces.com/contest/1281/problem/E) | √    | 看题解！！！！                                               | 293      |
 | F. [Miss Punyverse](https://codeforces.com/contest/1281/problem/F) |      |                                                              | 30       |
+
+
+
+### [Codeforces Round #608 (Div. 2)](https://codeforces.com/contest/1271)
+
+[题解](https://codeforces.com/blog/entry/72247)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/78f2b80c0d926f72a220436ccf821986)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Suits](https://codeforces.com/contest/1271/problem/A)    | √    |                                                              | 8738     |
+| B. [Blocks](https://codeforces.com/contest/1271/problem/B)   | √    |                                                              | 5835     |
+| C. [Shawarma Tent](https://codeforces.com/contest/1271/problem/C) | √    |                                                              | 5611     |
+| D. [Portals](https://codeforces.com/contest/1271/problem/D)  | √    | 做不到全局最优，只能局部最优+dp。题解说还可以维护一个`undoable list`当士兵不够的时候就`undo`，感觉可以用优先队列做 | 1168     |
+| E. [Common Number](https://codeforces.com/contest/1271/problem/E) | √    | 有点像二叉树，看题解吧                                       | 1538     |
+| F. [Divide The Students](https://codeforces.com/contest/1271/problem/F) | √    | dfs剪枝                                                      | 77       |
+
+
+
+### [Educational Codeforces Round 78 (Rated for Div. 2)](https://codeforces.com/contest/1278)
+
+[题解](https://codeforces.com/blog/entry/72330)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/ddd4e73649fd8555d82224561e94c324)
+
+| 题号                                                         | 完成 | 备注                                             | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------ | -------- |
+| A. [Shuffle Hashing](https://codeforces.com/contest/1278/problem/A) | √    |                                                  | 5820     |
+| B. [A and B](https://codeforces.com/contest/1278/problem/B)  | √    | [**数学**]看一波题解                             | 3270     |
+| C. [Berry Jam](https://codeforces.com/contest/1278/problem/C) | √    | 比B简单                                          | 1996     |
+| D. [Segment Tree](https://codeforces.com/contest/1278/problem/D) | √    | [**优化**]                                       | 514      |
+| E. [Tests for problem D](https://codeforces.com/contest/1278/problem/E) | √    | [**贪心**]差分约束了半天出不了结果，还是看题解吧 | 291      |
+| F. [Cards](https://codeforces.com/contest/1278/problem/F)    |      |                                                  | 73       |
+
+
+
+### [Codeforces Round #609 (Div. 2)](https://codeforces.com/contest/1269)
+
+[题解](https://codeforces.com/blog/entry/72358)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/ca4af5c0f847fab5f4589e00648b395d)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [Equation](https://codeforces.com/contest/1269/problem/A) | √    |                                                              | 9859     |
+| B. [Modulo Equality](https://codeforces.com/contest/1269/problem/B) | √    | 这题用dict/map做，代码量会少一点                             | 5103     |
+| C. [Long Beautiful Integer](https://codeforces.com/contest/1269/problem/C) | √    | 脑子没转过来，漏判一个条件~怎么回事??????                    | 3471     |
+| D. [Domino for Young](https://codeforces.com/contest/1269/problem/D) | √    | [**思维**]如果把图按棋盘的方式涂色，那么一个`domino`永远会占用一黑一白两种颜色的格子 | 1945     |
+| E. [K Integers](https://codeforces.com/contest/1269/problem/E) | √    | 看不懂题解。。估计是我境界不够                               | 253      |
+
+#### E题题解
+
+题解讲的不是很清楚，这里做一下记录
+
+首先，对于一个定值$k$，我们来讨论一下如何求解:
+
+首先计算原序列中`1 - k`中的逆序对数为$inv$， 接下来我们改变一下原序列
+
+`arr = [1 if x <= k else 0 for x in arr]`
+
+这样任务就变成了计算产生$k$个连续的1所需的操作步数，显然只需要把所有数字移动到中位即可
+
+
+
+那么对于$1 \le k \le n$，只需用一个树状数组维护逆序对和中位，并将$k$从1遍历到$n$即可求出答案。
+
+（统计答案时可以用树状数组计算前缀和，因此代码中一共了两个树状数组）
+
+
+
+### [Codeforces Round #610 (Div. 2)](https://codeforces.com/contest/1282)
+
+[题解](https://codeforces.com/blog/entry/72461)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/b89358bd1628631bdcd5a9a33537a24a)
+
+| 题号                                                         | 完成 | 备注                                     | 通过人数 |
+| ------------------------------------------------------------ | ---- | ---------------------------------------- | -------- |
+| A. [Temporarily unavailable](https://codeforces.com/contest/1282/problem/A) | √    |                                          | 9204     |
+| B1. [K for the Price of One (Easy Version)](https://codeforces.com/contest/1282/problem/B1) | √    | [贪心]                                   | 6128     |
+| B2. [K for the Price of One (Hard Version)](https://codeforces.com/contest/1282/problem/B2) | √    | [贪心]                                   | 5059     |
+| C. [Petya and Exam](https://codeforces.com/contest/1282/problem/C) | √    | [**贪心**]在$t_i - 1$时刻离开是最佳的    | 2532     |
+| D. [Enchanted Artifact](https://codeforces.com/contest/1282/problem/D) | √    | [**思维**]关键在于如何求出`a`和`b`的数量 | 1255     |
+| E. [The Cake Is a Lie](https://codeforces.com/contest/1282/problem/E) |      |                                          | 595      |
+
+
+
+### [Educational Codeforces Round 79 (Rated for Div. 2)](https://codeforces.com/contest/1279)
+
+[题解](https://codeforces.com/blog/entry/72577)
+
+[我的AC代码](https://gist.github.com/Chgtaxihe/d86643d5f6fb1634e359df0df973057e)
+
+| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. [New Year Garland](https://codeforces.com/contest/1279/problem/A) | √    |                                                              | 6821     |
+| B. [Verse For Santa](https://codeforces.com/contest/1279/problem/B) | √    | **如果只能背到第x段，那么跳过大于x的段落是没用的！**不然就WA | 4492     |
+| C. [Stack of Presents](https://codeforces.com/contest/1279/problem/C) | √    |                                                              | 3687     |
+| D. [Santa's Bot](https://codeforces.com/contest/1279/problem/D) | √    | 除了A之外最简单的一题？                                      | 1672     |
+| E. [New Year Permutations](https://codeforces.com/contest/1279/problem/E) |      | 感觉可以做，但是过题人数有点恐怖                             | 32       |
+| F. [New Year and Handle Change](https://codeforces.com/contest/1279/problem/F) |      |                                                              | 36       |
 
 
 
@@ -478,9 +589,26 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 同时根据定义，有
 
-`dp[i][j][k] = max(self, dp[i][j][k+1] + 1, dp[i][j][k-1] + 1)`
+`dp[i][j][k] = min(self, dp[i][j][k+1] + 1, dp[i][j][k-1] + 1)`
 
 则`dp[len(s)][len(t)][0]`为答案
 
-按dp路径回溯即可得到`ans`
+按dp路径回溯即可得到`ans`                                                                                                     
+
+
+
+### [Codeforces Round #611 (Div. 3)](https://codeforces.com/contest/1283)
+
+[题解](https://codeforces.com/contest/1283)
+
+[我的AC代码]
+
+| 题号                                                         | 完成 | 备注 | 通过人数 |
+| ------------------------------------------------------------ | ---- | ---- | -------- |
+| A. [Minutes Before the New Year](https://codeforces.com/contest/1283/problem/A) |      |      | 8731     |
+| B. [Candies Division](https://codeforces.com/contest/1283/problem/B) |      |      | 6998     |
+| C. [Friends and Gifts](https://codeforces.com/contest/1283/problem/C) |      |      | 2437     |
+| D. [Christmas Trees](https://codeforces.com/contest/1283/problem/D) |      |      | 1097     |
+| E. [New Year Parties](https://codeforces.com/contest/1283/problem/E) |      |      | 973      |
+| F. [DIY Garland](https://codeforces.com/contest/1283/problem/F) |      |      | 177      |
 
