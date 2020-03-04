@@ -6,9 +6,11 @@ permalink: /solutions.html
 
 * auto-gen TOC:
 {:toc}
-## 说明
+## 前言
 
-本人很懒
+好懒哦，为什么要写题解
+
+
 
 ## 数据结构
 ### Splay
@@ -256,6 +258,102 @@ signed main() {
 
 ```
 
+
+
+### 回文树
+
+简单实用的数据结构
+
+#### HDU 6599
+
+```c++
+#include <bits/stdc++.h>
+#define ll long long
+#define Android ios::sync_with_stdio(false), cin.tie(NULL)
+
+using namespace std;
+
+const int N = 3e5 + 1000;
+int pos[N];
+struct pam{
+    const static int S = 26;
+    int len[N], child[N][S], fail[N], text[N];
+    int last, slen, node_cnt;
+    ll cnt[N];
+
+    int new_node(int l){
+        for(int i=0; i<S; i++) child[node_cnt][i] = 0;
+        len[node_cnt] = l, cnt[node_cnt]=0;
+        return node_cnt++;
+    }
+
+    void init(){
+        slen = node_cnt = last = 0;
+        fail[new_node(0)] = 1;
+        new_node(-1);
+        text[0] = -1;
+    }
+
+    int getfail(int x){
+        while(text[slen-len[x]-1] != text[slen]) x=fail[x];
+        return x;
+    }
+
+    void add(int w){
+        text[++slen] = w;
+        int x = getfail(last);
+        if(!child[x][w]){
+            int y = new_node(len[x] + 2);
+            fail[y] = child[getfail(fail[x])][w];
+            child[x][w] = y;
+        }
+        cnt[last = child[x][w]]++;
+        pos[last] = slen;
+    }
+
+    void count(){
+        for(int i=node_cnt-1; i>0; i--) cnt[fail[i]] += cnt[i];
+    }
+}pt; // 模板
+
+unsigned ll hsh[N], base = 131;
+unsigned ll bs[N];
+ll ans[N];
+char buffer[N];
+unsigned ll get_hash(int l, int r){
+    return hsh[r] - hsh[l-1] * bs[r - l + 1];
+}
+
+bool check(int p, int l){ // 使用hash判断
+    if(l % 2 == 0)
+        return get_hash(p-l+1, p-l/2) == get_hash(p-l/2+1, p);
+    return get_hash(p-l+1, p-l/2)==get_hash(p-l/2, p);
+}
+
+void solve(){
+    pt.init();
+    int len = strlen(buffer + 1);
+    for(int i=0; i<=len; i++) ans[i] = 0;
+    for(int i=1; i<=len; i++) hsh[i] = hsh[i-1] * base + buffer[i];
+    for(int i=1; i<=len; i++) pt.add(buffer[i]-'a');
+    pt.count();
+    for(int i=pt.node_cnt-1; i>1; i--){ // 遍历每一种回文子串
+        int p = pos[i], le = pt.len[i];
+        if(check(p, le)) ans[le] += pt.cnt[i]; // 条件满足即加入答案中
+    }
+    
+    for(int i=1; i<=pt.slen; i++){
+        cout << ans[i] << (i==pt.slen?'\n':' ');
+    }
+}
+
+signed main() {
+    Android;
+    bs[0] = 1, hsh[0] = 0;
+    for(int i=1; i<N; i++) bs[i] = bs[i-1] * base;
+    while(cin >> (buffer + 1)) solve();
+}
 ```
 
-```
+
+
