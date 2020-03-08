@@ -19,6 +19,155 @@ permalink: /solutions.html
 
 
 
+#### [BZOJ 1251](http://www.lydsy.com/JudgeOnline/problem.php?id=1251)
+
+套splay模板即可，注意pushup时检查子节点是否存在(就因为这个WA了4发)
+
+```c++
+#include <bits/stdc++.h>
+#define ll long long
+#define Android ios::sync_with_stdio(false), cin.tie(NULL)
+
+using namespace std;
+
+const int maxn=6e4+500;
+ 
+int child[maxn][2], par[maxn], sz[maxn]={0}, tag[maxn]={0};
+ll lazy[maxn]={0}, mx[maxn]={0}, val[maxn];
+int root, nrof_node = 0;
+ 
+inline void push_up(int rt){
+    if(!rt) return;
+    sz[rt] = sz[child[rt][0]] + sz[child[rt][1]] + 1;
+    mx[rt] = val[rt];
+    if(child[rt][0]) mx[rt] = max(mx[rt], mx[child[rt][0]]);
+    if(child[rt][1]) mx[rt] = max(mx[rt], mx[child[rt][1]]);
+}
+ 
+inline void add(int rt, ll delta){
+    if(!rt) return;
+    lazy[rt] += delta;
+    val[rt] += delta;
+    mx[rt] += delta;
+}
+ 
+inline void push_down(int rt){
+    if(lazy[rt]){
+        add(child[rt][0], lazy[rt]);
+        add(child[rt][1], lazy[rt]);
+        lazy[rt] = 0;
+    }
+    if(tag[rt]){
+        tag[child[rt][0]] ^= 1;
+        tag[child[rt][1]] ^= 1;
+        swap(child[rt][0], child[rt][1]);
+        tag[rt] = 0;
+    }
+}
+ 
+int build_tree(int l, int r, int p){
+    if(l > r) return 0;
+    int idx = ++nrof_node;
+    int mid = (l + r)>>1;
+    val[idx] = 0, par[idx] = p, mx[idx] = 0, tag[idx] = 0;
+    child[idx][0] = build_tree(l, mid-1, idx);
+    child[idx][1] = build_tree(mid+1, r, idx);
+    push_up(idx);
+    return idx;
+}
+ 
+inline int chk(int rt){
+    return child[par[rt]][1] == rt;
+}
+ 
+void rotate(int rt){
+    int p = par[rt], g = par[p];
+    int k = chk(rt), op = child[rt][k^1];
+    child[g][chk(p)] = rt, par[rt] = g;
+    child[p][k] = op, par[op] = p;
+    child[rt][k^1] = p, par[p] = rt;
+    push_up(p); push_up(rt);
+}
+ 
+void splay(int rt, int goal = 0){
+    while(par[rt] != goal){
+        if(par[par[rt]] != goal){
+            if(chk(rt) == chk(par[rt])) rotate(par[rt]);
+            else rotate(rt);
+        }
+        rotate(rt);
+    }
+    if(!goal) root = rt;
+}
+ 
+int find(int pos){
+    int cur = root;
+    while(cur){
+        push_down(cur);
+        if(sz[child[cur][0]] >= pos){
+            cur = child[cur][0];
+        }else if(sz[child[cur][0]] + 1 >= pos){
+            return cur;
+        }else{
+            pos -= sz[child[cur][0]] + 1;
+            cur = child[cur][1];
+        }
+    }
+    return -1;
+}
+ 
+void interval_add(int l, int r, ll delta){
+    r += 2;
+    l = find(l), r = find(r);
+    splay(l, 0), splay(r, l);
+    add(child[r][0], delta);
+}
+ 
+ll interval_query(int l, int r){
+    r += 2;
+    l = find(l), r = find(r);
+    splay(l, 0), splay(r, l);
+    return mx[child[r][0]];
+}
+ 
+void reverse(int l, int r){
+    r += 2;
+    l = find(l), r = find(r);
+    splay(l, 0), splay(r, l);
+    tag[child[r][0]] ^= 1;
+}
+ 
+void solve(){
+    int n, m;
+    cin >> n >> m;
+    root = build_tree(0, n+1, 0);
+    int op, x, y, k;
+    for(int i=0;i<m;i++){
+        cin >> op;
+        if(op == 1){
+            cin >> x >> y >> k;
+            interval_add(x, y, k);
+        }else{
+            cin >> x >> y;
+            if(op == 3){
+                cout << interval_query(x, y) << '\n';
+            }else{
+                reverse(x, y);
+            }
+        }
+    }
+ 
+}
+ 
+int main(){
+    Android;
+    solve();
+}
+
+```
+
+
+
 ## 图论
 ### 判环
 #### [HDU-6736 Forest Program](/post/Graph/HDU6736.html)
