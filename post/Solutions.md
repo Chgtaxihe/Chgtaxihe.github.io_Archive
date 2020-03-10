@@ -363,15 +363,15 @@ void solve(){
             // 可知 exp<i, 因此若拓展后使得子串对应的循环次数增加delta,则 delta<=1
             // 同时，若str[s, s+com] == str[s+i, s+i+com]
             // 且 str[s-exp, s+com] != str[s+i-exp, s+i+com]
-            // 则定有lcp(str[s-exp, s+com], str[s+i-exp, s+i+com]) < exp (lcp:最长公共前缀)
+            // 则定有|lcp(str[s-exp, s+com], str[s+i-exp, s+i+com])| < exp (lcp:最长公共前缀)
             // PS.还不如把字符串反过来再求一遍SA数组......
             int opt = s - (i - com % i);
             if(opt >= 0 && (com % i)>0){
                 ak = rmq.query(opt, opt+i)/i+1;
                 if(ak > ans) ans = ak, idx.clear();
                 if(ak == ans) idx.insert(i);
-                // 这里若rmq.query(opt, opt+1) >= com 即可判定循环节数量+1
-                // 因为rmq.query(opt, opt+1)要么小于exp,要么大于com
+                // 这里若rmq.query(opt, opt+i) >= com 即可判定循环节数量+1
+                // 因为rmq.query(opt, opt+i)要么小于exp,要么大于com
             }
             if(k > ans) ans = k, idx.clear();
             if(k == ans) idx.insert(i);

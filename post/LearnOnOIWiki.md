@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 其他
+title: 其他笔记
 permalink: /learnOnOIWiki.html
 ---
 
@@ -16,11 +16,20 @@ permalink: /learnOnOIWiki.html
 
 ## 数论
 
-1.  [卡特兰数](/post/OI-Wiki/数论/卡特兰数.html)
+1.  [卡特兰数](/post/category/数论/卡特兰数.html)
+2.  [类欧几里得](/post/category/数论/类欧几里得.html)（施工中）
 
 
 
 ## 动态规划
 
-1.  [插头dp](/post/OI-Wiki/动态规划/插头dp.html)
+1.  [插头dp](/post/category/动态规划/插头dp.html)（未完成）
+
+
+
+## 图论
+
+1.  网络流-最小割（未完成）
+
+
 
