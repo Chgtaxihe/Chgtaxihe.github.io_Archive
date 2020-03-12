@@ -10,6 +10,11 @@ permalink: /solutions.html
 
 好懒哦，为什么要写题解
 
+------
+
+代码贴多了Typora会变卡~
+
+
 
 
 ## 数据结构
@@ -503,6 +508,16 @@ signed main() {
     while(cin >> (buffer + 1)) solve();
 }
 ```
+
+
+
+## DP
+
+### 决策单调性
+
+#### Codeforces 868F
+
+详见[我的补题列表](/2020/02/22/训练补题.html)
 
 
 
