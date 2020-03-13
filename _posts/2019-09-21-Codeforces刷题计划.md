@@ -612,3 +612,11 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 | E. [New Year Parties](https://codeforces.com/contest/1283/problem/E) |      |      | 973      |
 | F. [DIY Garland](https://codeforces.com/contest/1283/problem/F) |      |      | 177      |
 
+
+
+### [Codeforces Round #627 (Div. 3)](https://codeforces.com/contest/1324)
+
+第一次AK，用了70分钟，就不记录了吧~
+
+
+
