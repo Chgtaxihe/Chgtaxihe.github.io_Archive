@@ -19,8 +19,8 @@ permalink: /learningCategory.html
 1.  [卡特兰数](/post/category/数论/卡特兰数.html)
 2.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
 3.  [同余最短路](/post/category/数论/同余最短路.html)
-4.  [高斯整数](/post/category/数论/高斯整数.html)（施工中）
-5.  [本源勾股数组](/post/category/数论/本源勾股数组.html)（施工中）
+4.  [高斯整数](/post/category/数论/高斯整数.html)
+5.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
 
 
 
