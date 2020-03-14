@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 其他笔记
+title: 分类笔记
 permalink: /learningCategory.html
 ---
 
@@ -39,3 +39,12 @@ permalink: /learningCategory.html
 ## 数据结构
 
 1.  [线性基](/post/category/数据结构/线性基.html)（部分完成）
+
+
+
+## 字符串
+
+万恶的字符串
+
+1.  [AC自动机](/post/category/字符串/AC自动机.html)（施工中）
+2.  回文树/回文自动机
