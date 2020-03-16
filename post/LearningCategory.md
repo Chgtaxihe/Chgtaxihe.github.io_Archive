@@ -21,6 +21,7 @@ permalink: /learningCategory.html
 3.  [同余最短路](/post/category/数论/同余最短路.html)
 4.  [高斯整数](/post/category/数论/高斯整数.html)
 5.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
+6.  [模运算](/post/category/数论/模运算.html)（部分完成）
 
 
 
