@@ -48,5 +48,5 @@ permalink: /learningCategory.html
 
 万恶的字符串
 
-1.  [AC自动机](/post/category/字符串/AC自动机.html)（施工中）
+1.  [AC自动机](/post/category/字符串/AC自动机.html)
 2.  回文树/回文自动机
