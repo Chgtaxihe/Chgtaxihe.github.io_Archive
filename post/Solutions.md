@@ -521,3 +521,101 @@ signed main() {
 
 
 
+##  代码技巧
+
+### Codechef ANUGCD
+
+详见[我的补题列表](/2020/02/22/训练补题.html)
+
+顺便用上CodeChef SUBLCM里学来的小技巧
+
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+const int inf = 0x3f3f3f3f;
+const int maxn = 1e5 + 100;
+
+bool not_prime[maxn] = {0};
+vector<int> prime;
+int factor[maxn], n, m;
+
+void init(){ // 线性筛
+    for(int i=2; i<maxn; i++){
+        if(!not_prime[i]) prime.push_back(i), factor[i] = i;
+        for(int j=0; j<prime.size() && i*prime[j] < maxn; j++){
+            not_prime[i*prime[j]] = true;
+            factor[i*prime[j]] = prime[j];
+            if(i % prime[j] == 0) break;
+        }
+    }
+}
+
+vector<int> bit[maxn], pos[maxn], val[maxn], cnt[maxn];
+
+void update(vector<int> & bit, int value, int pos){
+    for(int i=pos; i<bit.size(); i+=(-i)&i){
+        bit[i] = max(bit[i], value);
+    }
+}
+
+int query(vector<int> & bit, vector<int> & val, int l, int r){
+    int ret = val[r], tmp;
+    while(l < r){
+        tmp = r - ((-r) & r);
+        if(tmp >= l){
+            ret = max(ret, bit[r]);
+            r = tmp;
+        }else{
+            ret = max(ret, val[r--]);
+        }
+    }
+    return ret;
+}
+
+int main(){
+	cin >> n >> m;
+    for(int i=1, tmp, cur, f; i<=n; i++){
+        cin >> tmp;
+        cur = tmp;
+        cnt[tmp].push_back(i);
+        while(cur > 1){ // 由于要求gcd(G,a[i])>1，不需要处理因子1
+            f = factor[cur];
+            while(cur % f == 0) cur /= f;
+            if(val[f].empty()){ // 树状数组从1开始
+                val[f].push_back(-1);
+                pos[f].push_back(-1);
+            }
+            val[f].push_back(tmp);
+            pos[f].push_back(i);
+        }
+    }
+    for(int i=2; i<maxn; i++){
+        if(!val[i].empty()){
+            bit[i].resize(val[i].size(), 0);
+            for(int j=1; j<val[i].size(); j++){
+                update(bit[i], val[i][j], j);
+            }
+        }
+    }
+    for(int i=0, g, l, r, f; i<m; i++){
+        cin >> g >> l >> r;
+        int mx = -1, ccnt = -1;
+        while(g > 1){
+            f = factor[g];
+            while(g % f == 0) g/= f;
+            if(bit[f].empty()) continue;
+            int low = lower_bound(pos[f].begin(), pos[f].end(), l) - pos[f].begin();
+            int high = upper_bound(pos[f].begin(), pos[f].end(), r) - pos[f].begin() - 1;
+            if(low <= high) mx = max(mx, query(bit[f], val[f], low-1, high));
+        }
+        if(mx != -1){
+            ccnt = upper_bound(cnt[mx].begin(), cnt[mx].end(), r) -
+                   lower_bound(cnt[mx].begin(), cnt[mx].end(), l);
+        }
+        cout << mx << " " << ccnt << '\n';
+    }
+}
+```
+
