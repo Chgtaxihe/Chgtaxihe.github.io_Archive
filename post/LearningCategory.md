@@ -34,6 +34,7 @@ permalink: /learningCategory.html
 ## 图论
 
 1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（部分完成）
+2.  [多源最短路](/post/category/图论/多源最短路.html)（未完成）
 
 
 
@@ -50,3 +51,4 @@ permalink: /learningCategory.html
 
 1.  [AC自动机](/post/category/字符串/AC自动机.html)
 2.  回文树/回文自动机
+
