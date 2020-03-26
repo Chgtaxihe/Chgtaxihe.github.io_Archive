@@ -28,6 +28,7 @@ permalink: /learningCategory.html
 ## 动态规划
 
 1.  [插头dp](/post/category/动态规划/插头dp.html)（未完成）
+2.  [动态dp](/post/category/动态规划/动态dp.html)（施工中）
 
 
 
@@ -51,4 +52,16 @@ permalink: /learningCategory.html
 
 1.  [AC自动机](/post/category/字符串/AC自动机.html)
 2.  回文树/回文自动机
+
+
+
+## 其他
+
+1.  [01分数规划](/post/category/其他/01分数规划.html)
+2.  [wqs二分](/post/category/其他/wqs二分.html)（待完成）
+3.  [广义矩阵乘法](/post/category/其他/广义矩阵乘法.html)
+
+
+
+
 
