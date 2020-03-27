@@ -28,7 +28,7 @@ permalink: /learningCategory.html
 ## 动态规划
 
 1.  [插头dp](/post/category/动态规划/插头dp.html)（未完成）
-2.  [动态dp](/post/category/动态规划/动态dp.html)（施工中）
+2.  [动态dp](/post/category/动态规划/动态dp.html)（部分完成）
 
 
 
