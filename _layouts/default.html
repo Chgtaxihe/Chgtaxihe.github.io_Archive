@@ -55,20 +55,29 @@
     <!-- lazy-calculator -->
     <script type="text/javascript">
         var httpRequest = new XMLHttpRequest();
-        httpRequest.open('POST', 'https://vjudge.net/status/data/', true); //第二步：打开连接
+        httpRequest.open('POST', 'https://vjudge.net/status/data/', true);
         httpRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        httpRequest.send('OJId=All&orderBy=run_id&un=Chgta&res=1&start=0&length=1');//发送请求 将情头体写在send中
+        httpRequest.send('OJId=All&orderBy=run_id&un=Chgta&res=1&start=0&length=1');
         httpRequest.onreadystatechange = function(){
             if(httpRequest.readyState==4 && httpRequest.status == 200){
-                //alert(typeof xhr.responseText);//string
-                //把接收的字符串json具体变为object的json对象
                 var json = httpRequest.responseText;
-                console.log(json);
                 var obj = JSON.parse(json).data[0];
                 var lasttime = parseInt(JSON.stringify(obj.time));
                 var timestamp = (new Date()).valueOf();
                 var delta = (timestamp - lasttime)/1000/60/60/24;
-                document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(2) + " 天没在Vjudge上做题了";
+                if(delta >= 1){
+                    document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(1) + " 天没做题了";
+                }else{
+                    delta = delta * 24;
+                    if(delta >= 1){
+                        document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(1) + " 小时没做题了";
+                    }else{
+                        delta = delta * 60;
+                        if(delta >= 1){
+                            document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(0) + " 分钟没做题了";
+                        }
+                    }
+                }
             }
         }
     </script>

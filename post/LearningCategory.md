@@ -17,11 +17,12 @@ permalink: /learningCategory.html
 ## 数论
 
 1.  [卡特兰数](/post/category/数论/卡特兰数.html)
-2.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
-3.  [同余最短路](/post/category/数论/同余最短路.html)
-4.  [高斯整数](/post/category/数论/高斯整数.html)
-5.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
-6.  [模运算](/post/category/数论/模运算.html)（部分完成）
+2.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
+3.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
+4.  [同余最短路](/post/category/数论/同余最短路.html)
+5.  [高斯整数](/post/category/数论/高斯整数.html)
+6.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
+7.  [模运算](/post/category/数论/模运算.html)（部分完成）
 
 
 
@@ -36,6 +37,7 @@ permalink: /learningCategory.html
 
 1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（部分完成）
 2.  [多源最短路](/post/category/图论/多源最短路.html)（未完成）
+3.  Fleury求欧拉回路
 
 
 
