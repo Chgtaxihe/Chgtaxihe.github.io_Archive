@@ -472,6 +472,24 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
+###  [Codeforces Round #630 (Div. 2)](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332)
+
+[题解](https://gx.chgtaxihe.top/codeforces_mirror/blog/entry/75432)
+
+| 题号                                                         | 完成    | 备注                    | 通过人数 |
+| ------------------------------------------------------------ | ------- | ----------------------- | -------- |
+| A. [Exercising Walk](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/A) | 赛时-AC |                         | 9009     |
+| B. [Composite Coloring](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/B) | 赛时-AC | 第11个质数:31,第12个:37 | 5767     |
+| C. [K-Complete Word](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/C) | 赛时-AC |                         | 5066     |
+| D. [Walk on Matrix](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/D) | 赛时-AC |                         | 3046     |
+| E. [Height All the Same](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/E) |         |                         | 783      |
+| F. [Independent Set](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/F) |         |                         | 142      |
+| G. [No Monotone Triples](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/G) |         |                         | 11       |
+
+ 
+
+
+
 
 ## Div. 3
 
@@ -619,4 +637,19 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 第一次AK，用了70分钟，就不记录了吧~
 
 
+
+###  [Codeforces Round #629 (Div. 3)](https://px.chgtaxihe.top/codeforces_mirror/contest/1328) 
+
+[题解](https://gx.chgtaxihe.top/codeforces_mirror/blog/entry/75246)
+
+才过了4题，居然还能涨Rating...
+
+| 题号                                                         | 完成     | 备注 | 通过人数 |
+| ------------------------------------------------------------ | -------- | ---- | -------- |
+| A. [Divisibility Problem](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/A) | 赛时-AC  |      | 17088    |
+| B. [K-th Beautiful String](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/B) | 赛时-AC  |      | 9001     |
+| C. [Ternary XOR](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/C) | 赛时-AC  |      | 9944     |
+| D. [Carousel](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/D) | 赛时-AC  |      | 2266     |
+| E. [Tree Queries](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/E) | 赛时-TLE |      | 977      |
+| F. [Make k Equal](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/F) |          |      | 368      |
 
