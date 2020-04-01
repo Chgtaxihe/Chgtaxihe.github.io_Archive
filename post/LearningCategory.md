@@ -32,6 +32,7 @@ permalink: /learningCategory.html
 
 1.  [插头dp](/post/category/动态规划/插头dp.html)（未完成）
 2.  [动态dp](/post/category/动态规划/动态dp.html)（部分完成）
+3.  [广义矩阵乘法](/post/category/动态规划/广义矩阵乘法.html)
 
 
 
@@ -40,7 +41,7 @@ permalink: /learningCategory.html
 1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（部分完成）
 2.  [多源最短路](/post/category/图论/多源最短路.html)（未完成）
 3.  Fleury求欧拉回路
-4.  [2-SAT](/post/category/图论/2-SAT.html)（施工中）
+4.  [2-SAT](/post/category/图论/2-SAT.html)
 
 
 
@@ -64,7 +65,6 @@ permalink: /learningCategory.html
 
 1.  [01分数规划](/post/category/其他/01分数规划.html)
 2.  [wqs二分](/post/category/其他/wqs二分.html)（待完成）
-3.  [广义矩阵乘法](/post/category/其他/广义矩阵乘法.html)
 
 
 

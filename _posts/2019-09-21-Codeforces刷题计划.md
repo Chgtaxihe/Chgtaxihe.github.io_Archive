@@ -472,21 +472,45 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-###  [Codeforces Round #630 (Div. 2)](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332)
+###  [Codeforces Round #630 (Div. 2)](https://codeforces.com/contest/1332)
 
-[题解](https://gx.chgtaxihe.top/codeforces_mirror/blog/entry/75432)
+[题解](https://codeforces.com/blog/entry/75432)
+
+两个号都上1600，再也不能打Div3了 <img src="https://s1.ax1x.com/2020/03/28/GAPit0.png" alt="GAPit0.png" title="GAPit0.png" width=150/>
 
 | 题号                                                         | 完成    | 备注                    | 通过人数 |
 | ------------------------------------------------------------ | ------- | ----------------------- | -------- |
-| A. [Exercising Walk](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/A) | 赛时-AC |                         | 9009     |
-| B. [Composite Coloring](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/B) | 赛时-AC | 第11个质数:31,第12个:37 | 5767     |
-| C. [K-Complete Word](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/C) | 赛时-AC |                         | 5066     |
-| D. [Walk on Matrix](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/D) | 赛时-AC |                         | 3046     |
-| E. [Height All the Same](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/E) |         |                         | 783      |
-| F. [Independent Set](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/F) |         |                         | 142      |
-| G. [No Monotone Triples](https://gx.chgtaxihe.top/codeforces_mirror/contest/1332/problem/G) |         |                         | 11       |
+| A. [Exercising Walk](https://codeforces.com/contest/1332/problem/A) | 赛时-AC |                         | 9009     |
+| B. [Composite Coloring](https://codeforces.com/contest/1332/problem/B) | 赛时-AC | 第11个质数:31,第12个:37 | 5767     |
+| C. [K-Complete Word](https://codeforces.com/contest/1332/problem/C) | 赛时-AC |                         | 5066     |
+| D. [Walk on Matrix](https://codeforces.com/contest/1332/problem/D) | 赛时-AC |                         | 3046     |
+| E. [Height All the Same](https://codeforces.com/contest/1332/problem/E) | AC      |                         | 783      |
+| F. [Independent Set](https://codeforces.com/contest/1332/problem/F) |         |                         | 142      |
+| G. [No Monotone Triples](https://codeforces.com/contest/1332/problem/G) |         |                         | 11       |
 
- 
+ #### E题题解
+
+在完成分类讨论之后，这道题有两个入手点（已知$nm$为偶数）
+
+1.  $(O+E)^{mn}=\sum_{i=0}^{nm/2} C_{nm}^{2i}O^{2i}E^{nm-2i} + \sum_{i=1}^{nm/2}C_{nm}^{2i-1}O^{2i-1}E^{nm-2i+1}$
+
+    $(O-E)^{mn}=\sum_{i=0}^{nm/2} C_{nm}^{2i}O^{2i}E^{nm-2i} - \sum_{i=1}^{nm/2}C_{nm}^{2i-1}O^{2i-1}E^{nm-2i+1}$
+
+    两式相加除以2即为结果
+
+2.  大神解法，目前还无法理解
+
+    ![](https://blog.chgtaxihe.top/resource/img/post/Codeforces刷题计划_1.PNG)
+
+3.  使用矩阵乘法：考虑$dp_{odd}[i]$代表$i$个格子中有奇数个奇数格的选法，$dp_{even}[i]$代表$i$个格子中有偶数个奇数格的选法，那么有
+
+    $dp_{odd}[i] = dp_{odd}[i-1] \cdot E + dp_{even}[i-1] \cdot O$
+
+    $dp_{even}[i] = dp_{even}[i-1] \cdot E + dp_{odd}[i-1] \cdot O$
+
+    显然可以转化为矩阵乘法，矩阵快速幂可解！
+    
+    [AC代码](./post/category/动态规划/广义矩阵乘法.html)
 
 
 
@@ -636,20 +660,45 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 第一次AK，用了70分钟，就不记录了吧~
 
+UPD: 打一场Rating就上1700+，我傻了
 
 
-###  [Codeforces Round #629 (Div. 3)](https://px.chgtaxihe.top/codeforces_mirror/contest/1328) 
 
-[题解](https://gx.chgtaxihe.top/codeforces_mirror/blog/entry/75246)
+###  [Codeforces Round #629 (Div. 3)](https://codeforces.com/contest/1328) 
+
+[题解](https://codeforces.com/blog/entry/75246)
 
 才过了4题，居然还能涨Rating...
 
-| 题号                                                         | 完成     | 备注 | 通过人数 |
-| ------------------------------------------------------------ | -------- | ---- | -------- |
-| A. [Divisibility Problem](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/A) | 赛时-AC  |      | 17088    |
-| B. [K-th Beautiful String](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/B) | 赛时-AC  |      | 9001     |
-| C. [Ternary XOR](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/C) | 赛时-AC  |      | 9944     |
-| D. [Carousel](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/D) | 赛时-AC  |      | 2266     |
-| E. [Tree Queries](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/E) | 赛时-TLE |      | 977      |
-| F. [Make k Equal](https://px.chgtaxihe.top/codeforces_mirror/contest/1328/problem/F) |          |      | 368      |
+| 题号                                                         | 完成         | 备注                                                         | 通过人数 |
+| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | -------- |
+| A. [Divisibility Problem](https://codeforces.com/contest/1328/problem/A) | 赛时-AC      |                                                              | 17088    |
+| B. [K-th Beautiful String](https://codeforces.com/contest/1328/problem/B) | 赛时-AC      |                                                              | 9001     |
+| C. [Ternary XOR](https://codeforces.com/contest/1328/problem/C) | 赛时-AC      |                                                              | 9944     |
+| D. [Carousel](https://codeforces.com/contest/1328/problem/D) | 赛时-AC      |                                                              | 2266     |
+| E. [Tree Queries](https://codeforces.com/contest/1328/problem/E) | 赛时-TLE  AC |                                                              | 977      |
+| F. [Make k Equal](https://codeforces.com/contest/1328/problem/F) | 理论AC       | 要让(排序后的)左边出现$n$个$m$，首先让左边的数字全变为$m-1$，然后结果$+n$即可 | 368      |
+
+
+
+#### D题题解
+
+对于判断节点$u$是否在节点$v$到$root$的路径上
+
+有一个巧妙的方法
+
+```c++
+void dfs(int v, int par = -1) {
+    tin[v] = T++;
+    for (auto to : g[v]) {
+        if (to == par) continue;
+        dfs(to, v);
+    }
+    tout[v] = T++;
+}
+```
+
+对于$u$的子树上任意节点$v\ (v\ne u)$，有$tin[u]<tin[v]<tout[v]<tout[u]$
+
+
 
