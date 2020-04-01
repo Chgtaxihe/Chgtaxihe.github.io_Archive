@@ -26,6 +26,7 @@ $.ping = function(option)
         timeout: 10000,
         beforeSend : function() 
         {
+            console.log('speed_test:' + option.url);
             if(option.beforePing) option.beforePing();
             requestTime = new Date().getTime();
         },
@@ -46,8 +47,9 @@ $.ping = function(option)
 
 <div id="msg"></div>
 <script type="text/javascript">
+var domain = window.domain;
 $.ping({
-url : 'https://blog.chgtaxihe.top', 
+url : 'https://'+domain, 
 beforePing : function(){$('#msg').html('正在计算延迟')},
 afterPing : function(ping){$('#msg').html('您到本站的延迟为' + ping + 'ms')}, 
 interval : 10
@@ -56,3 +58,4 @@ interval : 10
 
 [100M测速文件](http://speedtest-sgp1.digitalocean.com/100mb.test)
 
+[1000M测速文件](http://sgp-ping.vultr.com/vultr.com.1000MB.bin)
