@@ -47,9 +47,9 @@ $.ping = function(option)
 
 <div id="msg"></div>
 <script type="text/javascript">
-var domain = window.domain;
+var domain = window.location.href;
 $.ping({
-url : 'https://'+domain, 
+url : domain, 
 beforePing : function(){$('#msg').html('正在计算延迟')},
 afterPing : function(ping){$('#msg').html('您到本站的延迟为' + ping + 'ms')}, 
 interval : 10
