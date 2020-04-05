@@ -5,21 +5,23 @@ title: CDQ分治学习笔记
 
 * auto-gen TOC:
 {:toc}
-
-
-
-
 ## 算法说明
 
-CDQ分治是一种用来处理多维偏序的好方法，
+CDQ分治是一种用来处理多维偏序的好方法
+
+对于3维偏序，一般可以这样处理
+
+1.  第一维直接sort排序
+2.  第二维二分归并排序
+3.  第三维使用低复杂度的数据结构（树状数组等）
 
 
 
 ## 例题 Codeforces 12D
 
-CDQ分治并不比标程慢，就是细节比较多，而且代码量就有点....
+CDQ分治并不比标程慢，就是细节比较多，而且代码量有点令人作呕....
 
-由于题目要求是严格小于，需要对CDQ进行一些改造。
+由于题目要求严格小于，需要对CDQ进行一些改造。
 
 1.  对$a$从小到大排序
 2.  在进行二分时，由于是严格小于，因而如果要产生贡献，必须有$\forall a_{left},a_{right} \ a_{left} < a_{right}$
@@ -80,7 +82,6 @@ void cdq(int from, int to, bool contribute) {
     int mid = (from + to) >> 1;
     if(!contribute || vals[from].a == vals[to].a){ // 保证左侧一定小于右侧
         contribute = false;
-        cdq(from, mid, false), cdq(mid + 1, to, false);
     }else{
         int m1 = lower_bound(a.begin(), a.end(), vals[mid].a + 1) - a.begin();
         if(a_pos[m1]-1 >= to){
@@ -88,8 +89,8 @@ void cdq(int from, int to, bool contribute) {
         }else{
             mid = a_pos[m1]-1;
         }
-        cdq(from, mid, true), cdq(mid + 1, to, true);
     }
+    cdq(from, mid, contribute), cdq(mid + 1, to, contribute);
 
     dfn++;
     int l = mid, r = to, k = to;
