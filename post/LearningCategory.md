@@ -65,6 +65,7 @@ permalink: /learningCategory.html
 
 1.  [01分数规划](/post/category/其他/01分数规划.html)
 2.  [wqs二分](/post/category/其他/wqs二分.html)（待完成）
+3.  [CDQ分治](/post/category/其他/CDQ分治.html)
 
 
 
