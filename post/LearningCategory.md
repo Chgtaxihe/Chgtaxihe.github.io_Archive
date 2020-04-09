@@ -25,6 +25,8 @@ permalink: /learningCategory.html
 7.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
 8.  [模运算](/post/category/数论/模运算.html)（部分完成）
 9.  Pólya定理
+10.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
+11.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（施工中）
 
 
 
@@ -42,13 +44,14 @@ permalink: /learningCategory.html
 2.  [多源最短路](/post/category/图论/多源最短路.html)（未完成）
 3.  Fleury求欧拉回路
 4.  [2-SAT](/post/category/图论/2-SAT.html)
+5.  [树链剖分](/post/category/图论/树链剖分.html)
 
 
 
 ## 数据结构
 
 1.  [线性基](/post/category/数据结构/线性基.html)（部分完成）
-2.  [树状数组](/post/category/数据结构/树状数组.html)（部分完成）
+2.  [树状数组](/post/category/数据结构/树状数组.html)
 
 
 
