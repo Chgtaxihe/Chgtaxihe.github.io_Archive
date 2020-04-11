@@ -41,10 +41,11 @@ permalink: /learningCategory.html
 ## 图论
 
 1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（部分完成）
-2.  [多源最短路](/post/category/图论/多源最短路.html)（未完成）
-3.  Fleury求欧拉回路
-4.  [2-SAT](/post/category/图论/2-SAT.html)
-5.  [树链剖分](/post/category/图论/树链剖分.html)
+2.  [Johnson最短路](/post/category/图论/Johnson最短路.html)（待补充）
+3.  [多源最短路](/post/category/图论/多源最短路.html)
+4.  Fleury求欧拉回路
+5.  [2-SAT](/post/category/图论/2-SAT.html)
+6.  [树链剖分](/post/category/图论/树链剖分.html)
 
 
 
@@ -69,6 +70,7 @@ permalink: /learningCategory.html
 1.  [01分数规划](/post/category/其他/01分数规划.html)
 2.  [wqs二分](/post/category/其他/wqs二分.html)（待完成）
 3.  [CDQ分治](/post/category/其他/CDQ分治.html)
+4.  [单调性应用](/post/category/其他/单调性应用.html)
 
 
 
