@@ -27,6 +27,89 @@ tags: algorithm Codeforces
 
 
 
+###  Codeforces Round #631 (Div. 1)
+
+[题解](https://codeforces.com/codeforces_mirror/blog/entry/75559)
+
+| 题号                                                         | 完成        | 备注                | 过题人数 |
+| ------------------------------------------------------------ | ----------- | ------------------- | -------- |
+| A. [Dreamoon Likes Coloring](https://codeforces.com/contest/1329/problem/A) | AC(WA14/21) |                     | 1666     |
+| B. [Dreamoon Likes Sequences](https://codeforces.com/contest/1329/problem/B) | AC(TLE3)    | **记忆化**搜索      | 1735     |
+| C. [Drazil Likes Heap](https://codeforces.com/contest/1329/problem/C) | AC          | 贪心+模拟（细节多） | 833      |
+| D. [Dreamoon Likes Strings](https://codeforces.com/contest/1329/problem/D) | 题解        |                     | 112      |
+| E. [Dreamoon Loves AA](https://codeforces.com/contest/1329/problem/E) |             |                     | 34       |
+
+#### B题题解
+
+这题不需要搜索
+
+设$h(x)$为$x$的二进制的最高位位置，如$h(1)=0,h(2)=h(3)=1$，那么显然有$h(a_i)<h(a_j)\ (i<j)$
+
+那么对于每一位$v(0\le v\le h(d))$，可以有两类情况：
+
+1.  选：则有$min(2^{v+1}-1,d)-2^v+1$中情况
+2.  不选，有1中情况
+
+则该位有$c(v)=min(2^{v+1}-1,d)-2^v+2$种情况
+
+则答案$ans=-1+\prod_{i=0}^{h(d)}c(i)$，之所以要减一是因为要剔除序列长度为0的情况
+
+原理大致同我的dfs搜索一样，但快得多~
+
+
+
+#### C题题解
+
+这题正解不是模拟。
+
+<img src="https://s1.ax1x.com/2020/04/13/Gjjj8s.png" alt="Gjjj8s.png" title="Gjjj8s.png" width=800/>
+
+注意：
+
+1.  假设这棵树剩下的元素组成的集合$s$已经确定，那么这棵树的形状就是唯一确定的。
+
+2.  假如一个数$x$不在最终的序列$s$中，那么一定进行过$f(pos_x)$。因此，操作的序列可以由一下方式得出
+
+    ```c++
+    bool in_final_set[maxn];
+    vector<int> ans;
+    for(int i=n; i>=1; i--){
+        if(!in_final_set[i]) ans.push_back(i);
+    }
+    ```
+
+    $ans$即为操作序列
+
+3.  这里有一份更“优雅”的模拟，[AC代码](https://codeforces.com/contest/1329/submission/75778994)，，代码更短，耗时更短(358ms)！
+
+
+
+#### D题题解
+
+根据题解，最小的操作数为$max(\lceil \frac{\sum c_i}{2} \rceil, max_{0\le i\le25}(c_i)) + 1$
+
+把$s_i=s_{i+1}$的$i$称为`隔板`，可以发现每次操作，如果存在其他不同颜色的隔板，那么我们可以一次消除2个隔板，否则只能一个一个地消。消去所有隔板后，序列仍不为空，还需要一次操作来清空序列，这就是最小操作数式子的由来。
+
+
+
+[参考](https://www.cnblogs.com/suwakow/p/12662586.html)（对大佬而言" 思维难度基本上没有 "，o(╥﹏╥)o）
+
+
+
+### [Codeforces Round #633 (Div. 1) ](https://codeforces.com/contest/1338)
+
+[题解](https://codeforces.com/blog/entry/75913)
+
+| 题号                                                         | 完成 | 备注 | 过题人数 |
+| ------------------------------------------------------------ | ---- | ---- | -------- |
+| A. [Powered Addition](https://codeforces.com/contest/1338/problem/A) | WA3  |      | 1854     |
+| B. [Edge Weight Assignment](https://codeforces.com/contest/1338/problem/B) |      |      | 1619     |
+| C. [Perfect Triples](https://codeforces.com/contest/1338/problem/C) |      |      | 1115     |
+| D. [Nested Rubber Bands](https://codeforces.com/contest/1338/problem/D) |      |      | 270      |
+| E. [JYPnation](https://codeforces.com/contest/1338/problem/E) |      |      | 29       |
+
+
+
 ## Div. 2
 
 ### [Codeforces Round #588 (Div. 2)](https://codeforces.com/contest/1230) 
@@ -699,6 +782,8 @@ void dfs(int v, int par = -1) {
 ```
 
 对于$u$的子树上任意节点$v\ (v\ne u)$，有$tin[u]<tin[v]<tout[v]<tout[u]$
+
+
 
 
 
