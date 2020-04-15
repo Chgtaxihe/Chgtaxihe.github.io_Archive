@@ -100,13 +100,29 @@ tags: algorithm Codeforces
 
 [题解](https://codeforces.com/blog/entry/75913)
 
-| 题号                                                         | 完成 | 备注 | 过题人数 |
-| ------------------------------------------------------------ | ---- | ---- | -------- |
-| A. [Powered Addition](https://codeforces.com/contest/1338/problem/A) | WA3  |      | 1854     |
-| B. [Edge Weight Assignment](https://codeforces.com/contest/1338/problem/B) |      |      | 1619     |
-| C. [Perfect Triples](https://codeforces.com/contest/1338/problem/C) |      |      | 1115     |
-| D. [Nested Rubber Bands](https://codeforces.com/contest/1338/problem/D) |      |      | 270      |
-| E. [JYPnation](https://codeforces.com/contest/1338/problem/E) |      |      | 29       |
+| 题号                                                         | 完成    | 备注                          | 过题人数 |
+| ------------------------------------------------------------ | ------- | ----------------------------- | -------- |
+| A. [Powered Addition](https://codeforces.com/contest/1338/problem/A) | AC(WA3) |                               | 2000     |
+| B. [Edge Weight Assignment](https://codeforces.com/contest/1338/problem/B) | 题解AC  | 巧妙构造/边权转化为两点权异或 | 1683     |
+| C. [Perfect Triples](https://codeforces.com/contest/1338/problem/C) | 题解AC  | 真的是神仙题                  | 1184     |
+| D. [Nested Rubber Bands](https://codeforces.com/contest/1338/problem/D) |         |                               | 299      |
+| E. [JYPnation](https://codeforces.com/contest/1338/problem/E) |         |                               | 35       |
+
+[B题代码](https://codeforces.com/contest/1338/submission/76771858)
+
+#### C题题解
+
+考虑$[1, 4^n-1]$的数字已经全部使用，那么一定有$a_{2n}=1, a_{2n+1}=0, b_{2n}=0, b_{2n+1}=1$，其中$a_x,b_x$分别代表$a、b$二进制表示的第$x$位
+
+如下图所示
+
+![](https://espresso.codeforces.com/5f0a24543aeade78709e77fee5a18b0e88206748.png)
+
+因而对于$a$的$(i+1,i)(i\in \{0, 2, 4, 6, ...\})$位，有4种取法，每种取法都有唯一对应的$b_{i+1},b_{i},c_{i+1},c_i$，按照这种方法同时可保证把$[1, 4^n-1]$的所有数字用完
+
+![](https://espresso.codeforces.com/0c185d1a6606a7421cc262cc66f2ecdc6d0ada9f.png)
+
+[AC代码](https://codeforces.com/contest/1338/submission/76801718)
 
 
 
