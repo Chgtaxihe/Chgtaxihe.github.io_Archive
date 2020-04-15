@@ -92,6 +92,10 @@
             }
         }
     </script>
+
+  <link rel="stylesheet" href="/assets/css/styles/default.css">
+  <script src="/assets/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body>
 
@@ -232,28 +236,38 @@
       {% endif %}
       <script>
             var links = document.getElementsByTagName("a");
-            var pattern = new RegExp("https://(codeforces.com/problemset/submission/[0-9]+/[0-9]+)");
+            var pattern1 = new RegExp("https://(codeforces.com/problemset/submission/[0-9]+/[0-9]+)");
+            var pattern2 = new RegExp("https://(codeforces.com/contest/[0-9]+/submission/[0-9]+)");
             for (var i=0; i<links.length; i++){
-                if(pattern.test(links[i].href)){
-                    console.log(links[i].href);
-                    var href = links[i].href
-                    var parent = links[i].parentNode;
-                    var frame = document.createElement("div");
-                    if(parent.lastChild == links[i]){
-                        parent.appendChild(frame, links[i]);
-                    }else{
-                        parent.insertBefore(frame, links[i].nextSibling);
+                (function(i){
+                    var href = links[i].href;
+                    var url = '';
+                    if(pattern1.test(href)){
+                        url = pattern1.exec(href)[1].trim();
+                    }else if(pattern2.test(href)){
+                        url = pattern2.exec(href)[1].trim();
                     }
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('GET', 'https://api.chgtaxihe.top/codeforces_sources/' + pattern.exec(links[i])[1].trim(), true)
-                    xhr.onload = function(){
-                        if(xhr.status === 200){
-                            frame.innerHTML = '<details><summary>展开代码块</summary><pre><code>' + xhr.responseText + '</code></pre></details>';
+                    if (url != ''){
+                        var innerText = links[i].innerText
+                        var parent = links[i].parentNode;
+                        var frame = document.createElement("div");
+                        if(parent.lastChild == links[i]){
+                            parent.appendChild(frame, links[i]);
+                        }else{
+                            parent.insertBefore(frame, links[i].nextSibling);
                         }
-                    }
-                    xhr.send()
-                }
+                        var xhr = new XMLHttpRequest();
+                        xhr.open('GET', 'https://api.chgtaxihe.top/codeforces_sources/' + url, true);
+                        xhr.onload = function(){
+                            if(xhr.status === 200){
+                                s = hljs.highlightAuto(xhr.responseText).value;
+                                frame.innerHTML = '<details><summary>展开' + '</summary><div><pre>' + s + '</pre></div></details>';
+                            }
+                        }
+                        xhr.send();
+                }  
+                })(i);
             }
-      </script>
+        </script>
   </body>
 </html>
