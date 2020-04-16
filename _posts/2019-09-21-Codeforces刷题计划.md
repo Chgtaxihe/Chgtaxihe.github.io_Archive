@@ -14,7 +14,7 @@ tags: algorithm Codeforces
 
 ## Div. 1
 
-### [Codeforces Round #609 (Div. 1)](https://codeforces.com/contest/1268)
+### Codeforces Round #609 (Div. 1)
 
 [题解](https://codeforces.com/blog/entry/72358)
 
@@ -80,7 +80,9 @@ tags: algorithm Codeforces
 
     $ans$即为操作序列
 
-3.  这里有一份更“优雅”的模拟，[AC代码](https://codeforces.com/contest/1329/submission/75778994)，，代码更短，耗时更短(358ms)！
+3.  这里有一份更“优雅”的模拟，代码更短，耗时更短(358ms)！
+
+[AC代码](https://codeforces.com/contest/1329/submission/75778994)
 
 
 
@@ -96,7 +98,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #633 (Div. 1) ](https://codeforces.com/contest/1338)
+### Codeforces Round #633 (Div. 1)
 
 [题解](https://codeforces.com/blog/entry/75913)
 
@@ -126,9 +128,50 @@ tags: algorithm Codeforces
 
 
 
+###  Codeforces Round #618 (Div. 1) 
+
+| 题号                                                         | 完成   | 备注                                                        | 过题人数 |
+| ------------------------------------------------------------ | ------ | ----------------------------------------------------------- | -------- |
+| A. [Anu Has a Function](https://codeforces.com/contest/1299/problem/A) | 题解AC | $(a\mid b)-b=a\&(\sim b)$，注意用`unsigned`和`&与>`的优先级 | 1881     |
+| B. [Aerodynamic](https://codeforces.com/contest/1299/problem/B) | 题解AC | 又是一道神仙题                                              | 1403     |
+| C. [Water Balance](https://codeforces.com/contest/1299/problem/C) | 题解AC | 差点...                                                     | 1327     |
+| D. [Around the World](https://codeforces.com/contest/1299/problem/D) |        |                                                             | 177      |
+| E. [So Mean](https://codeforces.com/contest/1299/problem/E)  |        |                                                             | 51       |
+
+#### B题题解
+
+（基本上是翻译）
+
+`Convex Polygon`指`凸多边形`（任意一条边无限延长为直线时，其他各边都在此直线同旁）
+
+如果$\{(x_0,y_0), (0,0)\}\in P(x,y)$，那么$\{(-x_0,-y_0), (0,0)\}\in P(x-x_0,y-y_0)$，因此，$T$中心对称。如果$S\sim T$，必有$S$中心对称。
+
+下面证明`如果S中心对称，则S的每条边放大到原来的2倍后与T全等`
+
+首先平移$S$，使得$S$的对称中心与$(0,0)$重合。
+
+1.  如果$(x_0,y_0)\in P$，那么$\{(0,0),(2x_0,2y_0)\}\in P(x_0,y_0)$
+2.  如果$(x_0,y_0)\not\in P$，那么线段$\{(0,0),(x_0,y_0)\}$一定穿过$P$的某一条边$e_0$，下面我们称与$e_0$中心对称的边为$e_0'$。由于$S$是凸多边形，我们把$e_0,e_0'$沿两端无限延长成直线，进而$S$的所有点都夹在$e_0,e_0'$之间，将所有点$(x,y)$放大一倍后，点$(2x_0,2y_0)$定不在新边$e_1,e_1'$范围内。
+
+对称性的判断见代码。
+
+[AC代码](https://codeforces.com/contest/1299/submission/76931783)
+
+#### D题题解
+
+一开始就往斜率的方向考虑， 但是没有发现$a$的什么性质...
+
+看了题解之后，发现可以用前缀和$pre_i$来代替$a_i$，显然如果序列$S$是字典序最小的，那么它对应的前缀和序列也是字典序最小的，反之亦然。又因为$a_i\ge 1$，所以$pre_i$单调递增。
+
+将$x=i,y=pre_i$画出来，考虑进行一次操作$[l,r]$，就相当于使得$p_i=p_{l-1}+\frac{p_r-p_l}{r-l+1}(i-l+1)$，那么要使得$p_i$字典序最小，每次变换都选择一个斜率最小的即可，有点类似斜率dp。
+
+[AC代码](https://codeforces.com/contest/1299/submission/76960393)
+
+
+
 ## Div. 2
 
-### [Codeforces Round #588 (Div. 2)](https://codeforces.com/contest/1230) 
+### Codeforces Round #588 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/70008) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1230)
 
@@ -145,7 +188,7 @@ tags: algorithm Codeforces
 
 
 
-### [Educational Codeforces Round 73](https://codeforces.com/contest/1221) 
+### Educational Codeforces Round 73
 
 (Virtual Participate)
 
@@ -161,7 +204,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #589 (Div. 2)](https://codeforces.com/contest/1228)
+### Codeforces Round #589 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/70162) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1228)
 
@@ -178,7 +221,7 @@ tags: algorithm Codeforces
 
 
 
-### [Educational Codeforces Round 74](https://codeforces.com/contest/1238)
+### Educational Codeforces Round 74
 [题解](https://codeforces.com/blog/entry/70450)
 
 [我的AC代码(D)](https://gist.github.com/Chgtaxihe/3b2b8526c76d320424d5eb64f939f405)
@@ -195,7 +238,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #592 (Div. 2) ](https://codeforces.com/contest/1244)
+### Codeforces Round #592 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/70553)
 
@@ -213,7 +256,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #593 (Div. 2)](https://codeforces.com/contest/1236)
+### Codeforces Round #593 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/70654)
 
@@ -230,7 +273,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #594 (Div. 2) ]( https://codeforces.com/contest/1248 )
+### Codeforces Round #594 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/70720)
 
@@ -248,7 +291,7 @@ tags: algorithm Codeforces
 
 
 
-### [Educational Codeforces Round 75 (Rated for Div. 2)](https://codeforces.com/contest/1251)
+### Educational Codeforces Round 75 (Rated for Div. 2)
 
 [题解](https://codeforces.com/blog/entry/70860)
 
@@ -266,7 +309,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #597 (Div. 2)](https://codeforces.com/contest/1245)
+### Codeforces Round #597 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71080)
 
@@ -283,7 +326,7 @@ tags: algorithm Codeforces
 
 
 
-###  [Codeforces Round #599 (Div. 2) ](https://codeforces.com/contest/1243)
+###  Codeforces Round #599 (Div. 2) 
 
 [题解](https://codeforces.com/blog/entry/71216)
 
@@ -316,7 +359,7 @@ tags: algorithm Codeforces
 
 
 
-### [Educational Codeforces Round 76 (Rated for Div. 2)](https://codeforces.com/contest/1257)
+### Educational Codeforces Round 76 (Rated for Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71434)
 
@@ -334,7 +377,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #600 (Div. 2)](https://codeforces.com/contest/1253)
+### Codeforces Round #600 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71489)
 
@@ -351,7 +394,7 @@ tags: algorithm Codeforces
 
 
 
-### [Codeforces Round #601 (Div. 2)](https://codeforces.com/contest/1255)
+### Codeforces Round #601 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71594)
 
@@ -369,7 +412,7 @@ tags: algorithm Codeforces
 
 
 
-###  [Educational Codeforces Round 77 (Rated for Div. 2)](https://codeforces.com/contest/1260)
+###  Educational Codeforces Round 77 (Rated for Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71805)
 
@@ -398,7 +441,7 @@ $by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
 
 
 
-### [Codeforces Round #603 (Div. 2)](https://codeforces.com/contest/1263)
+### Codeforces Round #603 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71844?locale=en)
 
@@ -427,7 +470,7 @@ $by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
 
 
 
-### [Codeforces Round #604 (Div. 2)](https://codeforces.com/contest/1265)
+### Codeforces Round #604 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/71995)
 
@@ -452,7 +495,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #607 (Div. 2)](https://codeforces.com/contest/1281)
+### Codeforces Round #607 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/72212)
 
@@ -469,7 +512,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #608 (Div. 2)](https://codeforces.com/contest/1271)
+### Codeforces Round #608 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/72247)
 
@@ -486,7 +529,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Educational Codeforces Round 78 (Rated for Div. 2)](https://codeforces.com/contest/1278)
+### Educational Codeforces Round 78 (Rated for Div. 2)
 
 [题解](https://codeforces.com/blog/entry/72330)
 
@@ -503,7 +546,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #609 (Div. 2)](https://codeforces.com/contest/1269)
+### Codeforces Round #609 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/72358)
 
@@ -537,7 +580,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #610 (Div. 2)](https://codeforces.com/contest/1282)
+### Codeforces Round #610 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/72461)
 
@@ -554,7 +597,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Educational Codeforces Round 79 (Rated for Div. 2)](https://codeforces.com/contest/1279)
+### Educational Codeforces Round 79 (Rated for Div. 2)
 
 [题解](https://codeforces.com/blog/entry/72577)
 
@@ -571,7 +614,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-###  [Codeforces Round #630 (Div. 2)](https://codeforces.com/contest/1332)
+###  Codeforces Round #630 (Div. 2)
 
 [题解](https://codeforces.com/blog/entry/75432)
 
@@ -616,7 +659,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 ## Div. 3
 
-### [Codeforces Round #587 (Div. 3)](https://codeforces.com/contest/1216)
+### Codeforces Round #587 (Div. 3)
 
 [题解](https://codeforces.com/blog/entry/69954) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1216&title=&source=&category=all)
 
@@ -634,7 +677,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #590 (Div. 3)](https://codeforces.com/contest/1234)
+### Codeforces Round #590 (Div. 3)
 
 [题解](https://codeforces.com/blog/entry/70233) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1234&title=&source=&category=all)
 
@@ -652,7 +695,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #595 (Div. 3)](https://codeforces.com/contest/1249)
+### Codeforces Round #595 (Div. 3)
 
 [题解](https://codeforces.com/blog/entry/70779)
 
@@ -672,7 +715,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #598 (Div. 3)](https://codeforces.com/contest/1256)
+### Codeforces Round #598 (Div. 3)
 
 [题解](https://codeforces.com/blog/entry/71184)
 
@@ -695,7 +738,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #605 (Div. 3)](https://codeforces.com/contest/1272)
+### Codeforces Round #605 (Div. 3)
 
 [题解](https://codeforces.com/blog/entry/72132)
 
@@ -738,7 +781,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #611 (Div. 3)](https://codeforces.com/contest/1283)
+### Codeforces Round #611 (Div. 3)
 
 [题解](https://codeforces.com/contest/1283)
 
@@ -755,7 +798,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
 
 
-### [Codeforces Round #627 (Div. 3)](https://codeforces.com/contest/1324)
+### Codeforces Round #627 (Div. 3)
 
 第一次AK，用了70分钟，就不记录了吧~
 
@@ -763,7 +806,7 @@ UPD: 打一场Rating就上1700+，我傻了
 
 
 
-###  [Codeforces Round #629 (Div. 3)](https://codeforces.com/contest/1328) 
+###  Codeforces Round #629 (Div. 3)
 
 [题解](https://codeforces.com/blog/entry/75246)
 

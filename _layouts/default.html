@@ -96,6 +96,7 @@
   <link rel="stylesheet" href="/assets/css/styles/default.css">
   <script src="/assets/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   </head>
   <body>
 
@@ -235,39 +236,47 @@
       <script data-no-instant>InstantClick.init();</script>
       {% endif %}
       <script>
-            var links = document.getElementsByTagName("a");
-            var pattern1 = new RegExp("https://(codeforces.com/problemset/submission/[0-9]+/[0-9]+)");
-            var pattern2 = new RegExp("https://(codeforces.com/contest/[0-9]+/submission/[0-9]+)");
-            for (var i=0; i<links.length; i++){
-                (function(i){
-                    var href = links[i].href;
-                    var url = '';
-                    if(pattern1.test(href)){
-                        url = pattern1.exec(href)[1].trim();
-                    }else if(pattern2.test(href)){
-                        url = pattern2.exec(href)[1].trim();
+        var links = document.getElementsByTagName("a");
+        var pattern1 = new RegExp("https://(codeforces.com/problemset/submission/[0-9]+/[0-9]+)");
+        var pattern2 = new RegExp("https://(codeforces.com/contest/[0-9]+/submission/[0-9]+)");
+        for (var i=0; i<links.length; i++){
+            (function(i){
+                var href = links[i].href;
+                var url = '';
+                if(pattern1.test(href)){
+                    url = pattern1.exec(href)[1].trim();
+                }else if(pattern2.test(href)){
+                    url = pattern2.exec(href)[1].trim();
+                }
+                if (url != ''){
+                    var innerText = links[i].innerText
+                    var parent = links[i].parentNode;
+                    links[i].setAttribute('class', 'expand_code');
+                    links[i].id = i;
+                    var frame = document.createElement("div");
+                    frame.setAttribute("class", 'expand_div_' + i.toString());
+                    if(parent.lastChild == links[i]){
+                        parent.appendChild(frame, links[i]);
+                    }else{
+                        parent.insertBefore(frame, links[i].nextSibling);
                     }
-                    if (url != ''){
-                        var innerText = links[i].innerText
-                        var parent = links[i].parentNode;
-                        var frame = document.createElement("div");
-                        if(parent.lastChild == links[i]){
-                            parent.appendChild(frame, links[i]);
-                        }else{
-                            parent.insertBefore(frame, links[i].nextSibling);
-                        }
-                        var xhr = new XMLHttpRequest();
-                        xhr.open('GET', 'https://api.chgtaxihe.top/codeforces_sources/' + url, true);
-                        xhr.onload = function(){
-                            if(xhr.status === 200){
-                                s = hljs.highlightAuto(xhr.responseText).value;
-                                frame.innerHTML = '<details><summary>展开' + '</summary><div><pre>' + s + '</pre></div></details>';
-                            }
-                        }
-                        xhr.send();
                 }  
-                })(i);
+            })(i);
+        }
+        $("a.expand_code").click(function(){
+            var dest = this.href.replace("https:\/\/",'');
+            var item = $('div.expand_div_' + this.id);
+            var state = item.html();
+            if(state == ''){
+                $.get('https://api.chgtaxihe.top/codeforces_sources/' + dest, function(result){
+                    s = hljs.highlightAuto(result).value;
+                    item.html('<pre>' + s + '</pre>');
+                    item.slideToggle();
+                });
             }
-        </script>
+            item.slideToggle();
+            return false;
+        });
+    </script>
   </body>
 </html>
