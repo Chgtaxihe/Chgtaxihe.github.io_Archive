@@ -169,6 +169,23 @@ tags: algorithm Codeforces
 
 
 
+###  Codeforces Round #616 (Div. 1) 
+
+| 题号                                                         | 完成 | 备注                                   | 过题人数 |
+| ------------------------------------------------------------ | ---- | -------------------------------------- | -------- |
+| A. [Mind Control](https://codeforces.com/contest/1290/problem/A) | AC   | 想到了暴力，但是没敢做，姑且算自己AC吧 | 1497     |
+| B. [Irreducible Anagrams](https://codeforces.com/contest/1290/problem/B) |      |                                        | 1251     |
+| C. [Prefix Enlightenment](https://codeforces.com/contest/1290/problem/C) |      |                                        | 719      |
+| D. [Coffee Varieties (hard version)](https://codeforces.com/contest/1290/problem/D) |      |                                        | 248      |
+| E. [Cartesian Tree](https://codeforces.com/contest/1290/problem/E) |      |                                        | 64       |
+| F. [Making Shapes](https://codeforces.com/contest/1290/problem/F) |      |                                        | 40       |
+
+[A题AC代码 $O(n^2)$](https://codeforces.com/contest/1290/submission/76987131) 
+
+[A题AC代码 $O(n)$](https://codeforces.com/contest/1290/submission/76996970)
+
+
+
 ## Div. 2
 
 ### Codeforces Round #588 (Div. 2)
