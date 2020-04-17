@@ -4,7 +4,7 @@ title: Codeforces 刷题计划
 tags: algorithm Codeforces
 ---
 
-# Codeforces Rua~
+# Codeforces 刷题计划~
 
 * auto-gen TOC:
 {:toc}
@@ -12,13 +12,15 @@ tags: algorithm Codeforces
 
 有些题目比较简单，就没写题解/AC代码啦
 
+UPD: 我好菜啊
+
+
+
 ## Div. 1
 
 ### Codeforces Round #609 (Div. 1)
 
 [题解](https://codeforces.com/blog/entry/72358)
-
-[我的AC代码]
 
 | 题号                                                         | 完成 | 备注        | 过题人数 |
 | ------------------------------------------------------------ | ---- | ----------- | -------- |
@@ -29,8 +31,6 @@ tags: algorithm Codeforces
 
 ###  Codeforces Round #631 (Div. 1)
 
-[题解](https://codeforces.com/codeforces_mirror/blog/entry/75559)
-
 | 题号                                                         | 完成        | 备注                | 过题人数 |
 | ------------------------------------------------------------ | ----------- | ------------------- | -------- |
 | A. [Dreamoon Likes Coloring](https://codeforces.com/contest/1329/problem/A) | AC(WA14/21) |                     | 1666     |
@@ -39,7 +39,7 @@ tags: algorithm Codeforces
 | D. [Dreamoon Likes Strings](https://codeforces.com/contest/1329/problem/D) | 题解        |                     | 112      |
 | E. [Dreamoon Loves AA](https://codeforces.com/contest/1329/problem/E) |             |                     | 34       |
 
-#### B题题解
+B题题解
 
 这题不需要搜索
 
@@ -56,9 +56,9 @@ tags: algorithm Codeforces
 
 原理大致同我的dfs搜索一样，但快得多~
 
+------
 
-
-#### C题题解
+C题题解
 
 这题正解不是模拟。
 
@@ -84,9 +84,9 @@ tags: algorithm Codeforces
 
 [AC代码](https://codeforces.com/contest/1329/submission/75778994)
 
+------
 
-
-#### D题题解
+D题题解
 
 根据题解，最小的操作数为$max(\lceil \frac{\sum c_i}{2} \rceil, max_{0\le i\le25}(c_i)) + 1$
 
@@ -100,8 +100,6 @@ tags: algorithm Codeforces
 
 ### Codeforces Round #633 (Div. 1)
 
-[题解](https://codeforces.com/blog/entry/75913)
-
 | 题号                                                         | 完成    | 备注                          | 过题人数 |
 | ------------------------------------------------------------ | ------- | ----------------------------- | -------- |
 | A. [Powered Addition](https://codeforces.com/contest/1338/problem/A) | AC(WA3) |                               | 2000     |
@@ -112,7 +110,9 @@ tags: algorithm Codeforces
 
 [B题代码](https://codeforces.com/contest/1338/submission/76771858)
 
-#### C题题解
+------
+
+C题题解
 
 考虑$[1, 4^n-1]$的数字已经全部使用，那么一定有$a_{2n}=1, a_{2n+1}=0, b_{2n}=0, b_{2n+1}=1$，其中$a_x,b_x$分别代表$a、b$二进制表示的第$x$位
 
@@ -138,7 +138,7 @@ tags: algorithm Codeforces
 | D. [Around the World](https://codeforces.com/contest/1299/problem/D) |        |                                                             | 177      |
 | E. [So Mean](https://codeforces.com/contest/1299/problem/E)  |        |                                                             | 51       |
 
-#### B题题解
+B题题解
 
 （基本上是翻译）
 
@@ -157,7 +157,9 @@ tags: algorithm Codeforces
 
 [AC代码](https://codeforces.com/contest/1299/submission/76931783)
 
-#### D题题解
+------
+
+D题题解
 
 一开始就往斜率的方向考虑， 但是没有发现$a$的什么性质...
 
@@ -171,18 +173,37 @@ tags: algorithm Codeforces
 
 ###  Codeforces Round #616 (Div. 1) 
 
-| 题号                                                         | 完成 | 备注                                   | 过题人数 |
-| ------------------------------------------------------------ | ---- | -------------------------------------- | -------- |
-| A. [Mind Control](https://codeforces.com/contest/1290/problem/A) | AC   | 想到了暴力，但是没敢做，姑且算自己AC吧 | 1497     |
-| B. [Irreducible Anagrams](https://codeforces.com/contest/1290/problem/B) |      |                                        | 1251     |
-| C. [Prefix Enlightenment](https://codeforces.com/contest/1290/problem/C) |      |                                        | 719      |
-| D. [Coffee Varieties (hard version)](https://codeforces.com/contest/1290/problem/D) |      |                                        | 248      |
-| E. [Cartesian Tree](https://codeforces.com/contest/1290/problem/E) |      |                                        | 64       |
-| F. [Making Shapes](https://codeforces.com/contest/1290/problem/F) |      |                                        | 40       |
+| 题号                                                         | 完成          | 备注                                   | 过题人数 |
+| ------------------------------------------------------------ | ------------- | -------------------------------------- | -------- |
+| A. [Mind Control](https://codeforces.com/contest/1290/problem/A) | AC            | 想到了暴力，但是没敢做，姑且算自己AC吧 | 1497     |
+| B. [Irreducible Anagrams](https://codeforces.com/contest/1290/problem/B) | 题解AC        | 题解的证明很有意思                     | 1251     |
+| C. [Prefix Enlightenment](https://codeforces.com/contest/1290/problem/C) | 看题解+代码AC | 2-SAT?不不不                           | 719      |
+| D. [Coffee Varieties (hard version)](https://codeforces.com/contest/1290/problem/D) |               |                                        | 248      |
+| E. [Cartesian Tree](https://codeforces.com/contest/1290/problem/E) |               |                                        | 64       |
+| F. [Making Shapes](https://codeforces.com/contest/1290/problem/F) |               |                                        | 40       |
 
 [A题AC代码 $O(n^2)$](https://codeforces.com/contest/1290/submission/76987131) 
 
 [A题AC代码 $O(n)$](https://codeforces.com/contest/1290/submission/76996970)
+
+------
+
+C题每个开关只有两个状态，同时一个点$x$最多只会被两个开关$(a,b)$控制，根据$x$的初始状态便可确定$(a,b)$的相对状态（如果$x=off$，则$a,b$有且只有一个被操作，反之$x=on$，$a,b$要么同时操作，要么同时不被操作），对每个开关建两个点，分别代表操作/不操作，并用`dsu`维护联通集，同时维护一个联通集内所需操作数。显然$a_{on},a_{off}$一定是不联通的，那么求答案的时候取一下$min(size[block(a_{on})], size[block(a_{off})])$即可
+
+[C题AC代码](https://codeforces.com/contest/1290/submission/77087660)
+
+
+
+### Codeforces Round #614 (Div. 1) 
+
+| 题号                                                         | 完成 | 备注 | 过题人数 |
+| ------------------------------------------------------------ | ---- | ---- | -------- |
+| A. [NEKO's Maze Game](https://codeforces.com/contest/1292/problem/A) |      |      | 2138     |
+| B. [Aroma's Search](https://codeforces.com/contest/1292/problem/B) |      |      | 1456     |
+| C. [Xenon's Attack on the Gangs](https://codeforces.com/contest/1292/problem/C) |      |      | 877      |
+| D. [Chaotic V.](https://codeforces.com/contest/1292/problem/D) |      |      | 400      |
+| E. [Rin and The Unknown Flower](https://codeforces.com/contest/1292/problem/E) |      |      | 90       |
+| F. [Nora's Toy Boxes](https://codeforces.com/contest/1292/problem/F) |      |      | 44       |
 
 
 
@@ -358,7 +379,7 @@ tags: algorithm Codeforces
 | D. [0-1 MST](https://codeforces.com/contest/1243/problem/D)  | √    | 正确估计复杂度 + 实现 | 1754     |
 | E. [Sum Balance](https://codeforces.com/contest/1243/problem/E) |      |                       | 198      |
 
-#### C题题解
+C题题解
 
 对于$n=p^k$(p为质数)，有$ans = p$ (A)
 
@@ -370,7 +391,9 @@ tags: algorithm Codeforces
 
 因此$i$和$j(i\neq j)$颜色与$x$相同
 
-#### D题题解
+------
+
+D题题解
 
 暴力即可(set/bitset记录连通块)
 
@@ -444,7 +467,7 @@ tags: algorithm Codeforces
 | E. [Tournament](https://codeforces.com/contest/1260/problem/E) |      |                                                              | 194      |
 | F. [Colored Tree](https://codeforces.com/contest/1260/problem/F) |      |                                                              | 20       |
 
-#### C题题解
+C题题解
 
 假定$r\le b$， $g=gcd(r, b)$，存在$rx - by = g$ ($y\ge0$)，即$rx = g + by$ ($y\ge0$)
 
@@ -473,7 +496,7 @@ $by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
 | E. [Editor](https://codeforces.com/contest/1263/problem/E)   | √    | 第一反应是线段树，题解用两个`stack`维护左右两侧信息          | 1629     |
 | F. [Economic Difficulties](https://codeforces.com/contest/1263/problem/F) |      |                                                              | 448      |
 
-#### F题题解
+F题题解
 
 以`cursor`为界，分为左右两部分。同时计算左侧前缀和、右侧后缀和("("计1，")"计-1)。
 
@@ -502,13 +525,15 @@ $by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
 | E. [Beautiful Mirrors](https://codeforces.com/contest/1265/problem/E) | √    | 复习了一下概率dp和逆元~                                      | 1261     |
 | F. [Beautiful Bracket Sequence (easy version)](https://codeforces.com/contest/1265/problem/F) | X    | 没懂！！                                                     | 134      |
 
-#### E题题解
+E题题解
 
 没什么好说的，概率dp
 
 $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 
-#### F题待完成！！！
+------
+
+F题待完成！！！
 
 
 
@@ -577,7 +602,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 | D. [Domino for Young](https://codeforces.com/contest/1269/problem/D) | √    | [**思维**]如果把图按棋盘的方式涂色，那么一个`domino`永远会占用一黑一白两种颜色的格子 | 1945     |
 | E. [K Integers](https://codeforces.com/contest/1269/problem/E) | √    | 看不懂题解。。估计是我境界不够                               | 253      |
 
-#### E题题解
+E题题解
 
 题解讲的不是很清楚，这里做一下记录
 
@@ -647,7 +672,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 | F. [Independent Set](https://codeforces.com/contest/1332/problem/F) |         |                         | 142      |
 | G. [No Monotone Triples](https://codeforces.com/contest/1332/problem/G) |         |                         | 11       |
 
- #### E题题解
+E题题解
 
 在完成分类讨论之后，这道题有两个入手点（已知$nm$为偶数）
 
@@ -747,7 +772,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 | E. [Yet Another Division Into Teams](https://codeforces.com/contest/1256/problem/E) | √    | 一道带标记的Dp(Ps. 要是能注意到最优解中一个队伍不会超过5人，这题就更好做了(见题解)) | 392      |
 | F. [Equalizing Two Strings](https://codeforces.com/contest/1256/problem/F) | √    | 让B变成A，不如让AB都变成有序的串(详见代码)                   | 322      |
 
-#### F题题解
+F题题解
 
 当字符串s没有重复出现的字符时
 
@@ -770,7 +795,7 @@ $cost_i = cost_{i-1} + 1 + (1-p_i)cost_i$
 | E. [Nearest Opposite Parity](https://codeforces.com/contest/1272/problem/E) | √    | 图论，痛哭涕流，看题解吧 | 594      |
 | F. [Two Bracket Sequences](https://codeforces.com/contest/1272/problem/F) | √    | 看了题解，是个三维Dp     | 188      |
 
-#### F题题解
+F题题解
 
 设`dp[i][j][k]`代表字符串`ans`的最小长度，其中`s[:i]`和`t[:j]`为`ans`的子序列，且`ans`中`(` - `)`的数量为`k`，可知如果`k`小于0，该字符串一定不合法，故有$0 \le k \le max(len(s), len(t))$
 
@@ -838,9 +863,7 @@ UPD: 打一场Rating就上1700+，我傻了
 | E. [Tree Queries](https://codeforces.com/contest/1328/problem/E) | 赛时-TLE  AC |                                                              | 977      |
 | F. [Make k Equal](https://codeforces.com/contest/1328/problem/F) | 理论AC       | 要让(排序后的)左边出现$n$个$m$，首先让左边的数字全变为$m-1$，然后结果$+n$即可 | 368      |
 
-
-
-#### D题题解
+E题题解
 
 对于判断节点$u$是否在节点$v$到$root$的路径上
 
