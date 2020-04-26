@@ -65,6 +65,12 @@ permalink: /learningCategory.html
 
 
 
+## 几何
+
+1.  [已知顶点求面积](/post/category/几何/已知顶点求面积.html)
+
+
+
 ## 其他
 
 1.  [01分数规划](/post/category/其他/01分数规划.html)

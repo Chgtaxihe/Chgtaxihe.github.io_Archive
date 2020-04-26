@@ -196,14 +196,16 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 ### Codeforces Round #614 (Div. 1) 
 
-| 题号                                                         | 完成 | 备注 | 过题人数 |
-| ------------------------------------------------------------ | ---- | ---- | -------- |
-| A. [NEKO's Maze Game](https://codeforces.com/contest/1292/problem/A) |      |      | 2138     |
-| B. [Aroma's Search](https://codeforces.com/contest/1292/problem/B) |      |      | 1456     |
-| C. [Xenon's Attack on the Gangs](https://codeforces.com/contest/1292/problem/C) |      |      | 877      |
-| D. [Chaotic V.](https://codeforces.com/contest/1292/problem/D) |      |      | 400      |
-| E. [Rin and The Unknown Flower](https://codeforces.com/contest/1292/problem/E) |      |      | 90       |
-| F. [Nora's Toy Boxes](https://codeforces.com/contest/1292/problem/F) |      |      | 44       |
+| 题号                                                         | 完成         | 备注 | 过题人数 |
+| ------------------------------------------------------------ | ------------ | ---- | -------- |
+| A. [NEKO's Maze Game](https://codeforces.com/contest/1292/problem/A) | AC           | 水   | 2138     |
+| B. [Aroma's Search](https://codeforces.com/contest/1292/problem/B) | 题解AC(WA49) |      | 1456     |
+| C. [Xenon's Attack on the Gangs](https://codeforces.com/contest/1292/problem/C) |              |      | 877      |
+| D. [Chaotic V.](https://codeforces.com/contest/1292/problem/D) |              |      | 400      |
+| E. [Rin and The Unknown Flower](https://codeforces.com/contest/1292/problem/E) |              |      | 90       |
+| F. [Nora's Toy Boxes](https://codeforces.com/contest/1292/problem/F) |              |      | 44       |
+
+[B题AC代码](https://codeforces.com/contest/1292/submission/77541887)
 
 
 
@@ -695,6 +697,23 @@ E题题解
     显然可以转化为矩阵乘法，矩阵快速幂可解！
     
     [AC代码](./post/category/动态规划/广义矩阵乘法.html)
+
+
+
+###  Codeforces Round #635 (Div. 2) 
+
+改名叫Queueforces得了
+
+| 题号                          | 完成        | 备注 | 通过人数 |
+| ----------------------------- | ----------- | ---- | -------- |
+| A. Ichihime and Triangle      | AC          |      | 17784    |
+| B. Kana and Dragon Quest game | AC          |      | 17336    |
+| C. Linova and Kingdom         | 题解AC(WA6) |      | 7213     |
+| D. Xenia and Colorful Gems    | 题解AC      |      | 4646     |
+| E. Kaavi and Magic Spell      |             |      | 641      |
+| F. Yui and Mahjong Set        |             |      | 46       |
+
+[D题AC代码](https://codeforces.com/contest/1337/submission/77932688)
 
 
 

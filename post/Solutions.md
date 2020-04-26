@@ -16,10 +16,18 @@ permalink: /solutions.html
 
 
 
+## 数论
+
+### 卡特兰数
+
+[Gym102501J](/post/solutions/Gym102501.html)
+
+
+
 
 ## 数据结构
 ### Splay
-#### [POJ-3468](/post/solutions/POJ3468.html)
+[POJ-3468](/post/solutions/POJ3468.html)
 一道典型的线段树题，于是就用Splay做了
 
 
@@ -623,5 +631,5 @@ int main(){
 
 ## 其他
 
-### [Codeforces 578D](./post/solutions/Codeforces578D.html)
+### [Codeforces 578D](/post/solutions/Codeforces578D.html)
 
