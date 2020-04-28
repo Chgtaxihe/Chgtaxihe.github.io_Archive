@@ -77,6 +77,7 @@ permalink: /learningCategory.html
 2.  [wqs二分](/post/category/其他/wqs二分.html)（待完成）
 3.  [CDQ分治](/post/category/其他/CDQ分治.html)
 4.  [单调性应用](/post/category/其他/单调性应用.html)
+5.  [环检测算法(Floyd's Tortoise and Hare)](/post/category/其他/环检测算法.html)
 
 
 

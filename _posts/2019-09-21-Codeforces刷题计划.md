@@ -704,16 +704,45 @@ E题题解
 
 改名叫Queueforces得了
 
-| 题号                          | 完成        | 备注 | 通过人数 |
-| ----------------------------- | ----------- | ---- | -------- |
-| A. Ichihime and Triangle      | AC          |      | 17784    |
-| B. Kana and Dragon Quest game | AC          |      | 17336    |
-| C. Linova and Kingdom         | 题解AC(WA6) |      | 7213     |
-| D. Xenia and Colorful Gems    | 题解AC      |      | 4646     |
-| E. Kaavi and Magic Spell      |             |      | 641      |
-| F. Yui and Mahjong Set        |             |      | 46       |
+| 题号                          | 完成        | 备注   | 通过人数 |
+| ----------------------------- | ----------- | ------ | -------- |
+| A. Ichihime and Triangle      | AC          |        | 17784    |
+| B. Kana and Dragon Quest game | AC          |        | 17336    |
+| C. Linova and Kingdom         | 题解AC(WA6) |        | 7213     |
+| D. Xenia and Colorful Gems    | 题解AC      |        | 4646     |
+| E. Kaavi and Magic Spell      | 题解AC      | Dp     | 641      |
+| F. Yui and Mahjong Set        |             | 交互题 | 46       |
 
 [D题AC代码](https://codeforces.com/contest/1337/submission/77932688)
+
+------
+
+E题：$dp[i][j]$表示已经使用了$i$个字符，得到的$A$仍需往头部添加$j$个字符才能构成前缀$T$时，有多少种可能
+
+[E题AC代码(题解我都写到注释里了)](https://codeforces.com/contest/1337/submission/78343453)
+
+
+
+###  Codeforces Round #637 (Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Nastya and Rice  | AC |      | 16039 |
+| B. Nastya and Door  | AC(3WA2/RE3) |      | 11885 |
+| C. Nastya and Strange Generator  | AC | 有点麻烦，其实可以转化成求序列是否由数段连续上升序列组成 | 7929 |
+| D. Nastya and Scoreboard  | 题解AC |      | 3195 |
+| E. Nastya and Unexpected Guest  |      |      | 313 |
+| F. Nastya and Time Machine  |      |      | 57 |
+
+D题题解：
+
+一直想着用$dp[i][j]$来表示前$i$个数字操作了$j$次时能表示的最大数字，结果被复杂度被卡死在$O(2nklog_2k)=O(8e7)$(因为要排序并离散化)
+
+题解给的是：$dp[i][j]$表示后$i$个数字操作了$j$次时是否合法($true$或$false$)，那么只要从$dp[n][k]$贪心的往前回溯即可得到最优解，复杂度$O(10nk)=O(4e7)$
+
+PS: 4e7能过，说不定8e7也能过？
+
+[AC代码](https://codeforces.com/contest/1341/submission/78402343)，代码中$dp[i][j]$的含义与上述$dp$略微不同
 
 
 
@@ -722,7 +751,7 @@ E题题解
 
 ### Codeforces Round #587 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/69954) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1216&title=&source=&category=all)
+[题解](https://codeforces.com/blog/entry/69954) 
 
 [我的AC代码(C/E2/F)](https://gist.github.com/Chgtaxihe/7a268e89d6d5913ef37a8948d7f7c6b2)
 
@@ -740,7 +769,7 @@ E题题解
 
 ### Codeforces Round #590 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/70233) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1234&title=&source=&category=all)
+[题解](https://codeforces.com/blog/entry/70233)
 
 [我的AC代码(B2/D/E/F)](https://gist.github.com/Chgtaxihe/77b664c4c8a4295140c6310a23b218e2)
 
