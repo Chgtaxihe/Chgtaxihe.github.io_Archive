@@ -22,22 +22,22 @@ UPD: 我好菜啊
 
 [题解](https://codeforces.com/blog/entry/72358)
 
-| 题号                                                         | 完成 | 备注        | 过题人数 |
-| ------------------------------------------------------------ | ---- | ----------- | -------- |
-| D. [Invertation in Tournament](https://codeforces.com/contest/1268/problem/D) |      | 我不配 ╥﹏╥ | 93       |
-| E. [Happy Cactus](https://codeforces.com/contest/1268/problem/E) |      |             | 58       |
+| 题号                         | 完成 | 备注        | 过题人数 |
+| ---------------------------- | ---- | ----------- | -------- |
+| D. Invertation in Tournament |      | 我不配 ╥﹏╥ | 93       |
+| E. Happy Cactus              |      |             | 58       |
 
 
 
 ###  Codeforces Round #631 (Div. 1)
 
-| 题号                                                         | 完成        | 备注                | 过题人数 |
-| ------------------------------------------------------------ | ----------- | ------------------- | -------- |
-| A. [Dreamoon Likes Coloring](https://codeforces.com/contest/1329/problem/A) | AC(WA14/21) |                     | 1666     |
-| B. [Dreamoon Likes Sequences](https://codeforces.com/contest/1329/problem/B) | AC(TLE3)    | **记忆化**搜索      | 1735     |
-| C. [Drazil Likes Heap](https://codeforces.com/contest/1329/problem/C) | AC          | 贪心+模拟（细节多） | 833      |
-| D. [Dreamoon Likes Strings](https://codeforces.com/contest/1329/problem/D) | 题解        |                     | 112      |
-| E. [Dreamoon Loves AA](https://codeforces.com/contest/1329/problem/E) |             |                     | 34       |
+| 题号                        | 完成        | 备注                | 过题人数 |
+| --------------------------- | ----------- | ------------------- | -------- |
+| A. Dreamoon Likes Coloring  | AC(WA14/21) |                     | 1666     |
+| B. Dreamoon Likes Sequences | AC(TLE3)    | **记忆化**搜索      | 1735     |
+| C. Drazil Likes Heap        | AC          | 贪心+模拟（细节多） | 833      |
+| D. Dreamoon Likes Strings   | 题解        |                     | 112      |
+| E. Dreamoon Loves AA        |             |                     | 34       |
 
 B题题解
 
@@ -100,13 +100,13 @@ D题题解
 
 ### Codeforces Round #633 (Div. 1)
 
-| 题号                                                         | 完成    | 备注                          | 过题人数 |
-| ------------------------------------------------------------ | ------- | ----------------------------- | -------- |
-| A. [Powered Addition](https://codeforces.com/contest/1338/problem/A) | AC(WA3) |                               | 2000     |
-| B. [Edge Weight Assignment](https://codeforces.com/contest/1338/problem/B) | 题解AC  | 巧妙构造/边权转化为两点权异或 | 1683     |
-| C. [Perfect Triples](https://codeforces.com/contest/1338/problem/C) | 题解AC  | 真的是神仙题                  | 1184     |
-| D. [Nested Rubber Bands](https://codeforces.com/contest/1338/problem/D) |         |                               | 299      |
-| E. [JYPnation](https://codeforces.com/contest/1338/problem/E) |         |                               | 35       |
+| 题号                      | 完成    | 备注                          | 过题人数 |
+| ------------------------- | ------- | ----------------------------- | -------- |
+| A. Powered Addition       | AC(WA3) |                               | 2000     |
+| B. Edge Weight Assignment | 题解AC  | 巧妙构造/边权转化为两点权异或 | 1683     |
+| C. Perfect Triples        | 题解AC  | 真的是神仙题                  | 1184     |
+| D. Nested Rubber Bands    |         |                               | 299      |
+| E. JYPnation              |         |                               | 35       |
 
 [B题代码](https://codeforces.com/contest/1338/submission/76771858)
 
@@ -130,13 +130,13 @@ C题题解
 
 ###  Codeforces Round #618 (Div. 1) 
 
-| 题号                                                         | 完成   | 备注                                                        | 过题人数 |
-| ------------------------------------------------------------ | ------ | ----------------------------------------------------------- | -------- |
-| A. [Anu Has a Function](https://codeforces.com/contest/1299/problem/A) | 题解AC | $(a\mid b)-b=a\&(\sim b)$，注意用`unsigned`和`&与>`的优先级 | 1881     |
-| B. [Aerodynamic](https://codeforces.com/contest/1299/problem/B) | 题解AC | 又是一道神仙题                                              | 1403     |
-| C. [Water Balance](https://codeforces.com/contest/1299/problem/C) | 题解AC | 差点...                                                     | 1327     |
-| D. [Around the World](https://codeforces.com/contest/1299/problem/D) |        |                                                             | 177      |
-| E. [So Mean](https://codeforces.com/contest/1299/problem/E)  |        |                                                             | 51       |
+| 题号                   | 完成   | 备注                                                        | 过题人数 |
+| ---------------------- | ------ | ----------------------------------------------------------- | -------- |
+| A. Anu Has a Function) | 题解AC | $(a\mid b)-b=a\&(\sim b)$，注意用`unsigned`和`&与>`的优先级 | 1881     |
+| B. Aerodynamic         | 题解AC | 又是一道神仙题                                              | 1403     |
+| C. Water Balance       | 题解AC | 差点...                                                     | 1327     |
+| D. Around the World    |        |                                                             | 177      |
+| E. So Mean             |        |                                                             | 51       |
 
 B题题解
 
@@ -173,14 +173,14 @@ D题题解
 
 ###  Codeforces Round #616 (Div. 1) 
 
-| 题号                                                         | 完成          | 备注                                   | 过题人数 |
-| ------------------------------------------------------------ | ------------- | -------------------------------------- | -------- |
-| A. [Mind Control](https://codeforces.com/contest/1290/problem/A) | AC            | 想到了暴力，但是没敢做，姑且算自己AC吧 | 1497     |
-| B. [Irreducible Anagrams](https://codeforces.com/contest/1290/problem/B) | 题解AC        | 题解的证明很有意思                     | 1251     |
-| C. [Prefix Enlightenment](https://codeforces.com/contest/1290/problem/C) | 看题解+代码AC | 2-SAT?不不不                           | 719      |
-| D. [Coffee Varieties (hard version)](https://codeforces.com/contest/1290/problem/D) |               |                                        | 248      |
-| E. [Cartesian Tree](https://codeforces.com/contest/1290/problem/E) |               |                                        | 64       |
-| F. [Making Shapes](https://codeforces.com/contest/1290/problem/F) |               |                                        | 40       |
+| 题号                               | 完成          | 备注                                   | 过题人数 |
+| ---------------------------------- | ------------- | -------------------------------------- | -------- |
+| A. Mind Control                    | AC            | 想到了暴力，但是没敢做，姑且算自己AC吧 | 1497     |
+| B. Irreducible Anagrams            | 题解AC        | 题解的证明很有意思                     | 1251     |
+| C. Prefix Enlightenment            | 看题解+代码AC | 2-SAT?不不不                           | 719      |
+| D. Coffee Varieties (hard version) |               |                                        | 248      |
+| E. Cartesian Tree                  |               |                                        | 64       |
+| F. Making Shapes                   |               |                                        | 40       |
 
 [A题AC代码 $O(n^2)$](https://codeforces.com/contest/1290/submission/76987131) 
 
@@ -196,14 +196,14 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 ### Codeforces Round #614 (Div. 1) 
 
-| 题号                                                         | 完成         | 备注 | 过题人数 |
-| ------------------------------------------------------------ | ------------ | ---- | -------- |
-| A. [NEKO's Maze Game](https://codeforces.com/contest/1292/problem/A) | AC           | 水   | 2138     |
-| B. [Aroma's Search](https://codeforces.com/contest/1292/problem/B) | 题解AC(WA49) |      | 1456     |
-| C. [Xenon's Attack on the Gangs](https://codeforces.com/contest/1292/problem/C) |              |      | 877      |
-| D. [Chaotic V.](https://codeforces.com/contest/1292/problem/D) |              |      | 400      |
-| E. [Rin and The Unknown Flower](https://codeforces.com/contest/1292/problem/E) |              |      | 90       |
-| F. [Nora's Toy Boxes](https://codeforces.com/contest/1292/problem/F) |              |      | 44       |
+| 题号                           | 完成         | 备注 | 过题人数 |
+| ------------------------------ | ------------ | ---- | -------- |
+| A. NEKO's Maze Game            | AC           | 水   | 2138     |
+| B. Aroma's Search              | 题解AC(WA49) |      | 1456     |
+| C. Xenon's Attack on the Gangs |              |      | 877      |
+| D. Chaotic V.                  |              |      | 400      |
+| E. Rin and The Unknown Flower  |              |      | 90       |
+| F. Nora's Toy Boxes            |              |      | 44       |
 
 [B题AC代码](https://codeforces.com/contest/1292/submission/77541887)
 
@@ -664,15 +664,15 @@ E题题解
 
 两个号都上1600，再也不能打Div3了 <img src="https://s1.ax1x.com/2020/03/28/GAPit0.png" alt="GAPit0.png" title="GAPit0.png" width=150/>
 
-| 题号                                                         | 完成    | 备注                    | 通过人数 |
-| ------------------------------------------------------------ | ------- | ----------------------- | -------- |
-| A. [Exercising Walk](https://codeforces.com/contest/1332/problem/A) | 赛时-AC |                         | 9009     |
-| B. [Composite Coloring](https://codeforces.com/contest/1332/problem/B) | 赛时-AC | 第11个质数:31,第12个:37 | 5767     |
-| C. [K-Complete Word](https://codeforces.com/contest/1332/problem/C) | 赛时-AC |                         | 5066     |
-| D. [Walk on Matrix](https://codeforces.com/contest/1332/problem/D) | 赛时-AC |                         | 3046     |
-| E. [Height All the Same](https://codeforces.com/contest/1332/problem/E) | AC      |                         | 783      |
-| F. [Independent Set](https://codeforces.com/contest/1332/problem/F) |         |                         | 142      |
-| G. [No Monotone Triples](https://codeforces.com/contest/1332/problem/G) |         |                         | 11       |
+| 题号                   | 完成    | 备注                    | 通过人数 |
+| ---------------------- | ------- | ----------------------- | -------- |
+| A. Exercising Walk     | 赛时-AC |                         | 9009     |
+| B. Composite Coloring  | 赛时-AC | 第11个质数:31,第12个:37 | 5767     |
+| C. K-Complete Word     | 赛时-AC |                         | 5066     |
+| D. Walk on Matrix      | 赛时-AC |                         | 3046     |
+| E. Height All the Same | AC      |                         | 783      |
+| F. Independent Set     |         |                         | 142      |
+| G. No Monotone Triples |         |                         | 11       |
 
 E题题解
 
@@ -731,7 +731,7 @@ E题：$dp[i][j]$表示已经使用了$i$个字符，得到的$A$仍需往头部
 | B. Nastya and Door  | AC(3WA2/RE3) |      | 11885 |
 | C. Nastya and Strange Generator  | AC | 有点麻烦，其实可以转化成求序列是否由数段连续上升序列组成 | 7929 |
 | D. Nastya and Scoreboard  | 题解AC |      | 3195 |
-| E. Nastya and Unexpected Guest  |      |      | 313 |
+| E. Nastya and Unexpected Guest  | 题解AC | 01BFS: 边权为0则放到队首，边权为1放到队尾 | 313 |
 | F. Nastya and Time Machine  |      |      | 57 |
 
 D题题解：
@@ -744,6 +744,20 @@ PS: 4e7能过，说不定8e7也能过？
 
 [AC代码](https://codeforces.com/contest/1341/submission/78402343)，代码中$dp[i][j]$的含义与上述$dp$略微不同
 
+------
+
+E题题解：
+
+如果在$T_i$到达了某个点$v$，令$T_i \equiv j \mod{G}$，那么对于任意时刻$T_j(T_j>T_i\ \&\ T_j\equiv T_i\mod G)$，都不应当到达该点$v$，否则发生循环（浪费时间）。因为$G\le 1000$，我们让每个点对应$G$个新图上的点$V_{ij}$，跑01BFS即可。
+
+[AC代码](https://codefoces.com/contest/1341/submission/78467270)，代码中有01dfs的解析
+
+另：大佬的另一种思路
+
+![](https://blog.chgtaxihe.top/resource/img/post/Codeforces刷题计划_2.PNG)
+
+[大佬的AC代码](https://codeforces.com/contest/1340/submission/77903961)
+
 
 
 
@@ -755,15 +769,15 @@ PS: 4e7能过，说不定8e7也能过？
 
 [我的AC代码(C/E2/F)](https://gist.github.com/Chgtaxihe/7a268e89d6d5913ef37a8948d7f7c6b2)
 
-| 题号                                                         | 完成 | 一句话题解 | 通过人数 |
-| ------------------------------------------------------------ | ---- | ---------- | -------- |
-| A. [Prefixes](https://codeforces.com/contest/1216/problem/A) | √    | Water      | 5931     |
-| B. [Shooting](https://codeforces.com/contest/1216/problem/B) | √    |            | 5577     |
-| C. [White Sheet](https://codeforces.com/contest/1216/problem/C) | √    | 有点小麻烦 | 1331     |
-| D. [Swords](https://codeforces.com/contest/1216/problem/D)   | √    |            | 3388     |
-| E1. [Numerical Sequence (easy version)](https://codeforces.com/contest/1216/problem/E1) | √    |            | 670      |
-| E2. [Numerical Sequence (hard version)](https://codeforces.com/contest/1216/problem/E2) | √    | 不容易啊   | 128      |
-| F. [Wi-Fi](https://codeforces.com/contest/1216/problem/F)    | √    | DP好难     | 185      |
+| 题号                                  | 完成 | 一句话题解 | 通过人数 |
+| ------------------------------------- | ---- | ---------- | -------- |
+| A. Prefixes                           | √    | Water      | 5931     |
+| B. Shooting                           | √    |            | 5577     |
+| C. White Sheet                        | √    | 有点小麻烦 | 1331     |
+| D. Swords                             | √    |            | 3388     |
+| E1. Numerical Sequence (easy version) | √    |            | 670      |
+| E2. Numerical Sequence (hard version) | √    | 不容易啊   | 128      |
+| F. Wi-Fi                              | √    | DP好难     | 185      |
 
 
 
@@ -773,15 +787,15 @@ PS: 4e7能过，说不定8e7也能过？
 
 [我的AC代码(B2/D/E/F)](https://gist.github.com/Chgtaxihe/77b664c4c8a4295140c6310a23b218e2)
 
-| 题号                                                         | 完成 | 一句话题解                                                   | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Equalize Prices Again](https://codeforces.com/contest/1234/problem/A) | √    |                                                              | 8366     |
-| B1. [Social Network (easy version)](https://codeforces.com/contest/1234/problem/B1) | √    |                                                              | 6851     |
-| B2. [Social Network (hard version)](https://codeforces.com/contest/1234/problem/B2) | √    | 我服了，出题人专门出了一组数据来Hack unordered_set，用set即或[自定义hash](https://codeforces.com/blog/entry/62393) | 4712     |
-| C. [Pipes](https://codeforces.com/contest/1234/problem/C)    | √    |                                                              | 2924     |
-| D. [Distinct Characters Queries](https://codeforces.com/contest/1234/problem/D) | √    | 看题解半天都看不懂，才发现是读错题了                         | 2035     |
-| E. [Special Permutations](https://codeforces.com/contest/1234/problem/E) | √    |                                                              | 455      |
-| F. [Yet Another Substring Reverse](https://codeforces.com/contest/1234/problem/F) | √    | 感觉这题比F简单，刚开始还以为是水过的（毕竟DFS），后来发现只要把DFS改成一个for就是正解了 | 151      |
+| 题号                              | 完成 | 一句话题解                                                   | 通过人数 |
+| --------------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Equalize Prices Again          | √    |                                                              | 8366     |
+| B1. Social Network (easy version) | √    |                                                              | 6851     |
+| B2. Social Network (hard version) | √    | 我服了，出题人专门出了一组数据来Hack unordered_set，用set即或[自定义hash](https://codeforces.com/blog/entry/62393) | 4712     |
+| C. Pipes                          | √    |                                                              | 2924     |
+| D. Distinct Characters Queries    | √    | 看题解半天都看不懂，才发现是读错题了                         | 2035     |
+| E. Special Permutations           | √    |                                                              | 455      |
+| F. Yet Another Substring Reverse  | √    | 感觉这题比F简单，刚开始还以为是水过的（毕竟DFS），后来发现只要把DFS改成一个for就是正解了 | 151      |
 
 
 
