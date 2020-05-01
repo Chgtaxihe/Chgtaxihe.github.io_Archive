@@ -17,16 +17,16 @@ permalink: /learningCategory.html
 ## 数论
 
 1.  [卡特兰数](/post/category/数论/卡特兰数.html)
-2.  [欧几里得算法](/post/category/数论/欧几里得算法.html)
-3.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
-4.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
-5.  [同余最短路](/post/category/数论/同余最短路.html)
-6.  [高斯整数](/post/category/数论/高斯整数.html)
-7.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
-8.  [模运算](/post/category/数论/模运算.html)（部分完成）
-9.  Pólya定理
-10.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
-11.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（施工中）
+2.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
+3.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
+4.  [同余最短路](/post/category/数论/同余最短路.html)
+5.  [高斯整数](/post/category/数论/高斯整数.html)
+6.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
+7.  [模运算](/post/category/数论/模运算.html)（部分完成）
+8.  Pólya定理
+9.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
+10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（施工中）
+11.  [斯特林数]((/post/category/数论/斯特林数.html))
 
 
 

@@ -217,14 +217,14 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 [我的AC代码(C/D/E/F)](https://gist.github.com/Chgtaxihe/3f79063816b1224702acc31e684011aa)
 
-| 题号                                                         | 完成 | 一句话题解                                                   |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
-| A. [Dawid and Bags of Candies](https://codeforces.com/contest/1230/problem/A) | √    |                                                              |
-| B. [Ania and Minimizing](https://codeforces.com/contest/1230/problem/B) | √    |                                                              |
-| C. [Anadi and Domino](https://codeforces.com/contest/1230/problem/C) | √    | 如果n = 7，那么一定有两个点公用一个数字                      |
-| D. [Marcin and Training Camp](https://codeforces.com/contest/1230/problem/D) | √    | 如果A和B不是子集关系，那么A比B强且B比A强，$O(n^2)$           |
-| E. [Kamil and Making a Stream](https://codeforces.com/contest/1230/problem/E) | √    | AC容易，证明复杂度不易($v$到$v$的祖先路径上的不同的$gcd$不会超过$log(10^12)$个) |
-| F. [Konrad and Company Evaluation](https://codeforces.com/contest/1230/problem/F) | √    | $ans = \sum OutDegree_i * InDegree_i$ </br>难点在于证明复杂度$O(n + m + q \sqrt{2m})$ |
+| 题号                             | 完成 | 一句话题解                                                   |
+| -------------------------------- | ---- | ------------------------------------------------------------ |
+| A. Dawid and Bags of Candies     | √    |                                                              |
+| B. Ania and Minimizing           | √    |                                                              |
+| C. Anadi and Domino              | √    | 如果n = 7，那么一定有两个点公用一个数字                      |
+| D. Marcin and Training Camp      | √    | 如果A和B不是子集关系，那么A比B强且B比A强，$O(n^2)$           |
+| E. Kamil and Making a Stream     | √    | AC容易，证明复杂度不易($v$到$v$的祖先路径上的不同的$gcd$不会超过$log(10^12)$个) |
+| F. Konrad and Company Evaluation | √    | $ans = \sum OutDegree_i * InDegree_i$ </br>难点在于证明复杂度$O(n + m + q \sqrt{2m})$ |
 
 
 
@@ -232,15 +232,15 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 (Virtual Participate)
 
-| 题号                                                         | 完成 | 一句话题解                                                   | 过题人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [2048 Game](https://codeforces.com/contest/1221/problem/A) | √    |                                                              | 5662     |
-| B. [Knights](https://codeforces.com/contest/1221/problem/B)  | √    | 随便猜个结论，居然过了？？？                                 | 4135     |
-| C. [Perfect Team](https://codeforces.com/contest/1221/problem/C) | √    |                                                              | 4776     |
-| D. [Make The Fence Great Again](https://codeforces.com/contest/1221/problem/D) | √    | 每个板子增加的长度不会超过2，故$$dp_{pos, add} = add \cdot b_{pos} + \min\limits_{x=0 \dots 2, a_{pos-1}+x \neq a_{pos}+add} dp_{pos-1, x}$$ | 1426     |
-| E. [Game With String](https://codeforces.com/contest/1221/problem/E) | √    | 不容易啊，[题解](https://codeforces.com/blog/entry/69925)    | 122      |
-| F. [Choose a Square](https://codeforces.com/contest/1221/problem/F) | ╳    |                                                              | 85       |
-| G. [Graph And Numbers](https://codeforces.com/contest/1221/problem/G) | ╳    |                                                              | 12       |
+| 题号                          | 完成 | 一句话题解                                                   | 过题人数 |
+| ----------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. 2048 Game                  | √    |                                                              | 5662     |
+| B. Knights                    | √    | 随便猜个结论，居然过了？？？                                 | 4135     |
+| C. Perfect Team               | √    |                                                              | 4776     |
+| D. Make The Fence Great Again | √    | 每个板子增加的长度不会超过2，故$$dp_{pos, add} = add \cdot b_{pos} + \min\limits_{x=0 \dots 2, a_{pos-1}+x \neq a_{pos}+add} dp_{pos-1, x}$$ | 1426     |
+| E. Game With String           | √    | 不容易啊，[题解](https://codeforces.com/blog/entry/69925)    | 122      |
+| F. Choose a Square            | ╳    |                                                              | 85       |
+| G. Graph And Numbers          | ╳    |                                                              | 12       |
 
 
 
@@ -250,14 +250,14 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 [我的AC代码(C/D/E)](https://gist.github.com/Chgtaxihe/0775c7faff399a4fcce0bcac8b203574)
 
-| 题号                                                         | 完成 | 一句话题解                  | 过题人数 |
-| ------------------------------------------------------------ | ---- | --------------------------- | -------- |
-| A. [Distinct Digits](https://codeforces.com/contest/1228/problem/A) | √    |                             | 10912    |
-| B. [Filling the Grid](https://codeforces.com/contest/1228/problem/B) | √    | 暴力模拟                    | 6921     |
-| C. [Primes and Multiplication](https://codeforces.com/contest/1228/problem/C) | √    | 数学太恐怖，去看题解吧      | 4559     |
-| D. [Complete Tripartite](https://codeforces.com/contest/1228/problem/D) | √    | 优雅的暴力                  | 2842     |
-| E. [Another Filling the Grid](https://codeforces.com/contest/1228/problem/E) | √    | [DP] 题解表述有误，看评论区 | 965      |
-| F. [One Node is Gone](https://codeforces.com/contest/1228/problem/F) |      |                             | 209      |
+| 题号                         | 完成 | 一句话题解                  | 过题人数 |
+| ---------------------------- | ---- | --------------------------- | -------- |
+| A. Distinct Digits           | √    |                             | 10912    |
+| B. Filling the Grid          | √    | 暴力模拟                    | 6921     |
+| C. Primes and Multiplication | √    | 数学太恐怖，去看题解吧      | 4559     |
+| D. Complete Tripartite       | √    | 优雅的暴力                  | 2842     |
+| E. Another Filling the Grid  | √    | [DP] 题解表述有误，看评论区 | 965      |
+| F. One Node is Gone          |      |                             | 209      |
 
 
 
@@ -592,17 +592,15 @@ F题待完成！！！
 
 ### Codeforces Round #609 (Div. 2)
 
-[题解](https://codeforces.com/blog/entry/72358)
-
 [我的AC代码](https://gist.github.com/Chgtaxihe/ca4af5c0f847fab5f4589e00648b395d)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Equation](https://codeforces.com/contest/1269/problem/A) | √    |                                                              | 9859     |
-| B. [Modulo Equality](https://codeforces.com/contest/1269/problem/B) | √    | 这题用dict/map做，代码量会少一点                             | 5103     |
-| C. [Long Beautiful Integer](https://codeforces.com/contest/1269/problem/C) | √    | 脑子没转过来，漏判一个条件~怎么回事??????                    | 3471     |
-| D. [Domino for Young](https://codeforces.com/contest/1269/problem/D) | √    | [**思维**]如果把图按棋盘的方式涂色，那么一个`domino`永远会占用一黑一白两种颜色的格子 | 1945     |
-| E. [K Integers](https://codeforces.com/contest/1269/problem/E) | √    | 看不懂题解。。估计是我境界不够                               | 253      |
+| 题号                      | 完成 | 备注                                                         | 通过人数 |
+| ------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Equation               | √    |                                                              | 9859     |
+| B. Modulo Equality        | √    | 这题用dict/map做，代码量会少一点                             | 5103     |
+| C. Long Beautiful Integer | √    | 脑子没转过来，漏判一个条件~怎么回事??????                    | 3471     |
+| D. Domino for Young       | √    | [**思维**]如果把图按棋盘的方式涂色，那么一个`domino`永远会占用一黑一白两种颜色的格子 | 1945     |
+| E. K Integers             | √    | 看不懂题解。。估计是我境界不够                               | 253      |
 
 E题题解
 
@@ -626,41 +624,35 @@ E题题解
 
 ### Codeforces Round #610 (Div. 2)
 
-[题解](https://codeforces.com/blog/entry/72461)
-
 [我的AC代码](https://gist.github.com/Chgtaxihe/b89358bd1628631bdcd5a9a33537a24a)
 
-| 题号                                                         | 完成 | 备注                                     | 通过人数 |
-| ------------------------------------------------------------ | ---- | ---------------------------------------- | -------- |
-| A. [Temporarily unavailable](https://codeforces.com/contest/1282/problem/A) | √    |                                          | 9204     |
-| B1. [K for the Price of One (Easy Version)](https://codeforces.com/contest/1282/problem/B1) | √    | [贪心]                                   | 6128     |
-| B2. [K for the Price of One (Hard Version)](https://codeforces.com/contest/1282/problem/B2) | √    | [贪心]                                   | 5059     |
-| C. [Petya and Exam](https://codeforces.com/contest/1282/problem/C) | √    | [**贪心**]在$t_i - 1$时刻离开是最佳的    | 2532     |
-| D. [Enchanted Artifact](https://codeforces.com/contest/1282/problem/D) | √    | [**思维**]关键在于如何求出`a`和`b`的数量 | 1255     |
-| E. [The Cake Is a Lie](https://codeforces.com/contest/1282/problem/E) |      |                                          | 595      |
+| 题号                                      | 完成 | 备注                                     | 通过人数 |
+| ----------------------------------------- | ---- | ---------------------------------------- | -------- |
+| A. Temporarily unavailable                | √    |                                          | 9204     |
+| B1. K for the Price of One (Easy Version) | √    | [贪心]                                   | 6128     |
+| B2. K for the Price of One (Hard Version) | √    | [贪心]                                   | 5059     |
+| C. Petya and Exam                         | √    | [**贪心**]在$t_i - 1$时刻离开是最佳的    | 2532     |
+| D. Enchanted Artifact                     | √    | [**思维**]关键在于如何求出`a`和`b`的数量 | 1255     |
+| E. The Cake Is a Lie                      |      |                                          | 595      |
 
 
 
 ### Educational Codeforces Round 79 (Rated for Div. 2)
 
-[题解](https://codeforces.com/blog/entry/72577)
-
 [我的AC代码](https://gist.github.com/Chgtaxihe/d86643d5f6fb1634e359df0df973057e)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [New Year Garland](https://codeforces.com/contest/1279/problem/A) | √    |                                                              | 6821     |
-| B. [Verse For Santa](https://codeforces.com/contest/1279/problem/B) | √    | **如果只能背到第x段，那么跳过大于x的段落是没用的！**不然就WA | 4492     |
-| C. [Stack of Presents](https://codeforces.com/contest/1279/problem/C) | √    |                                                              | 3687     |
-| D. [Santa's Bot](https://codeforces.com/contest/1279/problem/D) | √    | 除了A之外最简单的一题？                                      | 1672     |
-| E. [New Year Permutations](https://codeforces.com/contest/1279/problem/E) |      | 感觉可以做，但是过题人数有点恐怖                             | 32       |
-| F. [New Year and Handle Change](https://codeforces.com/contest/1279/problem/F) |      |                                                              | 36       |
+| 题号                          | 完成 | 备注                                                         | 通过人数 |
+| ----------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. New Year Garland           | √    |                                                              | 6821     |
+| B. Verse For Santa            | √    | **如果只能背到第x段，那么跳过大于x的段落是没用的！**不然就WA | 4492     |
+| C. Stack of Presents          | √    |                                                              | 3687     |
+| D. Santa's Bot                | √    | 除了A之外最简单的一题？                                      | 1672     |
+| E. New Year Permutations      |      | 感觉可以做，但是过题人数有点恐怖                             | 32       |
+| F. New Year and Handle Change |      |                                                              | 36       |
 
 
 
 ###  Codeforces Round #630 (Div. 2)
-
-[题解](https://codeforces.com/blog/entry/75432)
 
 两个号都上1600，再也不能打Div3了 <img src="https://s1.ax1x.com/2020/03/28/GAPit0.png" alt="GAPit0.png" title="GAPit0.png" width=150/>
 
@@ -760,12 +752,61 @@ E题题解：
 
 
 
+###  Educational Codeforces Round 86
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Road To Zero  | AC(3WA2/1WA1) | 1. inf不够大 2. 没看到x,y>0 | 12855 |
+| B. Binary Period  | AC |      | 11321 |
+| C. Yet Another Counting Problem  | 题解AC |      | 3934 |
+| D. Multiple Testcases  | 题解AC |      | 1676 |
+| E. Placing Rooks  | 题解AC | 容斥 | 313 |
+| F. Make It Ascending  |      |      | 19 |
+
+C题题解:
+
+$(ab+x)\mod a \mod b=x\mod a\mod b$，且$(ab+x)\mod b \mod a=x\mod b\mod a$
+
+可以看出循环节大小为$ab$
+
+[AC代码](https://codeforces.com/contest/1342/submission/78530939)
+
+------
+
+D题题解：
+
+设$cnt_i$为大于等于$i$的数组个数，那么所需的最小testcase数为$ans=max(\lceil \frac{cnt_i}{c_i} \rceil)$。
+
+接着把$m$从小到大/从大到小排序，第$i$个数装进第$i\mod ans$个testcase中。
+
+[AC代码](https://codeforces.com/contest/1342/submission/78547809)
+
+------
+
+E题题解：
+
+由于只有$n$块石头，因而可以每行（或每列）有且只有一块石头，考虑每行一块的情况，结果乘2（除非k=0，此时每行与每列都满足"有且只有一块石头"）即可。
+
+由观察可发现，问题可转化为：把$n$块石头，分到$n-k$列，使得每列至少有一块，共有多少种分法。
+
+首先任选$n-k$列，有$C_n^{n-k}$种选法，下面考虑如何把$n$块石头分到$c$列中
+
+根据容斥原理，首先每块石头有$c$种选择（不同行的石头不等价），即$c^n$，减去单列为空的情况$C_c^1(c-1)^n$，补上两列为空的$C_c^2(c-2)^n$，再减去三列为空的$C_c^3(c-3)^n$，以此类推，得到公式$ans=\sum_{i=0}^c(-1)^iC_c^i(c-i)^n$
+
+![](https://blog.chgtaxihe.top/resource/img/post/Codeforces刷题计划_3.PNG)
+
+[AC代码](https://codeforces.com/contest/1342/submission/78582537)
+
+PS：容斥原理：$\mid\large\cup_{i=1}^nA_i\mid=\sum_{C\subseteq B}(-1)^{size(C)-1}\mid\large\cap_{e\in C}e\mid$
+
+PS2: 事实上，上述的$ans$即为第二类斯特林数$S(n, c)$乘上$c!$（因为不同的行之间不等价）
+
+
+
 
 ## Div. 3
 
 ### Codeforces Round #587 (Div. 3)
-
-[题解](https://codeforces.com/blog/entry/69954) 
 
 [我的AC代码(C/E2/F)](https://gist.github.com/Chgtaxihe/7a268e89d6d5913ef37a8948d7f7c6b2)
 
@@ -783,8 +824,6 @@ E题题解：
 
 ### Codeforces Round #590 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/70233)
-
 [我的AC代码(B2/D/E/F)](https://gist.github.com/Chgtaxihe/77b664c4c8a4295140c6310a23b218e2)
 
 | 题号                              | 完成 | 一句话题解                                                   | 通过人数 |
@@ -801,38 +840,34 @@ E题题解：
 
 ### Codeforces Round #595 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/70779)
-
 [我的AC代码(F题)](https://gist.github.com/Chgtaxihe/83ff3d95037537d11a3d9cbe51020b11)
 
-| 题号                                                         | 完成 | 一句话题解                                                   | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Yet Another Dividing into Teams](https://codeforces.com/contest/1249/problem/A) | √    |                                                              | 8354     |
-| B1. [Books Exchange (easy version)](https://codeforces.com/contest/1249/problem/B1) | √    |                                                              | 7001     |
-| B2. [Books Exchange (hard version)](https://codeforces.com/contest/1249/problem/B2) | √    |                                                              | 4520     |
-| C1. [Good Numbers (easy version)](https://codeforces.com/contest/1249/problem/C1) | √    |                                                              | 4500     |
-| C2. [Good Numbers (hard version)](https://codeforces.com/contest/1249/problem/C2) | √    |                                                              | 2785     |
-| D1. [Too Many Segments (easy version)](https://codeforces.com/contest/1249/problem/D1) | √    |                                                              | 893      |
-| D2. [Too Many Segments (hard version)](https://codeforces.com/contest/1249/problem/D2) | √    |                                                              | 726      |
-| E. [By Elevator or Stairs?](https://codeforces.com/contest/1249/problem/E) | √    |                                                              | 1483     |
-| F. [Maximum Weight Subset](https://codeforces.com/contest/1249/problem/F) | √    | [**树Dp**] `dp[u][dep]`代表以`u`为根的子树中，被选取的点深度至少为`dep`时最大的`weight`之和 | 152      |
+| 题号                                 | 完成 | 一句话题解                                                   | 通过人数 |
+| ------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. Yet Another Dividing into Teams   | √    |                                                              | 8354     |
+| B1. Books Exchange (easy version)    | √    |                                                              | 7001     |
+| B2. Books Exchange (hard version)    | √    |                                                              | 4520     |
+| C1. Good Numbers (easy version)      | √    |                                                              | 4500     |
+| C2. Good Numbers (hard version)      | √    |                                                              | 2785     |
+| D1. Too Many Segments (easy version) | √    |                                                              | 893      |
+| D2. Too Many Segments (hard version) | √    |                                                              | 726      |
+| E. By Elevator or Stairs?            | √    |                                                              | 1483     |
+| F. Maximum Weight Subset             | √    | [**树Dp**] `dp[u][dep]`代表以`u`为根的子树中，被选取的点深度至少为`dep`时最大的`weight`之和 | 152      |
 
 
 
 ### Codeforces Round #598 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/71184)
-
 [我的AC代码（C/D/E/F）](https://gist.github.com/Chgtaxihe/609ee28d9f9e40b2dc7cad4f54c08ec7)
 
-| 题号                                                         | 完成 | 一句话题解                                                   | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Payment Without Change](https://codeforces.com/contest/1256/problem/A) | √    |                                                              | 7365     |
-| B. [Minimize the Permutation](https://codeforces.com/contest/1256/problem/B) | √    | 看到$n \le 100$且$t \le 100$就该想直接想到暴力(优化成$O(n)$的意义不大) | 3716     |
-| C. [Platforms Jumping](https://codeforces.com/contest/1256/problem/C) | √    | 贪心 + 实现                                                  | 1320     |
-| D. [Binary String Minimizing](https://codeforces.com/contest/1256/problem/D) | √    | 贪心                                                         | 2583     |
-| E. [Yet Another Division Into Teams](https://codeforces.com/contest/1256/problem/E) | √    | 一道带标记的Dp(Ps. 要是能注意到最优解中一个队伍不会超过5人，这题就更好做了(见题解)) | 392      |
-| F. [Equalizing Two Strings](https://codeforces.com/contest/1256/problem/F) | √    | 让B变成A，不如让AB都变成有序的串(详见代码)                   | 322      |
+| 题号                               | 完成 | 一句话题解                                                   | 通过人数 |
+| ---------------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Payment Without Change          | √    |                                                              | 7365     |
+| B. Minimize the Permutation        | √    | 看到$n \le 100$且$t \le 100$就该想直接想到暴力(优化成$O(n)$的意义不大) | 3716     |
+| C. Platforms Jumping               | √    | 贪心 + 实现                                                  | 1320     |
+| D. Binary String Minimizing        | √    | 贪心                                                         | 2583     |
+| E. Yet Another Division Into Teams | √    | 一道带标记的Dp(Ps. 要是能注意到最优解中一个队伍不会超过5人，这题就更好做了(见题解)) | 392      |
+| F. Equalizing Two Strings          | √    | 让B变成A，不如让AB都变成有序的串(详见代码)                   | 322      |
 
 F题题解
 
@@ -844,18 +879,16 @@ F题题解
 
 ### Codeforces Round #605 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/72132)
-
 [我的AC代码](https://gist.github.com/Chgtaxihe/987972772382a0a49f6c953e68cf2740)
 
-| 题号                                                         | 完成 | 备注                     | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------ | -------- |
-| A. [Three Friends](https://codeforces.com/contest/1272/problem/A) | √    |                          | 6972     |
-| B. [Snow Walking Robot](https://codeforces.com/contest/1272/problem/B) | √    |                          | 4486     |
-| C. [Yet Another Broken Keyboard](https://codeforces.com/contest/1272/problem/C) | √    |                          | 5061     |
-| D. [Remove One Element](https://codeforces.com/contest/1272/problem/D) | √    |                          | 2429     |
-| E. [Nearest Opposite Parity](https://codeforces.com/contest/1272/problem/E) | √    | 图论，痛哭涕流，看题解吧 | 594      |
-| F. [Two Bracket Sequences](https://codeforces.com/contest/1272/problem/F) | √    | 看了题解，是个三维Dp     | 188      |
+| 题号                           | 完成 | 备注                     | 通过人数 |
+| ------------------------------ | ---- | ------------------------ | -------- |
+| A. Three Friends               | √    |                          | 6972     |
+| B. Snow Walking Robot          | √    |                          | 4486     |
+| C. Yet Another Broken Keyboard | √    |                          | 5061     |
+| D. Remove One Element          | √    |                          | 2429     |
+| E. Nearest Opposite Parity     | √    | 图论，痛哭涕流，看题解吧 | 594      |
+| F. Two Bracket Sequences       | √    | 看了题解，是个三维Dp     | 188      |
 
 F题题解
 
@@ -889,16 +922,14 @@ F题题解
 
 [题解](https://codeforces.com/contest/1283)
 
-[我的AC代码]
-
-| 题号                                                         | 完成 | 备注 | 通过人数 |
-| ------------------------------------------------------------ | ---- | ---- | -------- |
-| A. [Minutes Before the New Year](https://codeforces.com/contest/1283/problem/A) |      |      | 8731     |
-| B. [Candies Division](https://codeforces.com/contest/1283/problem/B) |      |      | 6998     |
-| C. [Friends and Gifts](https://codeforces.com/contest/1283/problem/C) |      |      | 2437     |
-| D. [Christmas Trees](https://codeforces.com/contest/1283/problem/D) |      |      | 1097     |
-| E. [New Year Parties](https://codeforces.com/contest/1283/problem/E) |      |      | 973      |
-| F. [DIY Garland](https://codeforces.com/contest/1283/problem/F) |      |      | 177      |
+| 题号                           | 完成 | 备注 | 通过人数 |
+| ------------------------------ | ---- | ---- | -------- |
+| A. Minutes Before the New Year |      |      | 8731     |
+| B. Candies Division            |      |      | 6998     |
+| C. Friends and Gifts           |      |      | 2437     |
+| D. Christmas Trees             |      |      | 1097     |
+| E. New Year Parties            |      |      | 973      |
+| F. DIY Garland                 |      |      | 177      |
 
 
 
@@ -912,18 +943,16 @@ UPD: 打一场Rating就上1700+，我傻了
 
 ###  Codeforces Round #629 (Div. 3)
 
-[题解](https://codeforces.com/blog/entry/75246)
-
 才过了4题，居然还能涨Rating...
 
-| 题号                                                         | 完成         | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ | -------- |
-| A. [Divisibility Problem](https://codeforces.com/contest/1328/problem/A) | 赛时-AC      |                                                              | 17088    |
-| B. [K-th Beautiful String](https://codeforces.com/contest/1328/problem/B) | 赛时-AC      |                                                              | 9001     |
-| C. [Ternary XOR](https://codeforces.com/contest/1328/problem/C) | 赛时-AC      |                                                              | 9944     |
-| D. [Carousel](https://codeforces.com/contest/1328/problem/D) | 赛时-AC      |                                                              | 2266     |
-| E. [Tree Queries](https://codeforces.com/contest/1328/problem/E) | 赛时-TLE  AC |                                                              | 977      |
-| F. [Make k Equal](https://codeforces.com/contest/1328/problem/F) | 理论AC       | 要让(排序后的)左边出现$n$个$m$，首先让左边的数字全变为$m-1$，然后结果$+n$即可 | 368      |
+| 题号                     | 完成         | 备注                                                         | 通过人数 |
+| ------------------------ | ------------ | ------------------------------------------------------------ | -------- |
+| A. Divisibility Problem  | 赛时-AC      |                                                              | 17088    |
+| B. K-th Beautiful String | 赛时-AC      |                                                              | 9001     |
+| C. Ternary XOR           | 赛时-AC      |                                                              | 9944     |
+| D. Carousel              | 赛时-AC      |                                                              | 2266     |
+| E. Tree Queries          | 赛时-TLE  AC |                                                              | 977      |
+| F. Make k Equal          | 理论AC       | 要让(排序后的)左边出现$n$个$m$，首先让左边的数字全变为$m-1$，然后结果$+n$即可 | 368      |
 
 E题题解
 
