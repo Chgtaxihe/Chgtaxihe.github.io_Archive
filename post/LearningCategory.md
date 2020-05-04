@@ -68,6 +68,7 @@ permalink: /learningCategory.html
 ## 几何
 
 1.  [已知顶点求面积](/post/category/几何/已知顶点求面积.html)
+2.  [凸包](/post/category/几何/凸包.html)
 
 
 
