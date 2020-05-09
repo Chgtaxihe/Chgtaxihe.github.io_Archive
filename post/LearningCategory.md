@@ -26,7 +26,8 @@ permalink: /learningCategory.html
 8.  Pólya定理
 9.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
 10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（施工中）
-11.  [斯特林数]((/post/category/数论/斯特林数.html))
+11.  [斯特林数](/post/category/数论/斯特林数.html)
+12.  [康托展开](/post/category/数论/康托展开.html)
 
 
 
@@ -69,6 +70,12 @@ permalink: /learningCategory.html
 
 1.  [已知顶点求面积](/post/category/几何/已知顶点求面积.html)
 2.  [凸包](/post/category/几何/凸包.html)
+
+
+
+## 暴力
+
+1.  [IDA*](/post/category/暴力/IDA.html)
 
 
 
