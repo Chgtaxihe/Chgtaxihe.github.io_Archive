@@ -54,6 +54,7 @@ permalink: /learningCategory.html
 
 1.  [线性基](/post/category/数据结构/线性基.html)（部分完成）
 2.  [树状数组](/post/category/数据结构/树状数组.html)
+3.  [舞蹈链](/post/category/数据结构/舞蹈链.html)
 
 
 
