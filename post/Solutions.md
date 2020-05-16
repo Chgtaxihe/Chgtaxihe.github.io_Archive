@@ -633,3 +633,5 @@ int main(){
 
 ### [Codeforces 578D](/post/solutions/Codeforces578D.html)
 
+### [Gym102433G](/post/solutions/Gym102433G.html)
+
