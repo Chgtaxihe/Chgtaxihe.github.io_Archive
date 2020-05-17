@@ -98,6 +98,20 @@
   <script>hljs.initHighlightingOnLoad();</script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  <script>
     var links = document.getElementsByTagName("a");
     var pattern1 = new RegExp("https://(codeforces.com/problemset/submission/[0-9]+/[0-9]+)");
     var pattern2 = new RegExp("https://(codeforces.com/contest/[0-9]+/submission/[0-9]+)");

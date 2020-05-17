@@ -627,11 +627,17 @@ int main(){
 }
 ```
 
+## 几何
+
+### [Gym102433G](/post/solutions/Gym102433G.html)
+
+### [Gym 102483C](/post/solutions/Gym102483C.html)
+
 
 
 ## 其他
 
 ### [Codeforces 578D](/post/solutions/Codeforces578D.html)
 
-### [Gym102433G](/post/solutions/Gym102433G.html)
+### 
 
