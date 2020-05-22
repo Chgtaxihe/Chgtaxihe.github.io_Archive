@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PaddlePaddle使用有感
+title: PaddlePaddle使用体验
 tags: PaddlePaddle
 ---
 
@@ -22,5 +22,57 @@ tags: PaddlePaddle
 
 
 
-To be continue
+## UPD：2020-05-21
+
+------
+
+今天研究了一下官方给的度量学习的例子，发现了一个没见过的函数`fluid.load()`，去Paddle文档一看，才发现Fluid已经更新到了1.8，这个函数是在1.7新增的。
+
+先看一下文档的说明：
+
+![](https://blog.chgtaxihe.top/resource/img/post/paddlepaddle使用有感_1.PNG)
+
+仔细研究后发现不对：在例子的`finetune.py`里直接`load`了预训练的模型checkpoint，但finetune的模型结构与与训练的不同！按理说这种情况下加载模型应该会报错（`load_persistables`或`load_param`会报错）
+
+又仔细看了一遍文档，并没有相关的说明，只好看源码。
+
+![](https://blog.chgtaxihe.top/resource/img/post/paddlepaddle使用有感_2.PNG)
+
+真相大白。
+
+------
+
+这也是为什么我之前说如果要用Paddle，就得做好读源码的准备----Paddle的文档写的真的差。
+
+
+
+## UPD: 2020-05-22
+
+cross_entropy的bug
+
+```python
+def loss(self, input, label):
+    logit = fluid.layers.fc(input=input,
+                            size=self.class_dim,
+                            param_attr=fluid.ParamAttr(name="softmax_loss_fc_w"),
+                            bias_attr=fluid.ParamAttr(name="softmax_loss_fc_b"))
+    logit = fluid.layers.softmax(logit, use_cudnn=True)
+    loss = fluid.layers.cross_entropy(input, label, soft_label=False)
+    return loss, logit
+```
+
+~~不知为什么，以上代码得到的loss居然为为负值~~（个人猜测不是精度问题）
+
+修复方式
+
+```python
+def loss(self, input, label):
+    logit = fluid.layers.fc(input=input,
+                            size=self.class_dim,
+                            param_attr=fluid.ParamAttr(name="softmax_loss_fc_w"),
+                            bias_attr=fluid.ParamAttr(name="softmax_loss_fc_b"))
+    loss = fluid.layers.softmax_with_cross_entropy(logit, label)
+    logit = fluid.layers.softmax(logit, use_cudnn=True)
+    return loss, logit
+```
 
