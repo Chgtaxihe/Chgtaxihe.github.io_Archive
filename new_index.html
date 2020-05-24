@@ -5,16 +5,61 @@ permalink: /new_index.html
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="/avatar/favicon.png" type="image/x-icon">
 <title>Chgtaxihe的blog</title>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script>
     $(function(){
-        $(".site-cover").css({
-            height: $(document.body).outerHeight(true)+50, 
-            width: $(document.body).outerWidth(true)
-        });
+		var on_reize_func = function(){
+			$(".site-cover").css({
+				height: $(document.body).outerHeight(true)+50, 
+				width: $(document.body).outerWidth(true)
+        	});
+		};
+		on_reize_func();
+        $(window).resize(on_reize_func);
+		
+		var resources = [
+			"./resource/video/menghuan.mp4",
+			"./resource/img/background/background1.jpg"
+		];
+		
+		var select_r = resources[Math.floor(Math.random() * resources.length)];
+		if(select_r.endsWith("mp4")){
+			var video_widget = $("<video class=\"page_background\" autoplay=\"preload\" loop=\"loop\" muted>" + 
+								"<source src=\"" + select_r + "\">" + 
+								"</video>");
+			$(".site-wrapper").append(video_widget);
+		}else{
+			var image_widget = $("<div class=\"page_background\"" +
+								 "style=\"background: url('" + select_r + "') no-repeat; background-size: cover;\">" +
+								 "</div>");
+			$(".site-wrapper").append(image_widget);
+		}
+		
+		var on_click_func = function(){
+			var href = $(this).attr("href");
+			$.get(href, function(data, status){
+				if(status == "success"){
+					var reg = /<section class="main-content fade">[\s\S]*?<\/section>/;
+					var result = reg.exec(data);
+					if(result.length > 0){
+						$(".content").html("<div style=\"text-align: left\">" + result[0] + "</div>");
+						$(".site-footer").remove();
+						on_reize_func();
+						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+					}
+				}
+			});
+			return false;
+		};
+		
+		$("a[href^='./']").click(on_click_func);
+		$("a[href^='/']").click(on_click_func);
+		$("a[href^='" + window.location.protocol + "//" + document.domain + "']").click(on_click_func);
     });
 </script>
+<link rel="stylesheet" href="/assets/css/style.css">
 <style>
     .site-cover{
         position: absolute;
@@ -40,19 +85,26 @@ permalink: /new_index.html
         margin-right: 100px;
     }
     a{text-decoration: none; color: white; font-size: 20px}
-    body{background-color: black}
+    body{
+		background-color: black;
+		overflow-x: hidden;
+	}
     h1{color: white; font-size: 3.25rem}
-    video{
+    .page_background{
         position: fixed;
         right: 0px; 
-        bottom: 0px; 
-        height: auto;
-        width: auto;
+        bottom: 0px;
         min-height: 100%;
         min-width: 100%;
         z-index: -11;
     }
+	h1{color: white !important;}
+	h2{color: white !important;}
+	h3{color: white !important;}
+	h4{color: white !important;}
+	h5{color: white !important;}
 </style>
+	
 </head>
 
 <body>
@@ -77,6 +129,7 @@ permalink: /new_index.html
                 {% endif %}
             {% endfor %}
         </div>
+		<font color="#FFFFFF">
         <div class="content">
             {% for post in site.posts %}
                   {% if post.stickie != true %}
@@ -99,10 +152,24 @@ permalink: /new_index.html
                 </div>
             {% endfor %}
         </div>
-        <video autoplay="preload" loop="loop" muted>
-            <source src="/resource/video/menghuan.mp4">
-        </video>
+		</font>
     </div>
+<!--
+	<div class="page_link normal">
+	<a class="post-link" href="/2020/05/17/%E8%AE%AD%E7%BB%83%E8%A1%A5%E9%A2%982.html" title="训练补题2">
+	<div>训练补题2</div>
+	</a>
+	</div>
+-->
     <embed src="https://share.dmca.gripe/KrYaWCW4fttswgpJ.mp3" hidden="true" autostart="true" loop="true" width="0px">
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+		tex2jax: {
+		  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+		  inlineMath: [['$','$']]
+		}
+	  });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
 </body>
 </html>
