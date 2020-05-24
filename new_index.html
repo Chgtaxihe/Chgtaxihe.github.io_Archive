@@ -20,8 +20,12 @@ permalink: /new_index.html
         $(window).resize(on_reize_func);
 		
 		var resources = [
-			"./resource/video/menghuan.mp4",
-			"./resource/img/background/background1.jpg"
+			"./resource/img/background/background4.jpg",
+      "./resource/img/background/background3.jpg",
+      "./resource/img/background/background2.jpg",
+      "./resource/img/background/background1.jpg",
+      "./resource/video/menghuan.mp4",
+      "./resource/video/background2.mp4"
 		];
 		
 		var select_r = resources[Math.floor(Math.random() * resources.length)];
@@ -92,7 +96,7 @@ permalink: /new_index.html
     h1{color: white; font-size: 3.25rem}
     .page_background{
         position: fixed;
-        right: 0px; 
+        left: 0px; 
         bottom: 0px;
         min-height: 100%;
         min-width: 100%;
@@ -111,7 +115,7 @@ permalink: /new_index.html
     <div class="site-wrapper">
         <div class="site-cover"></div>
         <div class="page_header">
-            <h1>Chgtaxihe的blog</h1>
+            <a href="/new_index.html"><h1>Chgtaxihe的blog</h1></a>
             {% assign default_paths = site.pages | map: "path" %}
             {% assign page_paths = site.header_pages | default: default_paths %}
             {% for path in page_paths %}
@@ -161,7 +165,7 @@ permalink: /new_index.html
 	</a>
 	</div>
 -->
-    <embed src="https://share.dmca.gripe/KrYaWCW4fttswgpJ.mp3" hidden="true" autostart="true" loop="true" width="0px">
+  <embed src="./resource/music/background.mp3" hidden="true" autostart="true" loop="true" width="0px">
 	<script type="text/x-mathjax-config">
 	  MathJax.Hub.Config({
 		tex2jax: {
