@@ -28,6 +28,10 @@ permalink: /learningCategory.html
 10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（施工中）
 11.  [斯特林数](/post/category/数论/斯特林数.html)
 12.  [康托展开](/post/category/数论/康托展开.html)
+13.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
+14.  Pollard-Rho 质因数分解
+15.  卢卡斯定理
+16.  洲阁筛、min25筛、杜教筛
 
 
 

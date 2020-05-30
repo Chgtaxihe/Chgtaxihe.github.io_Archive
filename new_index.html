@@ -57,10 +57,9 @@ permalink: /new_index.html
 			});
 			return false;
 		};
-		
-		$("a[href^='./']").click(on_click_func);
-		$("a[href^='/']").click(on_click_func);
-		$("a[href^='" + window.location.protocol + "//" + document.domain + "']").click(on_click_func);
+    $(document).on("click", "a[href^='./']", on_click_func);
+    $(document).on("click", "a[href^='/']", on_click_func);
+    $(document).on("click", "a[href^='" + window.location.protocol + "//" + document.domain + "']", on_click_func);
     });
 </script>
 <link rel="stylesheet" href="/assets/css/style.css">
@@ -158,14 +157,14 @@ permalink: /new_index.html
         </div>
 		</font>
     </div>
-<!--
-	<div class="page_link normal">
-	<a class="post-link" href="/2020/05/17/%E8%AE%AD%E7%BB%83%E8%A1%A5%E9%A2%982.html" title="训练补题2">
+
+	<!-- <div class="page_link normal">
+	<a class="post-link" href="https://blog.chgtaxihe.top/2020/05/17/%E8%AE%AD%E7%BB%83%E8%A1%A5%E9%A2%982.html" title="训练补题2">
 	<div>训练补题2</div>
 	</a>
-	</div>
--->
-  <embed src="./resource/music/background.mp3" hidden="true" autostart="true" loop="true" width="0px">
+  </div> -->
+  
+  <!-- <embed src="./resource/music/background.mp3" hidden="true" autostart="true" loop="true" width="0px"> -->
 	<script type="text/x-mathjax-config">
 	  MathJax.Hub.Config({
 		tex2jax: {
