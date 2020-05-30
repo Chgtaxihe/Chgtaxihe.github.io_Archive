@@ -28,14 +28,14 @@
       <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
     {% endif %}
     <meta name="keywords" itemprop="keywords" content="{{ site.keywords | escape }}">
-    <link rel="shortcut icon" sizes="128x128" href="https://{{ site.url }}{{ site.baseurl }}/avatar/favicon.png">
+    <link rel="shortcut icon" sizes="128x128" href="{{ site.url }}{{ site.baseurl }}/avatar/favicon.png">
     <meta name="robots" content="noarchive">
 
    {% comment %}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>{% endcomment %}
     {% include style.html %}
-    <link rel="stylesheet" href="https://{{ site.url }}{{ site.baseurl }}/assets/css/style.css">
-    <link rel="stylesheet" href="https://{{ site.url }}{{ site.baseurl }}/assets/css/fade.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/fade.css">
     
     <style>
         @font-face {
@@ -61,7 +61,7 @@
 
     <!-- live2d-widget -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-    <script src="https://{{ site.url }}/live2d-widget/autoload.js"></script>
+    <script src="{{ site.url }}/live2d-widget/autoload.js"></script>
     
     <!-- lazy-calculator -->
     <script type="text/javascript">
