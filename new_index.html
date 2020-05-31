@@ -20,12 +20,12 @@ permalink: /new_index.html
         $(window).resize(on_reize_func);
 		
 		var resources = [
-			"./resource/img/background/background4.jpg",
-      "./resource/img/background/background3.jpg",
-      "./resource/img/background/background2.jpg",
-      "./resource/img/background/background1.jpg",
-      "./resource/video/menghuan.mp4",
-      "./resource/video/background2.mp4"
+		  "./resource/img/background/background4.png",
+		  "./resource/img/background/background3.jpg",
+		  "./resource/img/background/background2.jpg",
+		  "./resource/img/background/background1.jpg",
+		  "./resource/video/menghuan.mp4",
+		  "./resource/video/background2.mp4"
 		];
 		
 		var select_r = resources[Math.floor(Math.random() * resources.length)];
@@ -41,9 +41,8 @@ permalink: /new_index.html
 			$(".site-wrapper").append(image_widget);
 		}
 		
-		var on_click_func = function(){
-			var href = $(this).attr("href");
-			$.get(href, function(data, status){
+		var get_callback = function(href){
+			return function(data, status){
 				if(status == "success"){
 					var reg = /<section class="main-content fade">[\s\S]*?<\/section>/;
 					var result = reg.exec(data);
@@ -52,14 +51,28 @@ permalink: /new_index.html
 						$(".site-footer").remove();
 						on_reize_func();
 						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+						history.pushState({"url": href}, "", href);
 					}
 				}
-			});
+			}
+		};
+		var on_click_func = function(){
+			var href = $(this).attr("href");
+			
+			$.get(href, get_callback(href));
 			return false;
 		};
-    $(document).on("click", "a[href^='./']", on_click_func);
-    $(document).on("click", "a[href^='/']", on_click_func);
-    $(document).on("click", "a[href^='" + window.location.protocol + "//" + document.domain + "']", on_click_func);
+		$(document).on("click", "a[href^='./']", on_click_func);
+		$(document).on("click", "a[href^='/']", on_click_func);
+		$(document).on("click", "a[href^='" + window.location.protocol + "//" + document.domain + "']", on_click_func);
+		$(document).on("click", "a", on_click_func);
+		window.onpopstate = function(event){
+			if(event.state){
+				$.get(event.state['href'], get_callback(event.state['href']));
+			}else{
+				location.href = "/new_index.html";
+			}
+		};
     });
 </script>
 <link rel="stylesheet" href="/assets/css/style.css">
@@ -114,7 +127,7 @@ permalink: /new_index.html
     <div class="site-wrapper">
         <div class="site-cover"></div>
         <div class="page_header">
-            <a href="/new_index.html"><h1>Chgtaxihe的blog</h1></a>
+            <a href="javascript:location.href='/new_index.html'"><h1>Chgtaxihe的blog</h1></a>
             {% assign default_paths = site.pages | map: "path" %}
             {% assign page_paths = site.header_pages | default: default_paths %}
             {% for path in page_paths %}
@@ -157,12 +170,14 @@ permalink: /new_index.html
         </div>
 		</font>
     </div>
+<!--
 
-	<!-- <div class="page_link normal">
+	 <div class="page_link normal">
 	<a class="post-link" href="https://blog.chgtaxihe.top/2020/05/17/%E8%AE%AD%E7%BB%83%E8%A1%A5%E9%A2%982.html" title="训练补题2">
 	<div>训练补题2</div>
 	</a>
-  </div> -->
+  </div> 
+-->
   
   <!-- <embed src="./resource/music/background.mp3" hidden="true" autostart="true" loop="true" width="0px"> -->
 	<script type="text/x-mathjax-config">
