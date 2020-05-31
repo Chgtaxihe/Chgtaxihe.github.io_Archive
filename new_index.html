@@ -65,7 +65,7 @@ permalink: /new_index.html
 		$(document).on("click", "a[href^='./']", on_click_func);
 		$(document).on("click", "a[href^='/']", on_click_func);
 		$(document).on("click", "a[href^='" + window.location.protocol + "//" + document.domain + "']", on_click_func);
-		$(document).on("click", "a", on_click_func);
+//		$(document).on("click", "a", on_click_func);
 		window.onpopstate = function(event){
 			if(event.state){
 				$.get(event.state['href'], get_callback(event.state['href']));
