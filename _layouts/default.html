@@ -147,7 +147,7 @@
             var item = $('div.expand_div_' + this.id);
             var state = item.html();
             if(state == ''){
-                $.get('https://api.chgtaxihe.top/?url=' + window.btoa(dest), function(result){
+                $.get('https://api.chgtaxihe.top/sources_fetch?url=' + window.btoa(dest), function(result){
                     s = hljs.highlightAuto(HTMLDecode(result)).value;
                     item.html('<pre>' + s + '</pre>');
                     item.slideToggle();
