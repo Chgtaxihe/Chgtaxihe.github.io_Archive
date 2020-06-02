@@ -24,7 +24,7 @@ permalink: /new_index.html
 		  "./resource/img/background/background3.jpg",
 		  "./resource/img/background/background2.jpg",
 		  "./resource/img/background/background1.jpg",
-		  "./resource/video/menghuan.mp4",
+		  "./resource/video/background1.mp4",
 		  "./resource/video/background2.mp4"
 		];
 		
@@ -51,28 +51,27 @@ permalink: /new_index.html
 						$(".site-footer").remove();
 						on_reize_func();
 						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-						history.pushState({"url": href}, "", href);
+						// history.pushState({"url": href}, "", href);
 					}
 				}
 			}
 		};
 		var on_click_func = function(){
 			var href = $(this).attr("href");
-			
 			$.get(href, get_callback(href));
 			return false;
 		};
 		$(document).on("click", "a[href^='./']", on_click_func);
 		$(document).on("click", "a[href^='/']", on_click_func);
 		$(document).on("click", "a[href^='" + window.location.protocol + "//" + document.domain + "']", on_click_func);
-//		$(document).on("click", "a", on_click_func);
-		window.onpopstate = function(event){
-			if(event.state){
-				$.get(event.state['href'], get_callback(event.state['href']));
-			}else{
-				console.log(document.location);
-			}
-		};
+		// $(document).on("click", "a", on_click_func);
+		// window.onpopstate = function(event){
+		// 	if(event.state){
+		// 		$.get(event.state['href'], get_callback(event.state['href']));
+		// 	}else{
+		// 		console.log(document.location);
+		// 	}
+		// };
     });
 </script>
 <link rel="stylesheet" href="/assets/css/style.css">

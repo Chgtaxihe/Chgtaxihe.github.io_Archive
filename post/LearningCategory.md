@@ -40,6 +40,7 @@ permalink: /learningCategory.html
 1.  [插头dp](/post/category/动态规划/插头dp.html)（未完成）
 2.  [动态dp](/post/category/动态规划/动态dp.html)（部分完成）
 3.  [广义矩阵乘法](/post/category/动态规划/广义矩阵乘法.html)
+4.  [斜率dp](/post/category/动态规划/斜率dp.html)
 
 
 
