@@ -803,6 +803,37 @@ PS2: 事实上，上述的$ans$即为第二类斯特林数$S(n, c)$乘上$c!$（
 
 
 
+###  Codeforces Round #647 (Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Johnny and Ancient Computer  | AC(WA2) |      | 13351 |
+| B. Johnny and His Hobbies  | AC(2WA2) |      | 10803 |
+| C. Johnny and Another Rating Drop  | AC |      | 9480 |
+| D. Johnny and Contribution  | AC |  | 3695 |
+| E. Johnny and Grandmaster  | 题解 | 很棒的[题解](https://www.youtube.com/watch?v=ZPQzYDf5A4Y)（与出题者思路不同） | 687 |
+| F. Johnny and Megan's Necklace  |      |      | 59 |
+
+
+
+### Codeforces Round #648 (Div. 2)
+
+心态炸了，A题这么简单都没过，~~不知得掉多少分~~
+
+*UPD:1631$\to$1630* 
+
+| 题号 | 完成         | 备注 | 通过人数 |
+| ---- | ------------ | ---- | -------- |
+| A. Matrix Game  | 赛后AC(4WA2) | 一开始看错了题，然而后来还是没过... | 10492 |
+| B. Trouble Sort   | AC |      | 8347 |
+| C. Rotation Matching   | AC |      | 7194 |
+| D. Solve The Maze | 赛后AC(2WA7) | 一个变量名写错了，愣是没做出来（居然Wa7，我也是服了） | 3568 |
+| E. Maximum Subsequence Value   | AC(2WA6,Wa3) | 没有仔细分析：子序列的元素个数不会超过3（离比赛结束还有30s的时候才AC） | 1727 |
+| F. Swaps Again   |              |      | 752 |
+| G. Secure Password   |              |      | 24 |
+
+
+
 
 ## Div. 3
 
