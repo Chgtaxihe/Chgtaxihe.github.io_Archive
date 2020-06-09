@@ -824,13 +824,44 @@ PS2: 事实上，上述的$ans$即为第二类斯特林数$S(n, c)$乘上$c!$（
 
 | 题号 | 完成         | 备注 | 通过人数 |
 | ---- | ------------ | ---- | -------- |
-| A. Matrix Game  | 赛后AC(4WA2) | 一开始看错了题，然而后来还是没过... | 10492 |
-| B. Trouble Sort   | AC |      | 8347 |
-| C. Rotation Matching   | AC |      | 7194 |
-| D. Solve The Maze | 赛后AC(2WA7) | 一个变量名写错了，愣是没做出来（居然Wa7，我也是服了） | 3568 |
-| E. Maximum Subsequence Value   | AC(2WA6,Wa3) | 没有仔细分析：子序列的元素个数不会超过3（离比赛结束还有30s的时候才AC） | 1727 |
-| F. Swaps Again   |              |      | 752 |
-| G. Secure Password   |              |      | 24 |
+| A. Matrix Game  | 赛后AC(4WA2) | 一开始看错了题，然而后来还是没过... | 13357 |
+| B. Trouble Sort   | AC |      | 11706 |
+| C. Rotation Matching   | AC |      | 10021 |
+| D. Solve The Maze | 赛后AC(2WA7) | 一个变量名写错了，愣是没做出来（居然Wa7，我也是服了） | 6152 |
+| E. Maximum Subsequence Value   | AC(2WA6,WA3) | 没有仔细分析：子序列的元素个数不会超过3（离比赛结束还有30s的时候才AC） | 3837 |
+| F. Swaps Again   | 题解AC(WA119) |      | 1946 |
+| G. Secure Password   | 题解AC | 很有意思的解法 | 211 |
+
+------
+
+>   If we consider the unordered pair of elements $\{ai,an−i+1\}$, then after any operation, the multiset of these pairs (irrespective of the ordering of elements within the pair) stays the same! 
+
+[F题AC代码](https://codeforces.com/contest/1365/submission/83152736)
+
+关键在于找到通过B构造出A的方法。
+
+------
+
+相关知识: Sperner's theorem
+
+E题通过编码方式，使得任意两个编码互不为子集，进而查询时只需查询该位为1的OR。
+
+[E题AC代码(看标程前)](https://codeforces.com/contest/1365/submission/83184135)
+
+[E题AC代码(看标程后)](https://codeforces.com/contest/1365/submission/83184363)
+
+
+
+###  Codeforces Round #646 (Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Odd Selection  | AC(WA3) |      | 16056 |
+| B. Subsequence Hate  |      |      | 11592 |
+| C. Game On Leaves  |      |      | 9145 |
+| D. Guess The Maximums  |      |      | 2519 |
+| E. Tree Shuffling  |      |      | 3769 |
+| F. Rotating Substrings  |      |      | 525 |
 
 
 
