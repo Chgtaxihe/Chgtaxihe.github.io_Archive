@@ -266,15 +266,15 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 [我的AC代码(D)](https://gist.github.com/Chgtaxihe/3b2b8526c76d320424d5eb64f939f405)
 
-| 题号                                                         | 完成 | 一句话题解                               | 过题人数 |
-| ------------------------------------------------------------ | ---- | ---------------------------------------- | -------- |
-| A. [Prime Subtraction](https://codeforces.com/contest/1238/problem/A) | √    |                                          | 6751     |
-| B. [Kill `Em All](https://codeforces.com/contest/1238/problem/B) | √    |                                          | 4535     |
-| C. [Standard Free2play](https://codeforces.com/contest/1238/problem/C) | √    | 讨论所有1序列的长度                      | 2388     |
-| D. [AB-string](https://codeforces.com/contest/1238/problem/D) | √    | 字符串只由AB组成，最后计算的方法也有意思 | 1137     |
-| E. [Keyboard Purchase](https://codeforces.com/contest/1238/problem/E) |      |                                          | 263      |
-| F. [The Maximum Subtree](https://codeforces.com/contest/1238/problem/F) |      |                                          | 167      |
-| G. [Adilbek and the Watering System](https://codeforces.com/contest/1238/problem/G) |      |                                          | 15       |
+| 题号                               | 完成 | 一句话题解                               | 过题人数 |
+| ---------------------------------- | ---- | ---------------------------------------- | -------- |
+| A. Prime Subtraction               | √    |                                          | 6751     |
+| B. Kill `Em All                    | √    |                                          | 4535     |
+| C. Standard Free2play              | √    | 讨论所有1序列的长度                      | 2388     |
+| D. AB-string                       | √    | 字符串只由AB组成，最后计算的方法也有意思 | 1137     |
+| E. Keyboard Purchase               |      |                                          | 263      |
+| F. The Maximum Subtree             |      |                                          | 167      |
+| G. Adilbek and the Watering System |      |                                          | 15       |
 
 
 
@@ -425,14 +425,14 @@ D题题解
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/49e435d6745c431b3be45412230c2113)
 
-| 题号                                                         | 完成 | 备注                             | 通过人数 |
-| ------------------------------------------------------------ | ---- | -------------------------------- | -------- |
-| A. [Single Push](https://codeforces.com/contest/1253/problem/A) | √    |                                  | 8804     |
-| B. [Silly Mistake](https://codeforces.com/contest/1253/problem/B) | √    |                                  | 5743     |
-| C. [Sweets Eating](https://codeforces.com/contest/1253/problem/C) | √    |                                  | 5690     |
-| D. [Harmonious Graph](https://codeforces.com/contest/1253/problem/D) | √    | 题解的思路比我的更简单易懂(更优) | 4046     |
-| E. [Antenna Coverage](https://codeforces.com/contest/1253/problem/E) | √    | [**Dp**]                         | 1464     |
-| F. [Cheap Robot](https://codeforces.com/contest/1253/problem/F) |      |                                  | 520      |
+| 题号                | 完成 | 备注                             | 通过人数 |
+| ------------------- | ---- | -------------------------------- | -------- |
+| A. Single Push      | √    |                                  | 8804     |
+| B. Silly Mistake    | √    |                                  | 5743     |
+| C. Sweets Eating    | √    |                                  | 5690     |
+| D. Harmonious Graph | √    | 题解的思路比我的更简单易懂(更优) | 4046     |
+| E. Antenna Coverage | √    | [**Dp**]                         | 1464     |
+| F. Cheap Robot      |      |                                  | 520      |
 
 
 
@@ -442,15 +442,15 @@ D题题解
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/6cae819ea8ccc42ba7a13bd74cd950d7)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Changing Volume](https://codeforces.com/contest/1255/problem/A) | √    |                                                              | 9713     |
-| B. [Fridge Lockers](https://codeforces.com/contest/1255/problem/B) | √    |                                                              | 6467     |
-| C. [League of Leesins](https://codeforces.com/contest/1255/problem/C) | √    |                                                              | 3659     |
-| D. [Feeding Chicken](https://codeforces.com/contest/1255/problem/D) | √    | python3的builtdins.input()比pypy3的快                        | 1842     |
-| E1. [Send Boxes to Alice (Easy Version)](https://codeforces.com/contest/1255/problem/E1) | √    |                                                              | 1213     |
-| E2. [Send Boxes to Alice (Hard Version)](https://codeforces.com/contest/1255/problem/E2) | √    | 对$a$求前缀和$S_i$，那么$box_i$向$box_{i+1}$移动一块，相当于$S_i -= 1$，对于$factor_k$,使得$all(S_i\%factor_k=0)$即可 | 604      |
-| F. [Point Ordering](https://codeforces.com/contest/1255/problem/F) |      |                                                              | 142      |
+| 题号                                   | 完成 | 备注                                                         | 通过人数 |
+| -------------------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Changing Volume                     | √    |                                                              | 9713     |
+| B. Fridge Lockers                      | √    |                                                              | 6467     |
+| C. League of Leesins                   | √    |                                                              | 3659     |
+| D. Feeding Chicken                     | √    | python3的builtdins.input()比pypy3的快                        | 1842     |
+| E1. Send Boxes to Alice (Easy Version) | √    |                                                              | 1213     |
+| E2. Send Boxes to Alice (Hard Version) | √    | 对$a$求前缀和$S_i$，那么$box_i$向$box_{i+1}$移动一块，相当于$S_i -= 1$，对于$factor_k$,使得$all(S_i\%factor_k=0)$即可 | 604      |
+| F. Point Ordering                      |      |                                                              | 142      |
 
 
 
@@ -460,14 +460,14 @@ D题题解
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/51c3fb94efd178b1f0fe2e408548777e)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Heating](https://codeforces.com/contest/1260/problem/A)  | √    |                                                              | 5450     |
-| B. [Obtain Two Zeroes](https://codeforces.com/contest/1260/problem/B) | √    | 对于$(a+b)\equiv0\pmod{3}$,定有$2a\equiv b\pmod3$(枚举一下$a$和$b$即可证明)故本题只需要满足$(a+b)\equiv 0\pmod3$和$min(a,b)*2\ge max(a,b)$即可 | 4380     |
-| C. [Infinite Fence](https://codeforces.com/contest/1260/problem/C) | √    |                                                              | 2075     |
-| D. [A Game with Traps](https://codeforces.com/contest/1260/problem/D) | √    | 注意到：对与一个要排除的陷阱$(l_k, r_k, d_k)$，若$l_k <= r_k$，则我们需要经过区域$[l_k, r_k]$三次（人生苦短，我用C++） | 796      |
-| E. [Tournament](https://codeforces.com/contest/1260/problem/E) |      |                                                              | 194      |
-| F. [Colored Tree](https://codeforces.com/contest/1260/problem/F) |      |                                                              | 20       |
+| 题号                 | 完成 | 备注                                                         | 通过人数 |
+| -------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Heating           | √    |                                                              | 5450     |
+| B. Obtain Two Zeroes | √    | 对于$(a+b)\equiv0\pmod{3}$,定有$2a\equiv b\pmod3$(枚举一下$a$和$b$即可证明)故本题只需要满足$(a+b)\equiv 0\pmod3$和$min(a,b)*2\ge max(a,b)$即可 | 4380     |
+| C. Infinite Fence    | √    |                                                              | 2075     |
+| D. A Game with Traps | √    | 注意到：对与一个要排除的陷阱$(l_k, r_k, d_k)$，若$l_k <= r_k$，则我们需要经过区域$[l_k, r_k]$三次（人生苦短，我用C++） | 796      |
+| E. Tournament        |      |                                                              | 194      |
+| F. Colored Tree      |      |                                                              | 20       |
 
 C题题解
 
@@ -489,14 +489,14 @@ $by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/3056e723c8e312749fe62e6a8c7d61e9)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Sweet Problem](https://codeforces.com/contest/1263/problem/A) | √    | 若$a\ge b\ge c$且$a \le b+c$，则按照最优策略，最后剩下的总糖果数为`0`或`1` | 8681     |
-| B. [PIN Codes](https://codeforces.com/contest/1263/problem/B) | √    |                                                              | 5919     |
-| C. [Everyone is a Winner!](https://codeforces.com/contest/1263/problem/C) | √    | 所有$k = \lfloor \sqrt{n} \rfloor$都属于是答案的一部分       | 6194     |
-| D. [Secret Passwords](https://codeforces.com/contest/1263/problem/D) | √    |                                                              | 5144     |
-| E. [Editor](https://codeforces.com/contest/1263/problem/E)   | √    | 第一反应是线段树，题解用两个`stack`维护左右两侧信息          | 1629     |
-| F. [Economic Difficulties](https://codeforces.com/contest/1263/problem/F) |      |                                                              | 448      |
+| 题号                     | 完成 | 备注                                                         | 通过人数 |
+| ------------------------ | ---- | ------------------------------------------------------------ | -------- |
+| A. Sweet Problem         | √    | 若$a\ge b\ge c$且$a \le b+c$，则按照最优策略，最后剩下的总糖果数为`0`或`1` | 8681     |
+| B. PIN Codes             | √    |                                                              | 5919     |
+| C. Everyone is a Winner! | √    | 所有$k = \lfloor \sqrt{n} \rfloor$都属于是答案的一部分       | 6194     |
+| D. Secret Passwords      | √    |                                                              | 5144     |
+| E. Editor                | √    | 第一反应是线段树，题解用两个`stack`维护左右两侧信息          | 1629     |
+| F. Economic Difficulties |      |                                                              | 448      |
 
 F题题解
 
@@ -518,14 +518,14 @@ F题题解
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/086b10066ac0b4c1fa9c5f3a274d376b)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Beautiful String](https://codeforces.com/contest/1265/problem/A) | √    |                                                              | 8368     |
-| B. [Beautiful Numbers](https://codeforces.com/contest/1265/problem/B) | √    |                                                              | 6432     |
-| C. [Beautiful Regional Contest](https://codeforces.com/contest/1265/problem/C) | √    |                                                              | 4708     |
-| D. [Beautiful Sequence](https://codeforces.com/contest/1265/problem/D) | √    | 需要注意的是，尽管$cnt[min] < cnt[min+1]$，但$min$仍可能放在开头位置，样例"20000 39999 20000 0" | 2331     |
-| E. [Beautiful Mirrors](https://codeforces.com/contest/1265/problem/E) | √    | 复习了一下概率dp和逆元~                                      | 1261     |
-| F. [Beautiful Bracket Sequence (easy version)](https://codeforces.com/contest/1265/problem/F) | X    | 没懂！！                                                     | 134      |
+| 题号                                         | 完成 | 备注                                                         | 通过人数 |
+| -------------------------------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Beautiful String                          | √    |                                                              | 8368     |
+| B. Beautiful Numbers                         | √    |                                                              | 6432     |
+| C. Beautiful Regional Contest                | √    |                                                              | 4708     |
+| D. Beautiful Sequence                        | √    | 需要注意的是，尽管$cnt[min] < cnt[min+1]$，但$min$仍可能放在开头位置，样例"20000 39999 20000 0" | 2331     |
+| E. Beautiful Mirrors                         | √    | 复习了一下概率dp和逆元~                                      | 1261     |
+| F. Beautiful Bracket Sequence (easy version) | X    | 没懂！！                                                     | 134      |
 
 E题题解
 
@@ -545,14 +545,14 @@ F题待完成！！！
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/e88cbaa483f8bb0d1895406ebc5d9e5e)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Suffix Three](https://codeforces.com/contest/1281/problem/A) | √    |                                                              | 8724     |
-| B. [Azamon Web Services](https://codeforces.com/contest/1281/problem/B) | √    | 找到**可交换**且字典序最小的字符a，若有多个a，取pos**最大**的那个 **BTW**：题解给出的代码挺巧妙的 | 3864     |
-| C. [Cut and Paste](https://codeforces.com/contest/1281/problem/C) | √    | 看了一眼题解，原来直接把前`x`个字符记录下来并保存到`vector`里也能过(935ms, $O(|S| + x)$), 那怎么我不偷鸡的递归查找就不能过了呢？(用记忆化搜索后时间降到62ms，复杂度$O(\log x)$ ) 另外，用`std::string`拼接更快，很迷，估计是是我想复杂了 | 1656     |
-| D. [Beingawesomeism](https://codeforces.com/contest/1281/problem/D) | √    | 分类讨论                                                     | 1115     |
-| E. [Jeremy Bearimy](https://codeforces.com/contest/1281/problem/E) | √    | 看题解！！！！                                               | 293      |
-| F. [Miss Punyverse](https://codeforces.com/contest/1281/problem/F) |      |                                                              | 30       |
+| 题号                   | 完成 | 备注                                                         | 通过人数 |
+| ---------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Suffix Three        | √    |                                                              | 8724     |
+| B. Azamon Web Services | √    | 找到**可交换**且字典序最小的字符a，若有多个a，取pos**最大**的那个 **BTW**：题解给出的代码挺巧妙的 | 3864     |
+| C. Cut and Paste       | √    | 看了一眼题解，原来直接把前`x`个字符记录下来并保存到`vector`里也能过(935ms, $O(|S| + x)$), 那怎么我不偷鸡的递归查找就不能过了呢？(用记忆化搜索后时间降到62ms，复杂度$O(\log x)$ ) 另外，用`std::string`拼接更快，很迷，估计是是我想复杂了 | 1656     |
+| D. Beingawesomeism     | √    | 分类讨论                                                     | 1115     |
+| E. Jeremy Bearimy      | √    | 看题解！！！！                                               | 293      |
+| F. Miss Punyverse      |      |                                                              | 30       |
 
 
 
@@ -562,14 +562,14 @@ F题待完成！！！
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/78f2b80c0d926f72a220436ccf821986)
 
-| 题号                                                         | 完成 | 备注                                                         | 通过人数 |
-| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | -------- |
-| A. [Suits](https://codeforces.com/contest/1271/problem/A)    | √    |                                                              | 8738     |
-| B. [Blocks](https://codeforces.com/contest/1271/problem/B)   | √    |                                                              | 5835     |
-| C. [Shawarma Tent](https://codeforces.com/contest/1271/problem/C) | √    |                                                              | 5611     |
-| D. [Portals](https://codeforces.com/contest/1271/problem/D)  | √    | 做不到全局最优，只能局部最优+dp。题解说还可以维护一个`undoable list`当士兵不够的时候就`undo`，感觉可以用优先队列做 | 1168     |
-| E. [Common Number](https://codeforces.com/contest/1271/problem/E) | √    | 有点像二叉树，看题解吧                                       | 1538     |
-| F. [Divide The Students](https://codeforces.com/contest/1271/problem/F) | √    | dfs剪枝                                                      | 77       |
+| 题号                   | 完成 | 备注                                                         | 通过人数 |
+| ---------------------- | ---- | ------------------------------------------------------------ | -------- |
+| A. Suits               | √    |                                                              | 8738     |
+| B. Blocks              | √    |                                                              | 5835     |
+| C. Shawarma Tent       | √    |                                                              | 5611     |
+| D. Portals             | √    | 做不到全局最优，只能局部最优+dp。题解说还可以维护一个`undoable list`当士兵不够的时候就`undo`，感觉可以用优先队列做 | 1168     |
+| E. Common Number       | √    | 有点像二叉树，看题解吧                                       | 1538     |
+| F. Divide The Students | √    | dfs剪枝                                                      | 77       |
 
 
 
@@ -581,12 +581,12 @@ F题待完成！！！
 
 | 题号                                                         | 完成 | 备注                                             | 通过人数 |
 | ------------------------------------------------------------ | ---- | ------------------------------------------------ | -------- |
-| A. [Shuffle Hashing](https://codeforces.com/contest/1278/problem/A) | √    |                                                  | 5820     |
-| B. [A and B](https://codeforces.com/contest/1278/problem/B)  | √    | [**数学**]看一波题解                             | 3270     |
-| C. [Berry Jam](https://codeforces.com/contest/1278/problem/C) | √    | 比B简单                                          | 1996     |
-| D. [Segment Tree](https://codeforces.com/contest/1278/problem/D) | √    | [**优化**]                                       | 514      |
-| E. [Tests for problem D](https://codeforces.com/contest/1278/problem/E) | √    | [**贪心**]差分约束了半天出不了结果，还是看题解吧 | 291      |
-| F. [Cards](https://codeforces.com/contest/1278/problem/F)    |      |                                                  | 73       |
+| A. Shuffle Hashing | √    |                                                  | 5820     |
+| B. A and B  | √    | [**数学**]看一波题解                             | 3270     |
+| C. Berry Jam | √    | 比B简单                                          | 1996     |
+| D. Segment Tree | √    | [**优化**]                                       | 514      |
+| E. Tests for problem D | √    | [**贪心**]差分约束了半天出不了结果，还是看题解吧 | 291      |
+| F. Cards    |      |                                                  | 73       |
 
 
 
@@ -856,12 +856,38 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
-| A. Odd Selection  | AC(WA3) |      | 16056 |
-| B. Subsequence Hate  |      |      | 11592 |
-| C. Game On Leaves  |      |      | 9145 |
-| D. Guess The Maximums  |      |      | 2519 |
-| E. Tree Shuffling  |      |      | 3769 |
-| F. Rotating Substrings  |      |      | 525 |
+| A. Odd Selection  | AC(WA3) | 能够暴力$O(n)$，绝不优化到$O(1)$ | 16056 |
+| B. Subsequence Hate  | AC(WA2) |      | 11592 |
+| C. Game On Leaves  | AC |      | 9145 |
+| D. Guess The Maximums  | AC(3WA7) | 存在$\cup S_i\not=A$的情况！！ | 2519 |
+| E. Tree Shuffling  | AC |      | 3769 |
+| F. Rotating Substrings  |      | DP？没懂 | 525 |
+
+------
+
+[B题AC代码](https://codeforces.com/contest/1363/submission/83201526)
+
+------
+
+
+
+###  Educational Codeforces Round 88 (Rated for Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Berland Poker  | AC |      | 12854 |
+| B. New Theatre Square  | AC |      | 10248 |
+| C. Mixing Water  | 题解AC | 算出k的最优值(double) | 3275 |
+| D. Yet Another Yet Another Task  |      |      | 1426 |
+| E. Modular Stability  |      |      | 1289 |
+| F. RC Kaboom Show  |      |      | 24 |
+
+------
+
+[C题AC代码](https://codeforces.com/contest/1359/submission/83274867)
+
+------
+
 
 
 
