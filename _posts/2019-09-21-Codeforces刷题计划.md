@@ -878,7 +878,7 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 | A. Berland Poker  | AC |      | 12854 |
 | B. New Theatre Square  | AC |      | 10248 |
 | C. Mixing Water  | 题解AC | 算出k的最优值(double) | 3275 |
-| D. Yet Another Yet Another Task  |      |      | 1426 |
+| D. Yet Another Yet Another Task  | AC(WA5) |      | 1426 |
 | E. Modular Stability  |      |      | 1289 |
 | F. RC Kaboom Show  |      |      | 24 |
 
@@ -888,7 +888,11 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 
 ------
 
+[D题AC代码](https://codeforces.com/contest/1359/submission/83281501) 总感觉是我想复杂了，做法：设第$i$个数为区间最大值，RMQ取左侧前缀和最小，右侧前缀和最大值。
 
+[D题题解做法](https://codeforces.com/contest/1359/submission/83283022) 很短，使用前缀和求最大子区间和（非双指针）。 ~~感觉智商受到了侮辱~~
+
+另外，设$dp[i]$为以$i$结尾的最大子区间和，那么$dp[i]=max(val[i],val[i]+dp[i-1])$，即要么自己单独成为一个子区间，要么与$i-1$的最优解结合。
 
 
 
