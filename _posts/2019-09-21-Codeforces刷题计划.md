@@ -879,7 +879,7 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 | B. New Theatre Square  | AC |      | 10248 |
 | C. Mixing Water  | 题解AC | 算出k的最优值(double) | 3275 |
 | D. Yet Another Yet Another Task  | AC(WA5) |      | 1426 |
-| E. Modular Stability  |      |      | 1289 |
+| E. Modular Stability  | 题解AC |  | 1289 |
 | F. RC Kaboom Show  |      |      | 24 |
 
 ------
@@ -893,6 +893,53 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 [D题题解做法](https://codeforces.com/contest/1359/submission/83283022) 很短，使用前缀和求最大子区间和（非双指针）。 ~~感觉智商受到了侮辱~~
 
 另外，设$dp[i]$为以$i$结尾的最大子区间和，那么$dp[i]=max(val[i],val[i]+dp[i-1])$，即要么自己单独成为一个子区间，要么与$i-1$的最优解结合。
+
+------
+
+[E题AC代码](https://codeforces.com/contest/1359/submission/83497346)
+
+互换顺序而对任意$x$都不影响结果，那么$\forall i,a_i\mid a_j(a_j=\min\limits_{i}\ a_i)$
+
+
+
+###  Educational Codeforces Round 89 (Rated for Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Shovels and Swords  | AC |      | 9163 |
+| B. Shuffle  | AC |      | 7698 |
+| C. Palindromic Paths  | AC |      | 4708 |
+| D. Two Divisors  | 看代码AC |      | 1358 |
+| E. Two Arrays  | 看代码AC |      | 679 |
+| F. Jog Around The Graph  |      |      | 42 |
+| G. Construct the String  |      |      | 25 |
+
+------
+
+[D题AC代码](https://codeforces.com/contest/1366/submission/83536289) 特殊构造
+
+$a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
+
+------
+
+想了半天Dp做法，看了别人代码之后才发现我看漏了个条件：$b_i$为升序
+
+[E题AC代码](https://codeforces.com/contest/1366/submission/83538716)
+
+------
+
+
+
+### Codeforces Round #645 (Div. 2)
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Park Lighting  | AC |      | 20013    |
+| B. Maria Breaks the Self-isolation  | AC |      | 16465    |
+| C. Celex Update  | 题解AC | 从最小一步一步转移到最大的情况 | 10574    |
+| D. The Best Vacation  |      |      | 5404     |
+| E. Are You Fired?  |      |      | 1302     |
+| F. Tasty Cookie  |      |      | 280      |
 
 
 
