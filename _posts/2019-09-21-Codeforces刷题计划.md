@@ -1136,5 +1136,16 @@ void dfs(int v, int par = -1) {
 
 
 
+### Codeforces Round #644 (Div. 3)
 
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Minimal Square  | AC |      | 14736 |
+| B. Honest Coach  | AC |      | 14749 |
+| C. Similar Pairs  | AC |      | 11532 |
+| D. Buying Shovels  | AC |      | 8368 |
+| E. Polygon  | AC |      | 8155 |
+| F. Spy-string  | AC |      | 2585 |
+| G. A/B Matrix  | AC |      | 1200 |
+| H. Binary Median  | 题解 |  | 798 |
 
