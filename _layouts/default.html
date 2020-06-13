@@ -124,6 +124,7 @@
                     var innerText = links[i].innerText
                     var parent = links[i].parentNode;
                     links[i].setAttribute('class', 'expand_code');
+                    links[i].innerText = links[i].innerText + "(展开)";
                     links[i].id = i;
                     var frame = document.createElement("div");
                     frame.setAttribute("class", 'expand_div_' + i.toString());

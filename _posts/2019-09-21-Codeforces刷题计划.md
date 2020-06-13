@@ -827,7 +827,7 @@ PS2: 事实上，上述的$ans$即为第二类斯特林数$S(n, c)$乘上$c!$（
 | A. Matrix Game  | 赛后AC(4WA2) | 一开始看错了题，然而后来还是没过... | 13357 |
 | B. Trouble Sort   | AC |      | 11706 |
 | C. Rotation Matching   | AC |      | 10021 |
-| D. Solve The Maze | 赛后AC(2WA7) | 一个变量名写错了，愣是没做出来（居然Wa7，我也是服了） | 6152 |
+| D. Solve The Maze | 赛后AC(2WA7) | 一个变量名写错了，愣是没检查出来（居然Wa7，我也是服了） | 6152 |
 | E. Maximum Subsequence Value   | AC(2WA6,WA3) | 没有仔细分析：子序列的元素个数不会超过3（离比赛结束还有30s的时候才AC） | 3837 |
 | F. Swaps Again   | 题解AC(WA119) |      | 1946 |
 | G. Secure Password   | 题解AC | 很有意思的解法 | 211 |
@@ -937,9 +937,31 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 | A. Park Lighting  | AC |      | 20013    |
 | B. Maria Breaks the Self-isolation  | AC |      | 16465    |
 | C. Celex Update  | 题解AC | 从最小一步一步转移到最大的情况 | 10574    |
-| D. The Best Vacation  |      |      | 5404     |
-| E. Are You Fired?  |      |      | 1302     |
+| D. The Best Vacation  | 题解AC |      | 5404     |
+| E. Are You Fired?  | 题解AC | 转化为前缀和 | 1302     |
 | F. Tasty Cookie  |      |      | 280      |
+
+------
+
+>   We will find such an optimal segment that its end coincides with the end of some month.
+
+[D题AC代码](https://codeforces.com/contest/1358/submission/83588599)
+
+------
+
+[E题AC代码](https://codeforces.com/contest/1358/submission/83596911) 
+
+如果暴力地对每一个$k$验证一遍，复杂度$O(n^2)$，显然超时。
+
+观察到暴力的过程中有许多重复计算，因此考虑将问题转化。对于本题，可以将其转化为前缀和。
+
+
+
+另一种与题解相似，但更容易想到的方法。
+
+![](https://blog.chgtaxihe.top/resource/img/post/Codeforces刷题计划_4.PNG)
+
+------
 
 
 
