@@ -965,6 +965,26 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 
 
+### Codeforces Round #649 (Div. 2)
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. XXXXX  | AC |      | 10493 |
+| B. Most socially-distanced subsequence  | AC | 比A简单 | 8885 |
+| C. Ehab and Prefix MEXs  | AC |  | 5510 |
+| D. Ehab's Last Corollary  | 2WA12,2WA21,看代码AC |      | 1514 |
+| E. X-OR  |      |      | 279 |
+
+------
+
+[D题AC代码](https://codeforces.com/contest/1364/submission/83833330) 一种与题解思路相通，但更为巧妙的做法（Um_nik的做法）
+
+另外，如果采用了dfs的方法，又发现图有环，且所有环的大小都大于$k$，就可以放心的在任意一个$depth[v] \ge k$的点跳$fa[v]$。没有环就更简单了~
+
+------
+
+
+
 ## Div. 3
 
 ### Codeforces Round #587 (Div. 3)
