@@ -30,8 +30,9 @@ permalink: /learningCategory.html
 12.  [康托展开](/post/category/数论/康托展开.html)
 13.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
 14.  Pollard-Rho 质因数分解
-15.  卢卡斯定理
-16.  洲阁筛、min25筛、杜教筛
+15.  [组合数的特性](/post/category/数论/组合数.html)
+16.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
+17.  洲阁筛、min25筛、杜教筛
 
 
 

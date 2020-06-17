@@ -973,7 +973,7 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 | B. Most socially-distanced subsequence  | AC | 比A简单 | 8885 |
 | C. Ehab and Prefix MEXs  | AC |  | 5510 |
 | D. Ehab's Last Corollary  | 2WA12,2WA21,看代码AC |      | 1514 |
-| E. X-OR  |      |      | 279 |
+| E. X-OR  | 题解AC | 题解的三种做法都是随机 | 279 |
 
 ------
 
@@ -982,6 +982,29 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 另外，如果采用了dfs的方法，又发现图有环，且所有环的大小都大于$k$，就可以放心的在任意一个$depth[v] \ge k$的点跳$fa[v]$。没有环就更简单了~
 
 ------
+
+[E题随机做法1](https://codeforces.com/contest/1364/submission/84078929)
+
+[E题随机做法2](https://codeforces.com/contest/1364/submission/84081287)
+
+
+
+### Educational Codeforces Round 87 (Rated for Div. 2)
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Alarm Clock  | AC |      | 11520 |
+| B. Ternary String  | AC |      | 9155 |
+| C1. Simple Polygon Embedding | AC |      | 6609 |
+| C2. Not So Simple Polygon Embedding | 半题解AC |      | 1402 |
+| D. Multiset  |      |      | 1510 |
+| E. Graph Coloring  |      |      | 357 |
+| F. Summoning Minions  |      |      | 75 |
+| G. Find a Gift  |      |      | 22 |
+
+------
+
+[C2AC代码](https://codeforces.com/contest/1354/submission/84093153)
 
 
 
@@ -1167,5 +1190,5 @@ void dfs(int v, int par = -1) {
 | E. Polygon  | AC |      | 8155 |
 | F. Spy-string  | AC |      | 2585 |
 | G. A/B Matrix  | AC |      | 1200 |
-| H. Binary Median  | 题解 |  | 798 |
+| H. Binary Median  | 题解 | 考虑左边有多少个数字，一直奔着那个方向去就行 | 798 |
 

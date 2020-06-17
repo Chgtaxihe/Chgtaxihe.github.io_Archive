@@ -17,6 +17,9 @@ layout: default
       {% if post.stickie != true %}
         {% continue %}
       {% endif %}
+      {% if post.layout == 'hidden_page' %}
+        {% continue %}
+      {% endif %}
     <li>
 
         {% assign date_format = site.hydrogen-blog.date_format | default: "%b %-d, %Y" %}
@@ -37,7 +40,9 @@ layout: default
     {% if post.stickie == true %}
       {% continue %}
     {% endif %}
-    
+    {% if post.layout == 'hidden_page' %}
+      {% continue %}
+    {% endif %}
       <li>
 
         {% assign date_format = site.hydrogen-blog.date_format | default: "%b %-d, %Y" %}
