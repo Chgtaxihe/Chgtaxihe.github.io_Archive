@@ -997,14 +997,26 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 | B. Ternary String  | AC |      | 9155 |
 | C1. Simple Polygon Embedding | AC |      | 6609 |
 | C2. Not So Simple Polygon Embedding | 半题解AC |      | 1402 |
-| D. Multiset  |      |      | 1510 |
-| E. Graph Coloring  |      |      | 357 |
+| D. Multiset  | AC |      | 1510 |
+| E. Graph Coloring  | 题解AC | 二分图 | 357 |
 | F. Summoning Minions  |      |      | 75 |
 | G. Find a Gift  |      |      | 22 |
 
 ------
 
 [C2AC代码](https://codeforces.com/contest/1354/submission/84093153)
+
+-------
+
+[D题树状数组](https://codeforces.com/contest/1354/submission/84392036) $O(nlog^2n),826ms$
+
+>   We can do it with binary search as follows: let's write a function that, for a given element x, tells the number of elements not greater than x in the resulting multiset.
+
+[D题技巧](https://codeforces.com/contest/1354/submission/84393710) $O(nlogn),389ms$
+
+------
+
+[E题AC代码](https://codeforces.com/contest/1354/submission/84399202)
 
 
 

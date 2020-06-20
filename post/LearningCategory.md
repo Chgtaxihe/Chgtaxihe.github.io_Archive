@@ -97,6 +97,7 @@ permalink: /learningCategory.html
 5.  [环检测算法(Floyd's Tortoise and Hare)](/post/category/其他/环检测算法.html)
 6.  [组合情况(求第k个组合)](/post/category/其他/组合情况.html)
 7.  [高效位运算](/post/category/其他/高效位运算.html)
+8.  [博弈论](/post/category/其他/博弈论.html)
 
 
 
