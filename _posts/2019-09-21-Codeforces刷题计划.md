@@ -1020,6 +1020,28 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 
 
+### Codeforces Round #651 (Div. 2)
+
+[BestRatingChanges](https://codeforces.com/bestRatingChanges/3331552) Wow
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Maximum GCD  | AC |      | 15305 |
+| B. GCD Compression  | AC |      | 11243 |
+| C. Number Game  | AC(WA3) | $sqrt(n)$质数分解的时候忘了$+1\quad if(n>1)$ | 8730 |
+| D. Odd-Even Subsequence  | AC(3WA10) | 边界没控制好 | 2346 |
+| E. Binary Subsequence Rotation  | AC(WA8) |      | 1412 |
+| F1. The Hidden Pair (Easy Version) | 题解AC |      | 334 |
+| F2. The Hidden Pair (Hard Version) |      |      | 223 |
+
+[F1AC代码](https://codeforces.com/contest/1370/submission/84564188)
+
+------
+
+F2题解：同F1一样先找到对应的根$root$，设$depth[root]=0$，接着有一个结论：$s,f$至少一个的$depth<\lfloor\frac{n}{2}\rfloor$，又因为如果$s\ne root,f\ne root$，则$s,f$分别在$root$下的不同子树中，因此二者至少一个所在的子树深度不超过$\lfloor\frac{n}{2}\rfloor$
+
+
+
 ## Div. 3
 
 ### Codeforces Round #587 (Div. 3)
