@@ -1042,6 +1042,62 @@ F2题解：同F1一样先找到对应的根$root$，设$depth[root]=0$，接着�
 
 
 
+### Codeforces Round #643 (Div. 2)
+
+这套题比较简单
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Sequence with Digits  | AC |      | 15097 |
+| B. Young Explorers  | AC |      | 13845 |
+| C. Count Triangles  | AC |  | 6488 |
+| D. Game With Array  | AC |      | 10549 |
+| E. Restorer Distance  | AC |      | 2696 |
+| F. Guess Divisors Count  |      | 数学大题 | 424 |
+
+------
+
+[C题AC代码](https://codeforces.com/contest/1355/submission/84663199)
+
+[C题前缀和做法](https://codeforces.com/contest/1355/submission/84664517)
+
+------
+
+[E题的三分法](https://codeforces.com/contest/1355/submission/84669547)
+
+```c++
+ll twoPointBinSearch(ll l, ll r, function<ll(ll)>cost){
+    while(l < r){
+        ll mid = (l + r) >> 1;
+        ll mmid = (mid + r + 1) >> 1;
+        ll cost_m = cost(mid), cost_mm = cost(mmid);
+        if(cost_m >= cost_mm){ // 下凸包
+            l = mid + 1;
+        }else{
+            r = mmid - 1;
+        }
+    }
+    return l;
+}
+```
+
+注意$mid$与$mmid$的取法
+
+
+
+### Codeforces Round #641 (Div. 2)
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Orac and Factors  | AC |      | 16546 |
+| B. Orac and Models  | AC | 第一次在前两题遇到Dp | 10753 |
+| C. Orac and LCM  | 题解AC | 想了半天怎么求$gcd(\{a_k\mid k\ne i\})$ | 6560 |
+| D. Orac and Medians  |      |      | 2975 |
+| E. Orac and Game of Life  |      |      | 1145 |
+| F. Slime and Sequences (Easy Version)  |      |      | 20 |
+
+
+
 ## Div. 3
 
 ### Codeforces Round #587 (Div. 3)
