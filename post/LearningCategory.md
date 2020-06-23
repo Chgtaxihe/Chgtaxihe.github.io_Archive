@@ -18,14 +18,14 @@ permalink: /learningCategory.html
 
 1.  [卡特兰数](/post/category/数论/卡特兰数.html)
 2.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
-3.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
+3.  [类欧几里得](/post/category/数论/类欧几里得.html)（部分完成）
 4.  [同余最短路](/post/category/数论/同余最短路.html)
 5.  [高斯整数](/post/category/数论/高斯整数.html)
 6.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
 7.  [模运算](/post/category/数论/模运算.html)（部分完成）
 8.  Pólya定理
 9.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
-10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（施工中）
+10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
 11.  [斯特林数](/post/category/数论/斯特林数.html)
 12.  [康托展开](/post/category/数论/康托展开.html)
 13.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
