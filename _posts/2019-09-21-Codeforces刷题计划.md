@@ -1024,6 +1024,8 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 [BestRatingChanges](https://codeforces.com/bestRatingChanges/3331552) Wow
 
+$Rating\to1782(+152)$
+
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
 | A. Maximum GCD  | AC |      | 15305 |
@@ -1095,6 +1097,25 @@ ll twoPointBinSearch(ll l, ll r, function<ll(ll)>cost){
 | D. Orac and Medians  |      |      | 2975 |
 | E. Orac and Game of Life  |      |      | 1145 |
 | F. Slime and Sequences (Easy Version)  |      |      | 20 |
+
+
+
+### Codeforces Round #652 (Div. 2)
+
+$Rating\to 1800(+18)$
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. FashionabLee  | AC |      | 15561    |
+| B. AccurateLee  | AC |      | 11159    |
+| C. RationalLee  | AC(RE3) | 没改maxn，检查了半天 | 7934     |
+| D. TediousLee  | AC |      | 3307     |
+| E. DeadLee  | 题解AC | 贪心 | 534      |
+| F. BareLee  |      |      | 116      |
+
+------
+
+[E题AC代码(python)](https://codeforces.com/contest/1369/submission/84860185) (预分配空间能够省一些时间(~100ms))
 
 
 
