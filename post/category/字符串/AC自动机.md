@@ -11,12 +11,6 @@ title: AC自动机学习笔记
 
 
 
-# 参考资料
-
-1.  [强势图解AC自动机](https://www.luogu.com.cn/blog/3383669u/qiang-shi-tu-xie-ac-zi-dong-ji)
-
-
-
 # AC自动机
 
 建一个AC自动机分为两步
@@ -29,7 +23,13 @@ title: AC自动机学习笔记
 
 ## 2. 计算fail指针
 
+$fail$指针指向的是后缀相同的串，用一张图来更好地了解fail指针的含义
+
 以下截图来自[参考资料](#参考资料)(1)
+
+![](https://blog.chgtaxihe.top/resource/img/post/ac_automaton_2.PNG)
+
+
 
 ![](https://blog.chgtaxihe.top/resource/img/post/ac_automaton_1.PNG)
 
@@ -282,4 +282,70 @@ signed main(){
 ```
 
 
+
+# 例题 洛谷P5231
+
+对密码建AC自动机，跑一遍母串，并把沿途所有点（和沿着fail跳转的所有点）都标记一下。最后，对每一个密码，从tire树底部往根部跑，找第一个被标记的点。
+
+```c++
+#include <bits/stdc++.h>
+
+using namespace std;
+
+const int maxn = 6e6 + 1000;
+const int maxm = 1e5 + 1000;
+
+int tail[maxm], slen[maxm], tcnt = 0;
+
+struct Aho_Corasick_Automaton{
+    int child[maxn][4], fail[maxn], fa[maxn], cnt;
+    bool mark[maxn];
+
+    int char2int(char c);
+	void calc_fail(); // 见模板
+    int count(string s); // 见模板，沿途打标记即可
+    void insert(string s){
+        int p = 0, len = s.size();
+        for(int i=0;i<len;i++){
+            int v = char2int(s[i]);
+            if(child[p][v] == 0) child[p][v] = cnt++;
+            fa[child[p][v]] = p;
+            p = child[p][v];
+        }
+        tail[tcnt++] = p;
+    }
+}ac;
+
+string exc, buffer;
+
+signed main(){
+    int n, m;
+    cin >> n >> m >> exc;
+    for(int i=0; i<m; i++){
+        cin >> buffer;
+        slen[i] = buffer.length();
+        ac.insert(buffer);
+    }
+    ac.calc_fail();
+    ac.count(exc);
+    for(int i=0; i<m; i++){
+        int p = tail[i], cnt = 0;
+        while(p){
+            if(ac.mark[p]) break;
+            cnt++;
+            p = ac.fa[p];
+        }
+        cout << slen[i] - cnt << '\n';
+    }
+}
+```
+
+
+
+
+
+
+# 参考资料
+
+1.  [强势图解AC自动机](https://www.luogu.com.cn/blog/3383669u/qiang-shi-tu-xie-ac-zi-dong-ji)
 
