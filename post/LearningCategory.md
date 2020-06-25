@@ -79,6 +79,7 @@ permalink: /learningCategory.html
 1.  [已知顶点求面积](/post/category/几何/已知顶点求面积.html)
 2.  [凸包](/post/category/几何/凸包.html)
 3.  [皮克定理](/post/category/几何/皮克定理.html)
+4.  几何模板
 
 
 
@@ -98,6 +99,7 @@ permalink: /learningCategory.html
 6.  [组合情况(求第k个组合)](/post/category/其他/组合情况.html)
 7.  [高效位运算](/post/category/其他/高效位运算.html)
 8.  [博弈论](/post/category/其他/博弈论.html)
+9.  [带权并查集处理线段](/post/category/其他/带权并查集处理线段.html)
 
 
 
