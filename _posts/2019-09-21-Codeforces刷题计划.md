@@ -1119,6 +1119,20 @@ $Rating\to 1800(+18)$
 
 
 
+### Codeforces Round #654 (Div. 2)
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Magical Sticks  | AC |      | 16414 |
+| B. Magical Calendar  | AC |      | 11076 |
+| C. A Cookie for You  | 3WA3 | CF炸了 | 9737 |
+| D. Grid-00100  |      |      | 6104 |
+| E1. Asterism (Easy Version) |      |      | 2290 |
+| E2. Asterism (Hard Version) |      |      | 857 |
+| F.  Raging Thunder |      |      | 99 |
+
+
+
 ## Div. 3
 
 ### Codeforces Round #587 (Div. 3)

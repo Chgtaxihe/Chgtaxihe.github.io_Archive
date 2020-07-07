@@ -54,6 +54,7 @@ permalink: /learningCategory.html
 5.  Fleury求欧拉回路
 6.  [2-SAT](/post/category/图论/2-SAT.html)
 7.  [树链剖分](/post/category/图论/树链剖分.html)
+8.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
 
 
 
@@ -100,5 +101,6 @@ permalink: /learningCategory.html
 7.  [高效位运算](/post/category/其他/高效位运算.html)
 8.  [博弈论](/post/category/其他/博弈论.html)
 9.  [带权并查集处理线段](/post/category/其他/带权并查集处理线段.html)
+10.  [一两句话小技巧](/post/category/其他/一两句话小技巧.html)
 
 
