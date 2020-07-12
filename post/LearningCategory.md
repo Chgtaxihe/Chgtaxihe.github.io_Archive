@@ -42,6 +42,7 @@ permalink: /learningCategory.html
 2.  [动态dp](/post/category/动态规划/动态dp.html)（部分完成）
 3.  [广义矩阵乘法](/post/category/动态规划/广义矩阵乘法.html)
 4.  [斜率dp](/post/category/动态规划/斜率dp.html)
+5.  整数划分
 
 
 
@@ -55,6 +56,10 @@ permalink: /learningCategory.html
 6.  [2-SAT](/post/category/图论/2-SAT.html)
 7.  [树链剖分](/post/category/图论/树链剖分.html)
 8.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
+9.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)（部分完成）
+10.  桥、割点、隔边
+11.  一般图最大匹配
+12.  最小路径覆盖
 
 
 
