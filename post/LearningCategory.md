@@ -56,7 +56,7 @@ permalink: /learningCategory.html
 6.  [2-SAT](/post/category/图论/2-SAT.html)
 7.  [树链剖分](/post/category/图论/树链剖分.html)
 8.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
-9.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)（部分完成）
+9.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)
 10.  桥、割点、隔边
 11.  一般图最大匹配
 12.  最小路径覆盖
@@ -85,7 +85,7 @@ permalink: /learningCategory.html
 1.  [已知顶点求面积](/post/category/几何/已知顶点求面积.html)
 2.  [凸包](/post/category/几何/凸包.html)
 3.  [皮克定理](/post/category/几何/皮克定理.html)
-4.  几何模板
+4.  [几何模板](/post/category/几何/几何模板.html)
 
 
 
@@ -98,7 +98,7 @@ permalink: /learningCategory.html
 ## 其他
 
 1.  [01分数规划](/post/category/其他/01分数规划.html)
-2.  [wqs二分](/post/category/其他/wqs二分.html)（待完成）
+2.  [wqs二分](/post/category/其他/wqs二分.html)
 3.  [CDQ分治](/post/category/其他/CDQ分治.html)
 4.  [单调性应用](/post/category/其他/单调性应用.html)
 5.  [环检测算法(Floyd's Tortoise and Hare)](/post/category/其他/环检测算法.html)
