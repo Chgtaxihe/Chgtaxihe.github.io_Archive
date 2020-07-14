@@ -10,7 +10,7 @@ permalink: /learningCategory.html
 
 ## 前言
 
-个人排位赛打自闭了
+这里的笔记是为了避免遗忘某些重要的知识点而写的，**只适合**用于复习！！初学不建议看这里。
 
 
 
@@ -18,11 +18,11 @@ permalink: /learningCategory.html
 
 1.  [卡特兰数](/post/category/数论/卡特兰数.html)
 2.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
-3.  [类欧几里得](/post/category/数论/类欧几里得.html)（部分完成）
+3.  [类欧几里得](/post/category/数论/类欧几里得.html)（待完善）
 4.  [同余最短路](/post/category/数论/同余最短路.html)
 5.  [高斯整数](/post/category/数论/高斯整数.html)
 6.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
-7.  [模运算](/post/category/数论/模运算.html)（部分完成）
+7.  [模运算](/post/category/数论/模运算.html)（待完善）
 8.  Pólya定理
 9.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
 10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
@@ -36,10 +36,10 @@ permalink: /learningCategory.html
 
 
 
-## 动态规划
+## 动态规划 (dynamic programming)
 
 1.  [插头dp](/post/category/动态规划/插头dp.html)（未完成）
-2.  [动态dp](/post/category/动态规划/动态dp.html)（部分完成）
+2.  [动态dp](/post/category/动态规划/动态dp.html)（待完善）
 3.  [广义矩阵乘法](/post/category/动态规划/广义矩阵乘法.html)
 4.  [斜率dp](/post/category/动态规划/斜率dp.html)
 5.  整数划分
@@ -48,9 +48,9 @@ permalink: /learningCategory.html
 
 ## 图论
 
-1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（部分完成）
+1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（待完善）
 2.  [网络流-最小费用最大流](/post/category/图论/网络流-最小费用最大流.html)
-3.  [Johnson最短路](/post/category/图论/Johnson最短路.html)（待补充）
+3.  [Johnson最短路](/post/category/图论/Johnson最短路.html)（待完善）
 4.  [多源最短路](/post/category/图论/多源最短路.html)
 5.  Fleury求欧拉回路
 6.  [2-SAT](/post/category/图论/2-SAT.html)
@@ -65,7 +65,7 @@ permalink: /learningCategory.html
 
 ## 数据结构
 
-1.  [线性基](/post/category/数据结构/线性基.html)（部分完成）
+1.  [线性基](/post/category/数据结构/线性基.html)（待完善）
 2.  [树状数组](/post/category/数据结构/树状数组.html)
 3.  [舞蹈链](/post/category/数据结构/舞蹈链.html)
 
@@ -76,7 +76,8 @@ permalink: /learningCategory.html
 万恶的字符串
 
 1.  [AC自动机](/post/category/字符串/AC自动机.html)
-2.  回文树/回文自动机
+2.  [KMP](/post/category/字符串/KMP.html)（待完善）
+3.  回文树/回文自动机
 
 
 
