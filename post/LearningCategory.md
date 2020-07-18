@@ -58,8 +58,9 @@ permalink: /learningCategory.html
 8.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
 9.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)
 10.  桥、割点、隔边
-11.  一般图最大匹配
-12.  最小路径覆盖
+11.  [二分图匹配]
+12.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
+13.  最小路径覆盖
 
 
 
@@ -68,6 +69,7 @@ permalink: /learningCategory.html
 1.  [线性基](/post/category/数据结构/线性基.html)（待完善）
 2.  [树状数组](/post/category/数据结构/树状数组.html)
 3.  [舞蹈链](/post/category/数据结构/舞蹈链.html)
+4.  [线段树](/post/category/数据结构/线段树.html)
 
 
 

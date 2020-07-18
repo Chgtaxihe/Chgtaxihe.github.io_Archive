@@ -1125,11 +1125,24 @@ $Rating\to 1800(+18)$
 | ---- | ---- | ---- | -------- |
 | A. Magical Sticks  | AC |      | 16414 |
 | B. Magical Calendar  | AC |      | 11076 |
-| C. A Cookie for You  | 3WA3 | CF炸了 | 9737 |
-| D. Grid-00100  |      |      | 6104 |
-| E1. Asterism (Easy Version) |      |      | 2290 |
-| E2. Asterism (Hard Version) |      |      | 857 |
-| F.  Raging Thunder |      |      | 99 |
+| C. A Cookie for You  | 3WA3, 题解AC | 一个简单地贪心题，怎么比E2还难... | 9737 |
+| D. Grid-00100  | AC |      | 6104 |
+| E1. Asterism (Easy Version) | AC |      | 2290 |
+| E2. Asterism (Hard Version) | 2TLE5, AC | TLE两次，发现是maxn不够大 | 857 |
+| F.  Raging Thunder | 理论AC | 线段树合并，细节之多跟模拟题有的一拼 | 99 |
+
+
+
+### Codeforces Round #655 (Div. 2)
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Omkar and Completion  | AC |      | 18453 |
+| B. Omkar and Last Class of Math  |      |      | 13071 |
+| C. Omkar and Baseball  |      |      | 9198 |
+| D. Omkar and Circle  |      |      | 2994 |
+| E. Omkar and Last Floor  |      |      | 356 |
+| F. Omkar and Modes  |      |      | 145 |
 
 
 
