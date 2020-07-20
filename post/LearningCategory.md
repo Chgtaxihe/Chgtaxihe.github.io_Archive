@@ -14,6 +14,10 @@ permalink: /learningCategory.html
 
 
 
+[知识盲点](/post/知识盲点.html)
+
+
+
 ## 数论
 
 1.  [卡特兰数](/post/category/数论/卡特兰数.html)
@@ -60,7 +64,7 @@ permalink: /learningCategory.html
 10.  桥、割点、隔边
 11.  [二分图匹配]
 12.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
-13.  最小路径覆盖
+13.  [最小路径覆盖（带花树）]
 
 
 
@@ -80,6 +84,9 @@ permalink: /learningCategory.html
 1.  [AC自动机](/post/category/字符串/AC自动机.html)
 2.  [KMP](/post/category/字符串/KMP.html)（待完善）
 3.  回文树/回文自动机
+4.  [子序列自动机](/post/category/字符串/子序列自动机.html)
+5.  [后缀自动机](/post/category/字符串/后缀自动机.html) （整理中）
+6.  广义后缀自动机
 
 
 
