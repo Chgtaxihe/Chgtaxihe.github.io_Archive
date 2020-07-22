@@ -37,6 +37,7 @@ permalink: /learningCategory.html
 15.  [组合数的特性](/post/category/数论/组合数.html)
 16.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
 17.  洲阁筛、min25筛、杜教筛
+18.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
 
 
 
@@ -65,6 +66,7 @@ permalink: /learningCategory.html
 11.  [二分图匹配]
 12.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
 13.  [最小路径覆盖（带花树）]
+14.  二次剩余
 
 
 
@@ -87,6 +89,7 @@ permalink: /learningCategory.html
 4.  [子序列自动机](/post/category/字符串/子序列自动机.html)
 5.  [后缀自动机](/post/category/字符串/后缀自动机.html) （整理中）
 6.  广义后缀自动机
+7.  Lyndon分解
 
 
 
