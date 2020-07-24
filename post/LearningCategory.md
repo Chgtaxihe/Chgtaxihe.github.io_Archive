@@ -85,11 +85,12 @@ permalink: /learningCategory.html
 
 1.  [AC自动机](/post/category/字符串/AC自动机.html)
 2.  [KMP](/post/category/字符串/KMP.html)（待完善）
-3.  回文树/回文自动机
-4.  [子序列自动机](/post/category/字符串/子序列自动机.html)
-5.  [后缀自动机](/post/category/字符串/后缀自动机.html) （整理中）
-6.  广义后缀自动机
-7.  Lyndon分解
+3.  扩展KMP
+4.  回文树/回文自动机
+5.  [子序列自动机](/post/category/字符串/子序列自动机.html)
+6.  [后缀自动机](/post/category/字符串/后缀自动机.html) （整理中）
+7.  广义后缀自动机
+8.  [Lyndon分解](/post/category/字符串/Lyndon分解.html)
 
 
 
