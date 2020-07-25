@@ -67,6 +67,7 @@ permalink: /learningCategory.html
 12.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
 13.  [最小路径覆盖（带花树）]
 14.  二次剩余
+15.  [最小**异或**生成树](/post/category/图论/最小异或生成树.html)
 
 
 
