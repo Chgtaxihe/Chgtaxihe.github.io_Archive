@@ -38,6 +38,7 @@ permalink: /learningCategory.html
 16.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
 17.  洲阁筛、min25筛、杜教筛
 18.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
+19.  置换群
 
 
 
@@ -122,5 +123,6 @@ permalink: /learningCategory.html
 8.  [博弈论](/post/category/其他/博弈论.html)
 9.  [带权并查集处理线段](/post/category/其他/带权并查集处理线段.html)
 10.  [一两句话小技巧](/post/category/其他/一两句话小技巧.html)
+11.  [约瑟夫环](/post/category/其他/约瑟夫环.html)
 
 
