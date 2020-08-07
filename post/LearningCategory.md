@@ -26,19 +26,21 @@ permalink: /learningCategory.html
 4.  [同余最短路](/post/category/数论/同余最短路.html)
 5.  [高斯整数](/post/category/数论/高斯整数.html)
 6.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
-7.  [模运算](/post/category/数论/模运算.html)（待完善）
-8.  Pólya定理
-9.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
-10.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
-11.  [斯特林数](/post/category/数论/斯特林数.html)
-12.  [康托展开](/post/category/数论/康托展开.html)
-13.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
-14.  Pollard-Rho 质因数分解
-15.  [组合数的特性](/post/category/数论/组合数.html)
-16.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
-17.  洲阁筛、min25筛、杜教筛
-18.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
-19.  置换群
+7.  [模运算](/post/category/数论/模运算.html)
+8.  二次剩余
+9.  Pólya定理
+10.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
+11.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
+12.  [斯特林数](/post/category/数论/斯特林数.html)
+13.  [康托展开](/post/category/数论/康托展开.html)
+14.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
+15.  Pollard-Rho 质因数分解
+16.  [组合数的特性](/post/category/数论/组合数.html)
+17.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
+18.  洲阁筛、min25筛、杜教筛
+19.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
+20.  置换群
+21.  [一些小问题](/post/category/数论/一些小问题.html)
 
 
 
@@ -67,8 +69,8 @@ permalink: /learningCategory.html
 11.  [二分图匹配]
 12.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
 13.  [最小路径覆盖（带花树）]
-14.  二次剩余
 15.  [最小**异或**生成树](/post/category/图论/最小异或生成树.html)
+15.  [矩阵树(Matrix Tree)定理](/post/category/图论/矩阵树定理.html)（未完成）
 
 
 
@@ -108,6 +110,7 @@ permalink: /learningCategory.html
 ## 暴力
 
 1.  [IDA*](/post/category/暴力/IDA.html)
+2.  [高斯消元](/post/category/暴力/高斯消元.html)
 
 
 
