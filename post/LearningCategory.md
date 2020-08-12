@@ -56,21 +56,22 @@ permalink: /learningCategory.html
 
 ## 图论
 
-1.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（待完善）
-2.  [网络流-最小费用最大流](/post/category/图论/网络流-最小费用最大流.html)
-3.  [Johnson最短路](/post/category/图论/Johnson最短路.html)（待完善）
-4.  [多源最短路](/post/category/图论/多源最短路.html)
-5.  Fleury求欧拉回路
-6.  [2-SAT](/post/category/图论/2-SAT.html)
-7.  [树链剖分](/post/category/图论/树链剖分.html)
-8.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
-9.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)
-10.  桥、割点、隔边
-11.  [二分图匹配]
-12.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
-13.  [最小路径覆盖（带花树）]
+1.  [可撤销并查集](/post/category/图论/可撤销并查集.html)
+2.  [网络流-最小割](/post/category/图论/网络流-最小割.html)（待完善）
+3.  [网络流-最小费用最大流](/post/category/图论/网络流-最小费用最大流.html)
+4.  [Johnson最短路](/post/category/图论/Johnson最短路.html)（待完善）
+5.  [多源最短路](/post/category/图论/多源最短路.html)
+6.  Fleury求欧拉回路
+7.  [2-SAT](/post/category/图论/2-SAT.html)
+8.  [树链剖分](/post/category/图论/树链剖分.html)
+9.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
+10.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)
+11.  桥、割点、隔边
+12.  二分图匹配
+13.  [一般图最大匹配](/post/category/图论/一般图最大匹配.html)
+14.  最小路径覆盖（带花树）
 15.  [最小**异或**生成树](/post/category/图论/最小异或生成树.html)
-15.  [矩阵树(Matrix Tree)定理](/post/category/图论/矩阵树定理.html)（未完成）
+16.  [矩阵树(Matrix Tree)定理](/post/category/图论/矩阵树定理.html)（未完成）
 
 
 
@@ -80,6 +81,7 @@ permalink: /learningCategory.html
 2.  [树状数组](/post/category/数据结构/树状数组.html)
 3.  [舞蹈链](/post/category/数据结构/舞蹈链.html)
 4.  [线段树](/post/category/数据结构/线段树.html)
+5.  [树链剖分](/post/category/数据结构/树链剖分.html)
 
 
 
