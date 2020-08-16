@@ -36,6 +36,12 @@ title: Link Cut Tree学习笔记
 
 
 
+
+
+**为了解题，splay有时还会维护一下size属性**
+
+
+
 ## splay(x)
 
 作用：将x旋转到其splay树的根
@@ -384,11 +390,70 @@ signed main(){
 
 
 
+# 其他技巧
+
+## 求LCA
+
+稍微修改一下`access(x)`函数
+
+```c++
+int access(int x){
+    int y = 0; // 其实就改了这里
+    for(; x; y = x, x = fa[x]){
+        splay(x);
+        ch[x][1] = y;
+        pushup(x);
+    }
+    return y; // 返回最后一个访问到的
+}
+```
+
+
+
+求$(u,v)$的lca前先`makeroot`确定树根，再`access(x)`，那么`lca=access(y)`
+
+
+
+洛谷P3379 AC代码（截取）
+
+比树剖省空间（23MB/8MB），但是很慢（1.27s/2.79s）
+
+```c++
+void solve(){
+    int n, m, s;
+    cin >> n >> m >> s;
+    for(int i=1, u, v; i<n; i++){
+        cin >> u >> v;
+        lct.link(u, v);
+    }
+    lct.makeroot(s);
+    for(int i=0, u, v; i<m; i++){
+        cin >> u >> v;
+        lct.access(u);
+        cout << lct.access(v) << '\n';
+    }
+}
+```
+
 
 
 # 非旋treap维护LCT
 
+等我先学一下treap
 
+
+
+# 练习题
+
+| **题目**                                                     | **完成情况** | **备注**                                                     |
+| ------------------------------------------------------------ | ------------ | ------------------------------------------------------------ |
+| **LCT上平衡树操作**                                          |              |                                                              |
+| [[HNOI2010]弹飞绵羊](https://www.luogu.com.cn/problem/P3203) | AC           | 这题我做过，当时是用分块AC的。LCT的话，Splay上维护一下size即可 |
+| [[国家集训队]Tree II](https://www.luogu.com.cn/problem/P1501) | AC           | 正确维护splay即可（为什么我的代码就是又臭又长呢）            |
+|                                                              |              |                                                              |
+| **维护连通性**                                               |              |                                                              |
+| [部落冲突](https://www.luogu.com.cn/problem/P3950)           | AC           | 不用在splay上维护额外信息，爽！                              |
+| [[AHOI2005] 航线规划](https://www.luogu.com.cn/problem/P2542) |              |                                                              |
 
 
 
