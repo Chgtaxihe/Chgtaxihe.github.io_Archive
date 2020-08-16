@@ -82,6 +82,7 @@ permalink: /learningCategory.html
 3.  [舞蹈链](/post/category/数据结构/舞蹈链.html)
 4.  [线段树](/post/category/数据结构/线段树.html)
 5.  [树链剖分](/post/category/数据结构/树链剖分.html)
+6.  [Link Cut Tree](/post/category/数据结构/Link_Cut_Tree.html)
 
 
 
