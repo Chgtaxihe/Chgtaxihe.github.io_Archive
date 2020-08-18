@@ -1138,11 +1138,17 @@ $Rating\to 1800(+18)$
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
 | A. Omkar and Completion  | AC |      | 18453 |
-| B. Omkar and Last Class of Math  |      |      | 13071 |
-| C. Omkar and Baseball  |      |      | 9198 |
-| D. Omkar and Circle  |      |      | 2994 |
-| E. Omkar and Last Floor  |      |      | 356 |
+| B. Omkar and Last Class of Math  | 题解AC |      | 13071 |
+| C. Omkar and Baseball  | 看数据AC | 坑 | 9198 |
+| D. Omkar and Circle  | AC | 比BC简单？ | 2994 |
+| E. Omkar and Last Floor  | 题解AC | dp | 356 |
 | F. Omkar and Modes  |      |      | 145 |
+
+
+
+### Educational Codeforces Round 91 (Rated for Div. 2)
+
+
 
 
 

@@ -453,7 +453,7 @@ void solve(){
 |                                                              |              |                                                              |
 | **维护连通性**                                               |              |                                                              |
 | [部落冲突](https://www.luogu.com.cn/problem/P3950)           | AC           | 不用在splay上维护额外信息，爽！                              |
-| [[AHOI2005] 航线规划](https://www.luogu.com.cn/problem/P2542) |              |                                                              |
+| [[AHOI2005] 航线规划](https://www.luogu.com.cn/problem/P2542) |              | 据说LCT维护双联通只支持加边？（那用树剖不就得了...）         |
 
 
 
