@@ -463,4 +463,4 @@ https://www.cnblogs.com/flashhu/p/8324551.html
 
 https://oi-wiki.org/ds/lct
 
-https://www.luogu.com.cn/blog/Qiu/qian-tan-link-cut-tree
+https://www.luogu.com.cn/blog/Qiu/qian-tan-link-cut-treeQ

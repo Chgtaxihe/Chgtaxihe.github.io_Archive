@@ -117,6 +117,14 @@ permalink: /learningCategory.html
 
 
 
+
+## 博弈论
+
+1.  [博弈论](/post/category/博弈论/博弈论概述.html)
+2.  [威佐夫博弈](/post/category/博弈论/威佐夫博弈.html)
+
+
+
 ## 其他
 
 1.  [01分数规划](/post/category/其他/01分数规划.html)
@@ -126,9 +134,8 @@ permalink: /learningCategory.html
 5.  [环检测算法(Floyd's Tortoise and Hare)](/post/category/其他/环检测算法.html)
 6.  [组合情况(求第k个组合)](/post/category/其他/组合情况.html)
 7.  [高效位运算](/post/category/其他/高效位运算.html)
-8.  [博弈论](/post/category/其他/博弈论.html)
 9.  [带权并查集处理线段](/post/category/其他/带权并查集处理线段.html)
 10.  [一两句话小技巧](/post/category/其他/一两句话小技巧.html)
-11.  [约瑟夫环](/post/category/其他/约瑟夫环.html)
+11.  [约瑟夫环](/post/category/其他/约瑟夫环.html)（待完成）
 
 
