@@ -137,5 +137,6 @@ permalink: /learningCategory.html
 9.  [带权并查集处理线段](/post/category/其他/带权并查集处理线段.html)
 10.  [一两句话小技巧](/post/category/其他/一两句话小技巧.html)
 11.  [约瑟夫环](/post/category/其他/约瑟夫环.html)（待完成）
+11.  [哈希函数(Hash)](/post/category/其他/哈希函数.html)
 
 
