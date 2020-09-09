@@ -20,27 +20,28 @@ permalink: /learningCategory.html
 
 ## 数论
 
-1.  [卡特兰数](/post/category/数论/卡特兰数.html)
-2.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
-3.  [类欧几里得](/post/category/数论/类欧几里得.html)（待完善）
-4.  [同余最短路](/post/category/数论/同余最短路.html)
-5.  [高斯整数](/post/category/数论/高斯整数.html)
-6.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
-7.  [模运算](/post/category/数论/模运算.html)
-8.  二次剩余
-9.  Pólya定理
-10.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
-11.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
-12.  [斯特林数](/post/category/数论/斯特林数.html)
-13.  [康托展开](/post/category/数论/康托展开.html)
-14.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
-15.  Pollard-Rho 质因数分解
-16.  [组合数的特性](/post/category/数论/组合数.html)
-17.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
-18.  洲阁筛、min25筛、杜教筛
-19.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
-20.  置换群
-21.  [一些小问题](/post/category/数论/一些小问题.html)
+1.  欧拉函数
+2.  [卡特兰数](/post/category/数论/卡特兰数.html)
+3.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
+4.  [类欧几里得](/post/category/数论/类欧几里得.html)（待完善）
+5.  [同余最短路](/post/category/数论/同余最短路.html)
+6.  [高斯整数](/post/category/数论/高斯整数.html)
+7.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
+8.  [模运算](/post/category/数论/模运算.html)
+9.  二次剩余
+10.  Pólya定理
+11.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
+12.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
+13.  [斯特林数](/post/category/数论/斯特林数.html)
+14.  [康托展开](/post/category/数论/康托展开.html)
+15.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
+16.  Pollard-Rho 质因数分解
+17.  [组合数的特性](/post/category/数论/组合数.html)
+18.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
+19.  洲阁筛、min25筛、杜教筛
+20.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
+21.  置换群
+22.  [一些小问题](/post/category/数论/一些小问题.html)
 
 
 
