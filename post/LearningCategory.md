@@ -35,13 +35,13 @@ permalink: /learningCategory.html
 13.  [斯特林数](/post/category/数论/斯特林数.html)
 14.  [康托展开](/post/category/数论/康托展开.html)
 15.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
-16.  Pollard-Rho 质因数分解
 17.  [组合数的特性](/post/category/数论/组合数.html)
 18.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
 19.  洲阁筛、min25筛、杜教筛
 20.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
 21.  置换群
 22.  [一些小问题](/post/category/数论/一些小问题.html)
+22.  [素性检测与大数分解](/post/category/数论/素性检测与大数分解.html)（未完成）
 
 
 
@@ -64,7 +64,6 @@ permalink: /learningCategory.html
 5.  [多源最短路](/post/category/图论/多源最短路.html)
 6.  Fleury求欧拉回路
 7.  [2-SAT](/post/category/图论/2-SAT.html)
-8.  [树链剖分](/post/category/图论/树链剖分.html)
 9.  [斯坦纳树](/post/category/图论/斯坦纳树.html)
 10.  [最近公共祖先(LCA)](/post/category/图论/最近公共祖先LCA.html)
 11.  桥、割点、隔边
