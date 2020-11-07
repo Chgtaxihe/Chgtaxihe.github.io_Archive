@@ -41,7 +41,7 @@ permalink: /learningCategory.html
 20.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
 21.  置换群
 22.  [一些小问题](/post/category/数论/一些小问题.html)
-22.  [素性检测与大数分解](/post/category/数论/素性检测与大数分解.html)（未完成）
+22.  [素性检测与大数分解](/post/category/数论/素性检测与大数分解.html)
 
 
 
