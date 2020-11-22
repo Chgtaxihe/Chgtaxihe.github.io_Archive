@@ -83,6 +83,7 @@ permalink: /learningCategory.html
 4.  [线段树](/post/category/数据结构/线段树.html)
 5.  [树链剖分](/post/category/数据结构/树链剖分.html)
 6.  [Link Cut Tree](/post/category/数据结构/Link_Cut_Tree.html)
+7.  笛卡尔树
 
 
 
@@ -90,14 +91,15 @@ permalink: /learningCategory.html
 
 万恶的字符串
 
-1.  [AC自动机](/post/category/字符串/AC自动机.html)
-2.  [KMP](/post/category/字符串/KMP.html)（待完善）
-3.  扩展KMP
-4.  回文树/回文自动机
-5.  [子序列自动机](/post/category/字符串/子序列自动机.html)
-6.  [后缀自动机](/post/category/字符串/后缀自动机.html) （整理中）
-7.  广义后缀自动机
-8.  [Lyndon分解](/post/category/字符串/Lyndon分解.html)
+1.  [字符串基础](/post/category/字符串/字符串基础.html)（未完成）
+2.  [AC自动机](/post/category/字符串/AC自动机.html)
+3.  [KMP](/post/category/字符串/KMP.html)（待完善）
+4.  扩展KMP
+5.  回文树/回文自动机
+6.  [子序列自动机](/post/category/字符串/子序列自动机.html)
+7.  [后缀自动机](/post/category/字符串/后缀自动机.html) （未完成）
+8.  广义后缀自动机
+9.  [Lyndon分解](/post/category/字符串/Lyndon分解.html)
 
 
 
@@ -136,7 +138,7 @@ permalink: /learningCategory.html
 7.  [高效位运算](/post/category/其他/高效位运算.html)
 9.  [带权并查集处理线段](/post/category/其他/带权并查集处理线段.html)
 10.  [一两句话小技巧](/post/category/其他/一两句话小技巧.html)
-11.  [约瑟夫环](/post/category/其他/约瑟夫环.html)（待完成）
+11.  [约瑟夫环](/post/category/其他/约瑟夫环.html)
 11.  [哈希函数(Hash)](/post/category/其他/哈希函数.html)
 
 
