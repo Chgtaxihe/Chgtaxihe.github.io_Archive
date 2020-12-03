@@ -1146,9 +1146,44 @@ $Rating\to 1800(+18)$
 
 
 
-### Educational Codeforces Round 91 (Rated for Div. 2)
+### Codeforces Round #685 (Div. 2)
+
+| 题号                  | 完成 | 备注 | 通过人数 |
+| --------------------- | ---- | ---- | -------- |
+| A. Subtract or Divide | 题解AC |      | 14018 |
+| B. Non-Substring Subsequence                    | AC |      | 11329 |
+| C. String Equality                    | AC |      | 7362 |
+| D. Circle Game                    | AC |      | 5100 |
+| E1. Bitwise Queries (Easy Version)                   | 题解AC | $a+b=a\oplus b+(a\& b)*2$ | 2151 |
+| E2. Bitwise Queries (Hard Version)                   | 题解AC | $a\oplus b$为某位$1$，即该位$a,b$不同 | 1314 |
+| F. Nullify The Matrix                    | 题解AC | awsome | 335 |
 
 
+
+### Educational Codeforces Round 98 (Rated for Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Robot Program   | AC |      | 10628 |
+| B. Toy Blocks   | 题解AC | 不用管具体怎么放，只看总数即可 | 3897 |
+| C. Two Brackets   | AC |      | 9127 |
+| D. Radio Towers   | AC(50min) |      | 2594 |
+| E. Two Editorials   | 题解AC |      | 168 |
+| F. Divide Powers   |      |      | 20 |
+| G. Game On Tree   |      |      | 7 |
+
+
+
+### Codeforces Round #684 (Div. 2) 
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Buy the String   | AC |  | 13230 |
+| B. Sum of Medians   | AC |      | 10657 |
+| C1. Binary Table (Easy Version)  | 看代码AC | 很考验代码技巧 | 4792 |
+| C2. Binary Table (Hard Version)  | 看代码AC |      | 2041 |
+| D. Graph Subset Problem   | 题解 |      | 163 |
+| E. Greedy Shopping   |      |      | 310 |
 
 
 
