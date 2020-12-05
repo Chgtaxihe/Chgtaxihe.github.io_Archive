@@ -1182,8 +1182,22 @@ $Rating\to 1800(+18)$
 | B. Sum of Medians   | AC |      | 10657 |
 | C1. Binary Table (Easy Version)  | 看代码AC | 很考验代码技巧 | 4792 |
 | C2. Binary Table (Hard Version)  | 看代码AC |      | 2041 |
-| D. Graph Subset Problem   | 题解 |      | 163 |
-| E. Greedy Shopping   |      |      | 310 |
+| D. Graph Subset Problem   | 题解AC | 无向图的“拓扑序” | 163 |
+| E. Greedy Shopping   | 题解AC | 痛苦面具 | 310 |
+
+
+
+### Codeforces Round #683
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Add Candies   | AC |      | 9900 |
+| B. Numbers Box   | AC |      | 8514 |
+| C. Knapsack   | AC |      | 6230 |
+| D. Catching Cheaters   | AC | 痛苦Dp，用了50分钟才AC。结果发现题解的Dp思路更简单，是我想得太复杂 | 2589 |
+| E. Xor Tree   | 题解AC | 一看就懂，一做就懵 | 660 |
+| F1. Frequency Problem (Easy Version)  |      |      | 187 |
+| F2. Frequency Problem (Hard Version) |      |      | 63 |
 
 
 
