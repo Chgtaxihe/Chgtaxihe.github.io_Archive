@@ -51,7 +51,9 @@ permalink: /new_index.html
 						$(".site-footer").remove();
 						on_reize_func();
 						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
-						// history.pushState({"url": href}, "", href);
+            
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
 					}
 				}
 			}
@@ -119,6 +121,7 @@ permalink: /new_index.html
         <div class="site-cover"></div>
         <div class="page_header">
             <a href="javascript:location.href='/new_index.html'"><h1>Chgtaxihe的blog</h1></a>
+            <a href="javascript:location.href='/new_index.html'"><h5>点我更换背景</h5></a>
             {% assign default_paths = site.pages | map: "path" %}
             {% assign page_paths = site.header_pages | default: default_paths %}
             {% for path in page_paths %}
