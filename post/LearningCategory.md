@@ -35,8 +35,7 @@ permalink: /learningCategory.html
 13.  [斯特林数](/post/category/数论/斯特林数.html)
 14.  [康托展开](/post/category/数论/康托展开.html)
 15.  [素数计数问题(Prime Counting)](/post/category/数论/素数计数问题.html)
-17.  [组合数的特性](/post/category/数论/组合数.html)
-18.  [卢卡斯定理](/post/category/数论/卢卡斯定理.html)
+17.  [组合数问题](/post/category/数论/组合数问题.html)
 19.  洲阁筛、min25筛、杜教筛
 20.  [斐波那契数列](/post/category/数论/斐波那契数列.html)
 21.  置换群
@@ -72,6 +71,7 @@ permalink: /learningCategory.html
 14.  最小路径覆盖
 15.  [最小**异或**生成树](/post/category/图论/最小异或生成树.html)
 16.  [矩阵树(Matrix Tree)定理](/post/category/图论/矩阵树定理.html)（未完成）
+16.  [树的直径与重心](/post/category/图论/树的直径与重心.html)
 
 
 

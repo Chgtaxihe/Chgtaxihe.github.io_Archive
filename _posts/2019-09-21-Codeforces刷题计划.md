@@ -1201,6 +1201,18 @@ $Rating\to 1800(+18)$
 
 
 
+### Codeforces Round #687
+
+| 题号 | 完成 | 备注 | 通过人数 |
+| ---- | ---- | ---- | -------- |
+| A. Prison Break  | AC |      | 8688 |
+| B. Repainting Street  | AC |      | 6572 |
+| C. Bouncing Ball  | AC |      | 4110 |
+| D. XOR-gun  | 看数据AC |  | 1524 |
+| E. New Game Plus!  |      |      | 512 |
+
+
+
 ## Div. 3
 
 ### Codeforces Round #587 (Div. 3)
