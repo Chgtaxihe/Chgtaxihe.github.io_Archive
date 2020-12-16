@@ -28,7 +28,7 @@ permalink: /learningCategory.html
 6.  [高斯整数](/post/category/数论/高斯整数.html)
 7.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
 8.  [模运算](/post/category/数论/模运算.html)
-9.  二次剩余
+9.  [二次剩余](/post/category/数论/二次剩余.html)
 10.  Pólya定理
 11.  [拉格朗日插值](/post/category/数论/拉格朗日插值.html)
 12.  [快速傅里叶变换FFT](/post/category/数论/快速傅里叶变换.html)（未完成）
