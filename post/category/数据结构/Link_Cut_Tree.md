@@ -26,19 +26,25 @@ title: Link Cut Tree学习笔记
 
 由Splay树构成，每棵辅助树维护的是一棵树，一些辅助树构成的森林，即LCT
 
-通常Splay的根节点为空，但在辅助树中，每棵Splay的根节点的父亲节点指向原树中**这条链**的父亲节点。因此，每个连通块（辅助树）恰有一个节点的父节点为空。
-
 有以下性质
 
 1.  原树中的每个节点与辅助树中Splay节点一一对应
-2.  每个Splay维护的是在原树中深度**严格递增**的路径，**中序遍历**Splay得到的每个点深度严格递增
+
+2.  每个Splay维护的是在原树中深度**严格递增**的路径，**中序遍历**Splay得到的每个点深度严格递增（Splay树性质）
+
 3.  边分为**实边**和**虚边**，实边包含在Splay中，虚边则由一棵Splay指向**另一棵**Splay上的某一节点（指向该Splay中**深度最小**的节点的父节点）
 
-
-
-
+    在这里，设子节点为$x$，其父节点为$y$，则定有$fa[x]=y$，若有$ch[y][0/1]=x$则该边为实边，否则为虚边
 
 **为了解题，splay有时还会维护一下size属性**
+
+
+
+## 变量定义
+
+```
+// fa[x]: 该splay节点的父节点, ch[x][0/1]: splay树中x的左/右子节点
+```
 
 
 
@@ -64,7 +70,7 @@ title: Link Cut Tree学习笔记
 
 ### 辅助函数rotate(x)
 
-作用：标准的旋转函数
+作用：splay树中标准的旋转函数
 
 ```c++
 void rotate(int x){
@@ -80,7 +86,9 @@ void rotate(int x){
 
 ### 辅助函数 update(x)
 
-也可以用手工栈代替
+作用：从根节点一路pushdown到当前节点
+
+也可以用手工栈代替递归栈
 
 ```c++
 void update(int x){ // 从splay根节点一路pushdown
@@ -104,10 +112,10 @@ void pushdown(int x){ // 注意这里pushdown的写法
 
 
 
-splay函数：
+### splay函数：
 
 ```c++
-void splay(int x){
+void splay(int x){ // 将x旋转到其所在splay树的根部
     update(x); // 也可以用手工栈代替
     while(!isroot(x)){ // splay双旋
         int y = fa[x];
@@ -121,7 +129,7 @@ void splay(int x){
 
 ## access(x)
 
-作用：删除x到根路径上所有连向其他点的重链，重新拉一条x到根（原树的根）的重链。
+作用：删除x到根路径上所有连向其他点的重链，重新拉一条x到根（原树的根）的重链（实链）。
 
 注：在新拉出来的链中，原树中深度最大的点为x
 
@@ -147,7 +155,7 @@ void access(int x){
 ```c++
 void flip(int x){ // splay的翻转操作
     swap(ch[x][0], ch[x][1]);
-    r[x] ^= 1; // 翻转标记(不是很懂，不打标记也不会破坏原树的连接关系呀)
+    r[x] ^= 1; // 翻转标记(不打标记会破坏深度关系)
 }
 
 void makeroot(int x){
@@ -186,6 +194,7 @@ int findroot(int x){
     access(x); // 先将根节点与x接到同一颗splay树中
     splay(x); // 旋到splay的根节点
     while(ch[x][0]) pushdown(x), x = ch[x][0]; // 不断向左走，下放信息
+    // 下放信息似乎是不必要的，因为splay(x)的时候已经进行了update(x)
     splay(x); // 保证复杂度???
     return x; // 由辅助树的性质可知，中序遍历的第一个节点即为根节点
 }
@@ -412,6 +421,10 @@ int access(int x){
 
 求$(u,v)$的lca前先`makeroot`确定树根，再`access(x)`，那么`lca=access(y)`
 
+解析：
+
+记$access(x)$后，根节点$root$所在的splay树为$t_1$，$access(y)$后根节点所在的splay树为$t_2$，则$t_1$与$t_2$共有的点即为$x\to root,y\to root$路径上的公共节点，$access(y)$过程中访问到的第一个公共点（该点同时为深度最大的公共节点）即为$lca(x,y)$
+
 
 
 洛谷P3379 AC代码（截取）
@@ -439,7 +452,7 @@ void solve(){
 
 # 非旋treap维护LCT
 
-等我先学一下treap
+等我先学会treap
 
 
 
