@@ -1209,7 +1209,21 @@ $Rating\to 1800(+18)$
 | B. Repainting Street  | AC |      | 6572 |
 | C. Bouncing Ball  | AC |      | 4110 |
 | D. XOR-gun  | 看数据AC |  | 1524 |
-| E. New Game Plus!  |      |      | 512 |
+| E. New Game Plus!  | 题解AC |      | 512 |
+
+
+
+### Educational Codeforces Round 99
+
+| 题号                     | 完成 | 备注 | 通过人数 |
+| ------------------------ | ---- | ---- | -------- |
+| A. Strange Functions     | AC   |      | 12293    |
+| B. Jumps                 | AC   |      | 6941     |
+| C. Ping-pong             | AC   |      | 7952     |
+| D. Sequence and Swaps    | AC   |      | 3049     |
+| E. Four Points           |      |      | 205      |
+| F. String and Operations |      |      | 32       |
+| G. Forbidden Value       |      |      | 8        |
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: hidden_page
-title: KMP学习笔记
+title: KMP/扩展KMP学习笔记
 ---
 
 * auto-gen TOC:
@@ -11,7 +11,7 @@ title: KMP学习笔记
 
 
 
-# 定义
+# KMP
 
 $fail[i]$指向的是**当前位失配时，与模式串前缀相同的最长后缀**，也是下一次配对的位置
 
@@ -21,7 +21,9 @@ $fail[i]$指向的是**当前位失配时，与模式串前缀相同的最长后
 
 
 
-# 模板
+一个容易理解的算法，并不需要太多解析。
+
+## 模板
 
 ```c++
 #include <bits/stdc++.h>
@@ -34,6 +36,8 @@ void calc(){
     f[0]=f[1]=0;
     for(int i=1; i<l2; i++) {
         while(k && pattern[i]!=pattern[k]) k=f[k];
+        //无下面这一行代码则应称为MP算法
+        while(k && pattern[i+1]==pattern[k]) k=fail[k];
         f[i+1]= pattern[i]==pattern[k]?++k:0;
     }
 }
@@ -54,18 +58,87 @@ int main() {
                 i=i-f[k];//f[k]等于 当第k位字符不匹配时，"前面已匹配字符串"的长度
                 k=f[k];
             }
-        }
-        else{
+        }else{
             if(!k)i++;//连第一位都匹配失败，i移向下一位
             else{
                 k=f[k];//跳转
             }
         }
     }
-    for(int j=1;j<=l2;j++)printf("%d ", f[j]);
 }
 ```
 
 
 
-待补充......
+# 扩展KMP
+
+典型问题：给定串$a,b$，对于$a$的每一个后缀$a_i$，求$a_i$与$b$的最长公共前缀。
+
+
+
+## z函数
+
+对于一个长度为$n$的字符串$s$（下标从0开始），定义其z函数，$z[i]$为$s[i:]$与$s$的最大公共前缀长度。
+
+显然有$z[0]=n$
+
+例如：
+$$
+Z(aabaa)=[n,1,0,2,1]
+$$
+其朴素$O(n^2)$算法如下
+
+```c++
+void calc_z_func(int * z, char * s, int len){
+    for(int i=1; i<len; i++){
+        z[i] = 0;
+        while(i + z[i] < len && s[z[i]] == s[z[i] + i]) z[i]++;
+    }
+}
+```
+
+
+
+### 利用z[1]...z[i-1]计算z[i]
+
+定义**匹配段**为 与$s$的某一前缀相同的 $s$的子串。例如$s=aabaa$，则$s[3:]$（"aa"）为一个匹配段。
+
+在计算$z[1]$到$z[i-1]$的过程中，我们记下**最右**（右边界最大的）的匹配段$[l,r]$，该$r$视为算法目前扫描到的边界，任何超过$r$的字符都是**未扫描**的。
+
+下面分情况讨论：
+
+1.  $r\lt i$，由于当前位置处于未扫描的部分，因此使用朴素算法进行扫描匹配即可。
+
+2.  $r\ge i$：
+
+    注意到$s[l\dots r]=s[0\dots (r - l)]$，因此有$s[i\dots r]=s[(i-l)\dots (i-l)+(r-i)]$。因此，我们可以利用$z[i-l]$作为参考。注意到$z[i-l]+i-1$可能超过$r$，而超过$r$的部分都是未扫描的。因此有
+    $$
+    z[i]=\min(r-i+1,z[i-l])
+    $$
+    接下来继续使用朴素算法去求就行。
+
+```c++
+void calc_z_func(int * z, char * s, int len){
+    for(int i=1, l=0, r=0; i<n; i++){
+        if(i <= r) z[i] = min(r - i + 1, z[i-l]);
+        while(i + z[i] < len && s[z[i]] == s[z[i] + i]) z[i]++;
+        if(i + z[i] - i > r) l = i, r = i + z[i] - 1;
+    }
+}
+```
+
+注意：如果从$i=0$开始，会使得最右匹配段一直为$[0,n-1]$，算法退化为$O(n^2)$
+
+
+
+## 求s每个后缀与t的最长公共前缀
+
+
+
+
+
+# 参考链接
+
+我自己的博文：https://blog.csdn.net/Chgtaxihe/article/details/88919673
+
+https://oi-wiki.org/string/z-func/

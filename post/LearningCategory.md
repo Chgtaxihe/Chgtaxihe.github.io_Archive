@@ -20,7 +20,7 @@ permalink: /learningCategory.html
 
 ## 数论
 
-1.  欧拉函数
+1.  [欧拉函数](/post/category/数论/欧拉函数.html)
 2.  [卡特兰数](/post/category/数论/卡特兰数.html)
 3.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
 4.  [类欧几里得](/post/category/数论/类欧几里得.html)（待完善）
@@ -50,7 +50,6 @@ permalink: /learningCategory.html
 2.  [动态dp](/post/category/动态规划/动态dp.html)（待完善）
 3.  [广义矩阵乘法](/post/category/动态规划/广义矩阵乘法.html)
 4.  [斜率dp](/post/category/动态规划/斜率dp.html)
-5.  整数划分
 
 
 
@@ -93,13 +92,13 @@ permalink: /learningCategory.html
 
 1.  [字符串基础](/post/category/字符串/字符串基础.html)（未完成）
 2.  [AC自动机](/post/category/字符串/AC自动机.html)
-3.  [KMP](/post/category/字符串/KMP.html)（待完善）
-4.  扩展KMP
+3.  [KMP/EXKMP](/post/category/字符串/KMP.html)（待完善）
 5.  回文树/回文自动机
 6.  [子序列自动机](/post/category/字符串/子序列自动机.html)
 7.  [后缀自动机](/post/category/字符串/后缀自动机.html) （未完成）
 8.  广义后缀自动机
 9.  [Lyndon分解](/post/category/字符串/Lyndon分解.html)
+9.  Manacher
 
 
 
