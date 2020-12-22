@@ -119,7 +119,9 @@ void calc_z_func(int * z, char * s, int len){
 
 ```c++
 void calc_z_func(int * z, char * s, int len){
+    z[0] = len;
     for(int i=1, l=0, r=0; i<n; i++){
+        z[i] = 0;
         if(i <= r) z[i] = min(r - i + 1, z[i-l]);
         while(i + z[i] < len && s[z[i]] == s[z[i] + i]) z[i]++;
         if(i + z[i] - i > r) l = i, r = i + z[i] - 1;
@@ -133,6 +135,37 @@ void calc_z_func(int * z, char * s, int len){
 
 ## 求s每个后缀与t的最长公共前缀
 
+在求出上述$z$函数后，仿照$z$函数的求法即可。
+
+$extend[i]$即为后缀$s_i$与$t$的最长公共前缀
+
+```c++
+int len_s = strlen(s), len_p = strlen(p);
+calc_z_func(p, len_p);
+
+for(int i=0, l = -1, r = -1; i<len_s; i++){
+    extend[i] = 0;
+    if(r >= i) extend[i] = min(r - i + 1, z[i - l]);
+    while(i + extend[i] < len_s && 
+          s[i + extend[i]] == p[extend[i]])
+         extend[i]++;
+    if(extend[i] + i - 1 > r) r = extend[i] + i - 1, l = i;
+}
+```
+
+
+
+## 其他应用
+
+### 查找子串
+
+问题：求串$p$在串$s$中出现的位置
+
+解法：
+
+令$t=p\delta s$，其中$\delta$为$s,p$中均为出现过的字符。
+
+计算$z$函数，对于$i\in\large[\normalsize\mid p\mid+ 1,\mid t\mid - 1\large]$，若$z[i]=\mid p\mid$，则有一个$p$出现在$s$的第$i$号位置。
 
 
 

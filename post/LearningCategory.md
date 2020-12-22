@@ -23,7 +23,7 @@ permalink: /learningCategory.html
 1.  [欧拉函数](/post/category/数论/欧拉函数.html)
 2.  [卡特兰数](/post/category/数论/卡特兰数.html)
 3.  [拓展欧几里得](/post/category/数论/拓展欧几里得.html)
-4.  [类欧几里得](/post/category/数论/类欧几里得.html)（待完善）
+4.  [类欧几里得](/post/category/数论/类欧几里得.html)（未完成）
 5.  [同余最短路](/post/category/数论/同余最短路.html)
 6.  [高斯整数](/post/category/数论/高斯整数.html)
 7.  [本原勾股数组](/post/category/数论/本原勾股数组.html)
@@ -92,13 +92,13 @@ permalink: /learningCategory.html
 
 1.  [字符串基础](/post/category/字符串/字符串基础.html)（未完成）
 2.  [AC自动机](/post/category/字符串/AC自动机.html)
-3.  [KMP/EXKMP](/post/category/字符串/KMP.html)（待完善）
+3.  [KMP/拓展KMP](/post/category/字符串/KMP.html)（缺少详细证明）
 5.  回文树/回文自动机
 6.  [子序列自动机](/post/category/字符串/子序列自动机.html)
 7.  [后缀自动机](/post/category/字符串/后缀自动机.html) （未完成）
 8.  广义后缀自动机
 9.  [Lyndon分解](/post/category/字符串/Lyndon分解.html)
-9.  Manacher
+9.  [Manacher](/post/category/字符串/Manacher.html)
 
 
 
