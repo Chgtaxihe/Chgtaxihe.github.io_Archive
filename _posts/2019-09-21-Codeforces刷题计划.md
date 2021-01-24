@@ -18,7 +18,7 @@ UPD: 我好菜啊
 
 ## Div. 1
 
-### Codeforces Round #609 (Div. 1)
+### Codeforces Round #609
 
 [题解](https://codeforces.com/blog/entry/72358)
 
@@ -29,7 +29,7 @@ UPD: 我好菜啊
 
 
 
-###  Codeforces Round #631 (Div. 1)
+###  Codeforces Round #631
 
 | 题号                        | 完成        | 备注                | 过题人数 |
 | --------------------------- | ----------- | ------------------- | -------- |
@@ -98,7 +98,7 @@ D题题解
 
 
 
-### Codeforces Round #633 (Div. 1)
+### Codeforces Round #633
 
 | 题号                      | 完成    | 备注                          | 过题人数 |
 | ------------------------- | ------- | ----------------------------- | -------- |
@@ -128,7 +128,7 @@ C题题解
 
 
 
-###  Codeforces Round #618 (Div. 1) 
+###  Codeforces Round #618 
 
 | 题号                   | 完成   | 备注                                                        | 过题人数 |
 | ---------------------- | ------ | ----------------------------------------------------------- | -------- |
@@ -171,7 +171,7 @@ D题题解
 
 
 
-###  Codeforces Round #616 (Div. 1) 
+###  Codeforces Round #616 
 
 | 题号                               | 完成          | 备注                                   | 过题人数 |
 | ---------------------------------- | ------------- | -------------------------------------- | -------- |
@@ -194,7 +194,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Codeforces Round #614 (Div. 1) 
+### Codeforces Round #614 
 
 | 题号                           | 完成         | 备注 | 过题人数 |
 | ------------------------------ | ------------ | ---- | -------- |
@@ -211,7 +211,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 ## Div. 2
 
-### Codeforces Round #588 (Div. 2)
+### Codeforces Round #588
 
 [题解](https://codeforces.com/blog/entry/70008) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1230)
 
@@ -244,7 +244,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Codeforces Round #589 (Div. 2)
+### Codeforces Round #589
 
 [题解](https://codeforces.com/blog/entry/70162) [VirtualJudge](https://vjudge.net/problem#OJId=CodeForces&probNum=1228)
 
@@ -278,7 +278,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Codeforces Round #592 (Div. 2)
+### Codeforces Round #592
 
 [题解](https://codeforces.com/blog/entry/70553)
 
@@ -296,7 +296,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Codeforces Round #593 (Div. 2)
+### Codeforces Round #593
 
 [题解](https://codeforces.com/blog/entry/70654)
 
@@ -313,7 +313,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Codeforces Round #594 (Div. 2)
+### Codeforces Round #594
 
 [题解](https://codeforces.com/blog/entry/70720)
 
@@ -331,7 +331,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Educational Codeforces Round 75 (Rated for Div. 2)
+### Educational Codeforces Round 75
 
 [题解](https://codeforces.com/blog/entry/70860)
 
@@ -349,7 +349,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-### Codeforces Round #597 (Div. 2)
+### Codeforces Round #597
 
 [题解](https://codeforces.com/blog/entry/71080)
 
@@ -366,7 +366,7 @@ C题每个开关只有两个状态，同时一个点$x$最多只会被两个开�
 
 
 
-###  Codeforces Round #599 (Div. 2) 
+###  Codeforces Round #599
 
 [题解](https://codeforces.com/blog/entry/71216)
 
@@ -401,7 +401,7 @@ D题题解
 
 
 
-### Educational Codeforces Round 76 (Rated for Div. 2)
+### Educational Codeforces Round 76
 
 [题解](https://codeforces.com/blog/entry/71434)
 
@@ -419,7 +419,7 @@ D题题解
 
 
 
-### Codeforces Round #600 (Div. 2)
+### Codeforces Round #600
 
 [题解](https://codeforces.com/blog/entry/71489)
 
@@ -436,7 +436,7 @@ D题题解
 
 
 
-### Codeforces Round #601 (Div. 2)
+### Codeforces Round #601
 
 [题解](https://codeforces.com/blog/entry/71594)
 
@@ -454,7 +454,7 @@ D题题解
 
 
 
-###  Educational Codeforces Round 77 (Rated for Div. 2)
+###  Educational Codeforces Round 77
 
 [题解](https://codeforces.com/blog/entry/71805)
 
@@ -483,7 +483,7 @@ $by+g, by+g+r, by+g+2r,...,by+g+(m*r)$
 
 
 
-### Codeforces Round #603 (Div. 2)
+### Codeforces Round #603
 
 [题解](https://codeforces.com/blog/entry/71844?locale=en)
 
@@ -512,7 +512,7 @@ F题题解
 
 
 
-### Codeforces Round #604 (Div. 2)
+### Codeforces Round #604
 
 [题解](https://codeforces.com/blog/entry/71995)
 
@@ -539,7 +539,7 @@ F题待完成！！！
 
 
 
-### Codeforces Round #607 (Div. 2)
+### Codeforces Round #607
 
 [题解](https://codeforces.com/blog/entry/72212)
 
@@ -556,7 +556,7 @@ F题待完成！！！
 
 
 
-### Codeforces Round #608 (Div. 2)
+### Codeforces Round #608
 
 [题解](https://codeforces.com/blog/entry/72247)
 
@@ -573,7 +573,7 @@ F题待完成！！！
 
 
 
-### Educational Codeforces Round 78 (Rated for Div. 2)
+### Educational Codeforces Round 78
 
 [题解](https://codeforces.com/blog/entry/72330)
 
@@ -590,7 +590,7 @@ F题待完成！！！
 
 
 
-### Codeforces Round #609 (Div. 2)
+### Codeforces Round #609
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/ca4af5c0f847fab5f4589e00648b395d)
 
@@ -622,7 +622,7 @@ E题题解
 
 
 
-### Codeforces Round #610 (Div. 2)
+### Codeforces Round #610
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/b89358bd1628631bdcd5a9a33537a24a)
 
@@ -637,7 +637,7 @@ E题题解
 
 
 
-### Educational Codeforces Round 79 (Rated for Div. 2)
+### Educational Codeforces Round 79
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/d86643d5f6fb1634e359df0df973057e)
 
@@ -652,7 +652,7 @@ E题题解
 
 
 
-###  Codeforces Round #630 (Div. 2)
+###  Codeforces Round #630
 
 两个号都上1600，再也不能打Div3了 <img src="https://s1.ax1x.com/2020/03/28/GAPit0.png" alt="GAPit0.png" title="GAPit0.png" width=150/>
 
@@ -692,7 +692,7 @@ E题题解
 
 
 
-###  Codeforces Round #635 (Div. 2) 
+###  Codeforces Round #635
 
 改名叫Queueforces得了
 
@@ -715,7 +715,7 @@ E题：$dp[i][j]$表示已经使用了$i$个字符，得到的$A$仍需往头部
 
 
 
-###  Codeforces Round #637 (Div. 2) 
+###  Codeforces Round #637
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -803,7 +803,7 @@ PS2: 事实上，上述的$ans$即为第二类斯特林数$S(n, c)$乘上$c!$（
 
 
 
-###  Codeforces Round #647 (Div. 2) 
+###  Codeforces Round #647
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -816,7 +816,7 @@ PS2: 事实上，上述的$ans$即为第二类斯特林数$S(n, c)$乘上$c!$（
 
 
 
-### Codeforces Round #648 (Div. 2)
+### Codeforces Round #648
 
 心态炸了，A题这么简单都没过，~~不知得掉多少分~~
 
@@ -852,7 +852,7 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 
 
 
-###  Codeforces Round #646 (Div. 2) 
+###  Codeforces Round #646
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -871,7 +871,7 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 
 
 
-###  Educational Codeforces Round 88 (Rated for Div. 2) 
+###  Educational Codeforces Round 88
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -902,7 +902,7 @@ E题通过编码方式，使得任意两个编码互不为子集，进而查询�
 
 
 
-###  Educational Codeforces Round 89 (Rated for Div. 2) 
+###  Educational Codeforces Round 89
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -930,7 +930,7 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 
 
-### Codeforces Round #645 (Div. 2)
+### Codeforces Round #645
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -965,7 +965,7 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 
 
-### Codeforces Round #649 (Div. 2)
+### Codeforces Round #649
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -989,7 +989,7 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 
 
-### Educational Codeforces Round 87 (Rated for Div. 2)
+### Educational Codeforces Round 87
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -1020,7 +1020,7 @@ $a=p_0^{x1}p_1^{x2}p_2^{x3}...p_n^{xn},gcd(a,\frac{a}{p_i^{xi}} + p_i)=1$
 
 
 
-### Codeforces Round #651 (Div. 2)
+### Codeforces Round #651
 
 [BestRatingChanges](https://codeforces.com/bestRatingChanges/3331552) Wow
 
@@ -1044,7 +1044,7 @@ F2题解：同F1一样先找到对应的根$root$，设$depth[root]=0$，接着�
 
 
 
-### Codeforces Round #643 (Div. 2)
+### Codeforces Round #643
 
 这套题比较简单
 
@@ -1087,7 +1087,7 @@ ll twoPointBinSearch(ll l, ll r, function<ll(ll)>cost){
 
 
 
-### Codeforces Round #641 (Div. 2)
+### Codeforces Round #641
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -1100,7 +1100,7 @@ ll twoPointBinSearch(ll l, ll r, function<ll(ll)>cost){
 
 
 
-### Codeforces Round #652 (Div. 2)
+### Codeforces Round #652
 
 $Rating\to 1800(+18)$
 
@@ -1119,7 +1119,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #654 (Div. 2)
+### Codeforces Round #654
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -1133,7 +1133,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #655 (Div. 2)
+### Codeforces Round #655
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -1146,7 +1146,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #685 (Div. 2)
+### Codeforces Round #685
 
 | 题号                  | 完成 | 备注 | 通过人数 |
 | --------------------- | ---- | ---- | -------- |
@@ -1160,7 +1160,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Educational Codeforces Round 98 (Rated for Div. 2) 
+### Educational Codeforces Round 98
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -1174,7 +1174,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #684 (Div. 2) 
+### Codeforces Round #684
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |
@@ -1227,9 +1227,39 @@ $Rating\to 1800(+18)$
 
 
 
+### Codeforces Round #688
+
+| 题号           | 完成   | 备注           | 通过人数 |
+| -------------- | ------ | -------------- | -------- |
+| D. CheckPoints | AC     |                | 2796     |
+| E. Dog Snacks  | 题解AC |                | 1182     |
+| F. Even Harder | AC     | Dp，比E简单... | 348      |
+
+
+
+### Codeforces Round #689
+
+| 题号                       | 完成   | 备注 | 通过人数 |
+| -------------------------- | ------ | ---- | -------- |
+| E. Water Level             | 题解AC |      | 1388     |
+| F. Mathematical Expression | 题解   |      | 269      |
+
+
+
+### Educational Codeforces Round 100
+
+| 题号                | 完成 | 备注 | 通过人数 |
+| ------------------- | ---- | ---- | -------- |
+| C. Busy Robot       |      |      | 1667     |
+| D. Pairs            |      |      | 1007     |
+| E. Plan of Lectures |      |      | 181      |
+| F. Max Correct Set  |      |      | 6        |
+
+
+
 ## Div. 3
 
-### Codeforces Round #587 (Div. 3)
+### Codeforces Round #587
 
 [我的AC代码(C/E2/F)](https://gist.github.com/Chgtaxihe/7a268e89d6d5913ef37a8948d7f7c6b2)
 
@@ -1245,7 +1275,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #590 (Div. 3)
+### Codeforces Round #590
 
 [我的AC代码(B2/D/E/F)](https://gist.github.com/Chgtaxihe/77b664c4c8a4295140c6310a23b218e2)
 
@@ -1261,7 +1291,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #595 (Div. 3)
+### Codeforces Round #595
 
 [我的AC代码(F题)](https://gist.github.com/Chgtaxihe/83ff3d95037537d11a3d9cbe51020b11)
 
@@ -1279,7 +1309,7 @@ $Rating\to 1800(+18)$
 
 
 
-### Codeforces Round #598 (Div. 3)
+### Codeforces Round #598
 
 [我的AC代码（C/D/E/F）](https://gist.github.com/Chgtaxihe/609ee28d9f9e40b2dc7cad4f54c08ec7)
 
@@ -1300,7 +1330,7 @@ F题题解
 
 
 
-### Codeforces Round #605 (Div. 3)
+### Codeforces Round #605
 
 [我的AC代码](https://gist.github.com/Chgtaxihe/987972772382a0a49f6c953e68cf2740)
 
@@ -1341,7 +1371,7 @@ F题题解
 
 
 
-### Codeforces Round #611 (Div. 3)
+### Codeforces Round #611
 
 [题解](https://codeforces.com/contest/1283)
 
@@ -1356,7 +1386,7 @@ F题题解
 
 
 
-### Codeforces Round #627 (Div. 3)
+### Codeforces Round #627
 
 第一次AK，用了70分钟，就不记录了吧~
 
@@ -1364,7 +1394,7 @@ UPD: 打一场Rating就上1700+，我傻了
 
 
 
-###  Codeforces Round #629 (Div. 3)
+###  Codeforces Round #629
 
 才过了4题，居然还能涨Rating...
 
@@ -1398,7 +1428,7 @@ void dfs(int v, int par = -1) {
 
 
 
-### Codeforces Round #644 (Div. 3)
+### Codeforces Round #644
 
 | 题号 | 完成 | 备注 | 通过人数 |
 | ---- | ---- | ---- | -------- |

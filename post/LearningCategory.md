@@ -99,6 +99,7 @@ permalink: /learningCategory.html
 8.  广义后缀自动机
 9.  [Lyndon分解](/post/category/字符串/Lyndon分解.html)
 9.  [Manacher](/post/category/字符串/Manacher.html)
+10.  后缀数组
 
 
 
