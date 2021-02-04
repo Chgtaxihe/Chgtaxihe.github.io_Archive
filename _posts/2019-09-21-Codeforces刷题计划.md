@@ -1169,8 +1169,6 @@ $Rating\to 1800(+18)$
 | C. Two Brackets   | AC |      | 9127 |
 | D. Radio Towers   | AC(50min) |      | 2594 |
 | E. Two Editorials   | 题解AC |      | 168 |
-| F. Divide Powers   |      |      | 20 |
-| G. Game On Tree   |      |      | 7 |
 
 
 
@@ -1196,8 +1194,6 @@ $Rating\to 1800(+18)$
 | C. Knapsack   | AC |      | 6230 |
 | D. Catching Cheaters   | AC | 痛苦Dp，用了50分钟才AC。结果发现题解的Dp思路更简单，是我想得太复杂 | 2589 |
 | E. Xor Tree   | 题解AC | 一看就懂，一做就懵 | 660 |
-| F1. Frequency Problem (Easy Version)  |      |      | 187 |
-| F2. Frequency Problem (Hard Version) |      |      | 63 |
 
 
 
@@ -1215,15 +1211,12 @@ $Rating\to 1800(+18)$
 
 ### Educational Codeforces Round 99
 
-| 题号                     | 完成 | 备注 | 通过人数 |
-| ------------------------ | ---- | ---- | -------- |
-| A. Strange Functions     | AC   |      | 12293    |
-| B. Jumps                 | AC   |      | 6941     |
-| C. Ping-pong             | AC   |      | 7952     |
-| D. Sequence and Swaps    | AC   |      | 3049     |
-| E. Four Points           |      |      | 205      |
-| F. String and Operations |      |      | 32       |
-| G. Forbidden Value       |      |      | 8        |
+| 题号                  | 完成 | 备注 | 通过人数 |
+| --------------------- | ---- | ---- | -------- |
+| A. Strange Functions  | AC   |      | 12293    |
+| B. Jumps              | AC   |      | 6941     |
+| C. Ping-pong          | AC   |      | 7952     |
+| D. Sequence and Swaps | AC   |      | 3049     |
 
 
 
@@ -1248,12 +1241,28 @@ $Rating\to 1800(+18)$
 
 ### Educational Codeforces Round 100
 
-| 题号                | 完成 | 备注 | 通过人数 |
-| ------------------- | ---- | ---- | -------- |
-| C. Busy Robot       |      |      | 1667     |
-| D. Pairs            |      |      | 1007     |
-| E. Plan of Lectures |      |      | 181      |
-| F. Max Correct Set  |      |      | 6        |
+| 题号          | 完成 | 备注 | 通过人数 |
+| ------------- | ---- | ---- | -------- |
+| C. Busy Robot | AC   |      | 1667     |
+| D. Pairs      | AC   |      | 1007     |
+
+
+
+### Codeforces Round #691 (Div. 2)
+
+| 题号                  | 完成   | 备注                                   | 通过人数 |
+| --------------------- | ------ | -------------------------------------- | -------- |
+| C. Row GCD            | 题解AC |                                        | 5698     |
+| D. Glass Half Spilled | 题解AC | double数组初始化为负无穷：memset(0xfe) | 835      |
+
+
+
+### Codeforces Round #692
+
+| 题号              | 完成 | 备注 | 通过人数 |
+| ----------------- | ---- | ---- | -------- |
+| C. Peaceful Rooks | AC   |      | 3470     |
+| D. Grime Zoo      | 题解 |      | 752      |
 
 
 

@@ -167,11 +167,48 @@ doSomething(int, double, char)
 
 
 
+## 重载
+
+```java
+class OverloadTest {
+	
+	private static class A{}
+	private static class B extends A{}
+	private static class C extends B{}
+	
+	public void doSomething(A info) {
+		System.out.println("A");
+	}
+	
+	public void doSomething(B info) {
+		System.out.println("B");
+	}
+
+	public static void main(String[] args) {
+		OverloadTest olt = new OverloadTest();
+		olt.doSomething(new A());
+		olt.doSomething(new B());
+		olt.doSomething(new C());
+	}
+
+}
+```
+
+上述代码输出为
+
+```
+A
+B
+B
+```
+
+
+
 ## Object.finalize()
 
 >   **Deprecated**.
 
-摘自文档：https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html
+文档：https://docs.oracle.com/javase/9/docs/api/java/lang/Object.html
 
 使用`Autocloseable`或`PhantomReference`替代
 
@@ -763,6 +800,369 @@ public static void main(String[] args) throws ClassNotFoundException {
 ```
 
 第8行返回的类型是`Class<? super Internal2>`而非`Internal`
+
+
+
+# Thinking in Java 笔记: 第十五章--泛型
+
+## 泛型擦除
+
+由于擦除，下列代码无法正常工作
+
+```java
+class Erase<T>{
+    void doSomething(Object arg){
+        if(arg instanceof T){} // Error
+        T var = new T(); // Error
+        T[] arr = new T[SIZE]; // Error
+        T[] arr = (T[]) new Object[SIZE]; //  Warning:未检查的转型
+    }
+}
+```
+
+
+
+下列例子可以更清晰的看出泛型擦除的性质
+
+```java
+class EraseTest {
+	private static class Erase<T extends CharSequence>{
+		void doSomething() {
+			T[] arr1 = (T[]) new String[5]; // no problem
+			T[] arr2 = (T[]) new Object[5]; // ClassCastException
+		}
+	}
+	
+	public static void main(String[] args) {
+		Erase<String> e = new Erase<>();
+		e.doSomething("123");
+	}
+}
+```
+
+在运行时，类型将被擦除至其泛型边界（本例中，边界为`CharSequence`）
+
+
+
+## 泛型数组
+
+```java
+class EraseTest {
+
+	private static class A{}
+	
+	private static class Erase<T>{
+		T[] arr = (T[]) new Object[5];
+	}
+	
+	public static void main(String[] args) {
+		Erase<A> erase = new Erase<>();
+		A[] arr = erase.arr; // ClassCastException
+		arr[0] = new A();
+	}
+}
+```
+
+上述代码将产生`ClastCastException`，原因在于`erase.arr`的类型实际上是`Object[]`，而
+
+```java
+T[] arr = (T[]) new Object[5];
+```
+
+在运行时并没有进行强制转型（或者说是由`Object[]`转为`Object[]`，自然不会有任何错误）
+
+随后，由于泛型，`erase.err`被转型为`A[]`（可在反编译出的代码中看到，这一步中包含一类型检查）
+
+```java
+A[] arr = erase.arr;
+```
+
+----
+
+ThinkingInJava中推荐的做法是，在类的内部直接使用`Object[]`而非`T[]`（即不要转型为`T[]`），又或者传入一个类型标记`Class`，并在新建数组时使用以下方法
+
+```java
+class A<T>{
+    T[] arr；
+    void op(Class<T> type, int length) {
+	    arr = (T[]) Array.newInstance(type, length);
+    }
+}
+```
+
+
+
+## 通配符
+
+下面的代码很好地说明了通配符的作用：
+
+```java
+class WilecareTest {
+	
+	private static class A{}
+	private static class B extends A{}
+	private static class C extends B{}
+
+	private static class Holder<T>{
+		T obj;
+		void set(T arg) {obj = arg;}
+		T get() {return obj;}
+	}
+	
+    public static void main(String[] args) {
+		Holder<B> origin = new Holder<>();
+		
+		Holder<? extends B> h1 = origin;
+		// h1.set(new B()); 不能编译
+		h1.get();
+		
+		Holder<? super B> h2 = origin;
+		h2.set(new B());
+		h2.set(new C());
+		h2.get(); // 返回Object类型
+	}
+
+}
+```
+
+-   `Holder<? extends B>`说明其接受**任意一个**泛型类型**继承**自`B`的`Holder`，然而，编译器并不能确定`?`是什么类型（可以是`B`或`C`），因而任何使用`T`作参数的函数均不能被调用；然而对于`get`方法，编译器知道返回值一定继承自`B`，因而可以调用。
+
+-   `Holder<? super B>`说明其接受**任意一个**泛型类型是`B`的**超类**的`Holder`，这里的`?`可以是`Object`/`A` /`B`。对于`set`方法，任意`B`的子类都可以转型为`?`，因而可以调用。对于`get`方法，`?`一定"继承"自`Object`，同样可以被调用（但返回值类型将变为`Object`）。
+
+## 自限定
+
+一些奇奇怪怪的用法（最好不要用上？）
+
+```java
+class A<T extends A<T>>{}
+```
+
+想要继承`A`时，子类的定义须是
+
+```java
+class B extends A<B>{}
+class C extends A<B>{}
+```
+
+然而，可以这样子绕过：
+
+```java
+class D extends A{}
+```
+
+
+
+# Thinking in Java 笔记: 第十六章--数组
+
+## Comparator.equals
+
+该方法与比较过程无关，仅用于判断两个比较器是否相同。
+
+>   Indicates whether some other object is "equal to" this comparator.
+
+尽管该接口中有`equals`方法，但并不需要"实现"该方法，通常使用`Object.equals`就足够了。
+
+
+
+# Thinking in Java 笔记: 第十九章--枚举类型
+
+-   所有` 枚举类T`都继承自`Enum<T>`
+
+-   在枚举类中封装业务逻辑真的好么？
+
+
+
+## import static
+
+Java5以后，可以使用以下语法：
+
+```java
+// ImportStatic.java
+package chapter19.import_static;
+
+import static chapter19.import_static.StaticMethod.method;
+
+class ImportStatic {
+
+	public static void main(String[] args) {
+		method();
+	}
+
+}
+
+// StaticMethod.java
+package chapter19.import_static;
+
+class StaticMethod {
+
+	public static void method() {
+		System.out.println("static method");
+	}
+}
+```
+
+`import static`可以导入静态成员（变量/方法）
+
+>   Use it when you require frequent access to static members from one or two classes.
+
+
+
+## 枚举类中的抽象方法
+
+枚举类中可以有抽象方法（由于枚举类的对象必须在该类内定义并实例化，因此作用不大？）
+
+```java
+enum AbstractEnum {
+	
+	A {
+		@Override
+		void doSomething() {
+			System.out.println(name());
+		}
+	}, B {
+		@Override
+		void doSomething() {
+			System.out.println(name());
+		}
+	}, C {
+		@Override
+		void doSomething() {
+			System.out.println(name());
+		}
+	};
+	
+	abstract void doSomething();
+	
+	public static void main(String[] args) {
+		A.doSomething();
+		B.doSomething();
+		C.doSomething();
+	}
+	
+}
+```
+
+
+
+## Class Body of An Enum Constant
+
+在乱搞的时候，写出了以下代码
+
+```java
+enum InvisiableMethod {
+	A{
+		public void doSomething() {
+			System.out.println("invoked");
+		}
+	};
+	
+	public static void main(String[] args) {
+		// A.doSomething(); 方法未定义
+		System.out.println(A.getClass().getName());
+		System.out.println(A.getClass().getSuperclass().getName());
+		Method[] methods = A.getClass().getDeclaredMethods();
+		for(Method m:methods) {
+			System.out.println(m.getName());
+		}
+	}
+}
+/* 输出：
+chapter19.InvisiableMethod$1
+chapter19.InvisiableMethod
+doSomething
+*/
+```
+
+通过反射可以知道`A`所对应的类是`InvisiableMethod$1`，是一个匿名内部类，因此无法直接调用`doSomething`方法。
+
+但仍然可以通过反射得到对应的`Method`对象
+
+文档解释如下：
+
+https://docs.oracle.com/javase/specs/jls/se15/preview/specs/sealed-classes-jls.html
+
+>   **The optional class body of an enum constant implicitly declares an anonymous class ([15.9.5](https://docs.oracle.com/javase/specs/jls/se15/preview/specs/sealed-classes-jls.html#jls-15.9.5)) that (i) is `final`, and (ii) extends the immediately enclosing `sealed` enum type.**
+
+也就是说，枚举类实例的方法体其实是一个**final**内部类
+
+
+
+ps1. 实在不知道这个东西应该怎么翻译
+
+ps2. 暂时不知道这个特性有什么用（除了让代码更加难懂以外）
+
+
+
+## 使用枚举类实现职责链（别这么做）
+
+-   枚举类是`final`的，意味着其不能被继承，对拓展封闭...
+-   个人认为在枚举类中封装业务逻辑违反直觉，不利于查错
+
+```java
+enum ResponsibilityChain {
+
+	FIREWALL_HANDLER{
+		private static final String DENY_DEST = "1.1.1.1";
+		@Override
+		boolean handle(String dest) {
+			if(dest.equals(DENY_DEST)) return true;
+			return false;
+		}
+		
+	}, PROXY_HANDLER{
+		private static final String PROXY_DEST = "1.0.0.1";
+		@Override
+		boolean handle(String dest) {
+			if(dest.equals(PROXY_DEST)) return true;
+			return false;
+		}
+		
+	}, RESPOND_HANDLER{
+
+		@Override
+		boolean handle(String dest) {
+			System.out.println("response from " + dest);
+			return true;
+		}
+		
+	};
+	
+	abstract boolean handle(String dest);
+	
+	public static void main(String[] args) {
+		for(ResponsibilityChain handler:ResponsibilityChain.values()) {
+			if(handler.handle("127.0.0.1")) break;
+		}
+	}
+}
+```
+
+
+
+# Thinking in Java 笔记: 第二十章--注解
+
+## 定义注解
+
+```java
+@Retention(RUNTIME)
+@Target(FIELD)
+public @interface AutoIncrease {
+	public int begin() default 0;
+}
+```
+
+注解元素中可用的类型
+
+-   所有基本类型（int, float等）
+-   String
+-   Class
+-   enum
+-   Annotation
+-   以上类型的数组
+
+注解元素中不能有不确定的值（即不能为null，要么提供默认值，要么在使用时提供）
+
+## 注解解释器与APT *
 
 
 
