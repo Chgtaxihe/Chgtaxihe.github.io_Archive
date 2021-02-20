@@ -1,5 +1,5 @@
 ---
-layout: hidden_page
+layout: post
 title: 网络测试
 permalink: /speedtest.html
 ---

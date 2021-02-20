@@ -1257,12 +1257,43 @@ $Rating\to 1800(+18)$
 
 
 
+
+
 ### Codeforces Round #692
 
-| 题号              | 完成 | 备注 | 通过人数 |
-| ----------------- | ---- | ---- | -------- |
-| C. Peaceful Rooks | AC   |      | 3470     |
-| D. Grime Zoo      | 题解 |      | 752      |
+| 题号              | 完成   | 备注 | 通过人数 |
+| ----------------- | ------ | ---- | -------- |
+| C. Peaceful Rooks | AC     |      | 3140     |
+| D. Grime Zoo      | 题解AC |      | 763      |
+
+
+
+### Educational Codeforces Round 101
+
+| 题号              | 完成   | 备注 | 通过人数 |
+| ----------------- | ------ | ---- | -------- |
+| C. Building a Fence | AC     |      | 3470     |
+| D. Ceil Divisions | AC |      | 2360  |
+| E. A Bit Similar | 题解AC | | 236 |
+
+
+
+### Codeforces Round #694 (Div. 2)
+
+| 题号                  | 完成   | 备注                | 通过人数 |
+| --------------------- | ------ | ------------------- | -------- |
+| D. Strange Definition | AC     | 忘了ll，debug了好久 | 2639     |
+| E. Strange Shuffle    |        |                     | 251      |
+| F. Strange Housing    | 题解AC | 题意表述不清晰      | 929      |
+
+
+
+### Codeforces Round #695 (Div. 2)
+
+| 题号                           | 完成   | 备注 | 通过人数 |
+| ------------------------------ | ------ | ---- | -------- |
+| D. Sum of Paths                | 题解AC |      | 2407     |
+| E. Distinctive Roots in a Tree |        |      | 750      |
 
 
 
