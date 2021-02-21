@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hidden_page
 title: Codeforces 刷题计划
 tags: algorithm Codeforces
 ---

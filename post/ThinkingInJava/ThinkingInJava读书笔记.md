@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hidden_page
 title: ThinkingInJava读书笔记
 ---
 

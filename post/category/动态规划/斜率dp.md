@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: hidden_page
 title: 斜率dp回顾
-permalink: /post/category/动态规划/斜率dp.html
 ---
 
 * auto-gen TOC:

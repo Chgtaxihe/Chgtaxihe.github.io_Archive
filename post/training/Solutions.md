@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: hidden_page
 title: 题解们
-permalink: /solutions.html
 ---
 
 * auto-gen TOC:

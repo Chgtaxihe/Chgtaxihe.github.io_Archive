@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hidden_page
 title: Splay学习笔记
 tags: algorithm data_structure splay
 ---
