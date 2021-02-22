@@ -14,7 +14,7 @@ bulidtime: "1564066578" #博客建立时的时间戳 可进入https://tool.lu/ti
 
 PJAX: false #启用PJAX，会与评论系统冲突（如不用评论系统建议开启）
 
-paginate: 8 #同时显示的最大文章数，超过自动分页
+paginate: 50 #同时显示的最大文章数，超过自动分页
 paginate_path: "page:num"
 # background: /background.jpg
 background: "https://api.dujin.org/bing/1920.php"

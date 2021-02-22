@@ -57,36 +57,6 @@
 
       gtag('config', 'UA-160986436-1');
     </script>
-    
-    <!-- lazy-calculator -->
-    <script type="text/javascript">
-        var httpRequest = new XMLHttpRequest();
-        httpRequest.open('POST', 'https://vjudge.net/status/data/', true);
-        httpRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-        httpRequest.send('OJId=All&orderBy=run_id&un=Chgta&res=1&start=0&length=1');
-        httpRequest.onreadystatechange = function(){
-            if(httpRequest.readyState==4 && httpRequest.status == 200){
-                var json = httpRequest.responseText;
-                var obj = JSON.parse(json).data[0];
-                var lasttime = parseInt(JSON.stringify(obj.time));
-                var timestamp = (new Date()).valueOf();
-                var delta = (timestamp - lasttime)/1000/60/60/24;
-                if(delta >= 1){
-                    document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(1) + " 天没做题了";
-                }else{
-                    delta = delta * 24;
-                    if(delta >= 1){
-                        document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(1) + " 小时没做题了";
-                    }else{
-                        delta = delta * 60;
-                        if(delta >= 1){
-                            document.getElementById("lazy-calculator").innerHTML = "这个人已经 " + delta.toFixed(0) + " 分钟没做题了";
-                        }
-                    }
-                }
-            }
-        }
-    </script>
 
   <link rel="stylesheet" href="/assets/css/styles/default.css">
   <script src="/assets/js/highlight.pack.js"></script>
@@ -196,7 +166,6 @@
     <section class="page-header">
       <h1 class="project-name">{{ page-title }}</h1>
       <h2 class="project-tagline">{{ page-tagline }}</h2>
-      <h4 class="project-tagline" id="lazy-calculator"></h4>
       {% if page.layout == 'post' %}
         <h2 class="project-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
